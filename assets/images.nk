@@ -1,0 +1,2902 @@
+#! /Applications/Nuke10.5v4/Nuke10.5v4.app/Contents/MacOS/libnuke-10.5.4.dylib -nx
+version 10.5 v4
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="43" y="23" w="1637" h="1027" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="974" stretch="1"/>
+            <splitter orientation="2">
+                <split size="588"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="413"/>
+                <dock id="" activePageId="DAG.1" focus="true">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name /Users/davidabbott/Dropbox/Website/assets/images.nk
+ project_directory "\[python \{nuke.script_directory()\}]"
+ last_frame 1
+ fps 25
+ format "480 270 0 0 480 270 1 thumbnail"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+}
+Read {
+ inputs 0
+ file _input/HkbyciyJE.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read14
+ xpos 950
+ ypos -157
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat9
+ xpos 950
+ ypos -33
+}
+Write {
+ file ../2019/img/thumbs/music_01.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 20
+ in_colorspace linear
+ out_colorspace linear
+ name Write9
+ xpos 950
+ ypos 35
+}
+Read {
+ inputs 0
+ file _input/EpicDelay_Cover_Vimeo.png
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ origset true
+ name Read1
+ xpos 1610
+ ypos -181
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat12
+ xpos 1610
+ ypos -33
+}
+Write {
+ file ../2019/img/thumbs/music_04.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 21
+ in_colorspace linear
+ out_colorspace linear
+ name Write12
+ xpos 1610
+ ypos 35
+}
+Read {
+ inputs 0
+ file _input/ryH6Jq1yV.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read2
+ xpos 1390
+ ypos -181
+ postage_stamp false
+}
+RotoPaint {
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097664}
+    {t x44200000 x43b40000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {cubiccurve Clone2 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44904000 x43c80000 1}
+       {x44904000 x43ca0000 1}
+       {x44908000 x43cc0000 1}
+       {x44914000 x43ce0000 1}
+       {x44918000 x43d10000 1}
+       {x44924000 x43d50000 1}
+       {x44930000 x43d90000 1}
+       {x4493c000 x43dd0000 1}
+       {x44948000 x43e30000 1}
+       {x44958000 x43ea0000 1}
+       {x44964000 x43f10000 1}
+       {x4496c000 x43f50000 1}
+       {x4496c000 x43f90000 1}
+       {x44974000 x43fd0000 1}
+       {x44980000 x44010000 1}
+       {x44980000 x44030000 1}
+       {x44984000 x44048000 1}
+       {x44984000 x44058000 1}
+       {x44988000 x44070000 1}
+       {x44988000 x44088000 1}
+       {x44988000 x440a0000 1}
+       {x44990000 x440a8000 1}
+       {x44990000 x440c0000 1}
+       {x44990000 x440d8000 1}
+       {x44990000 x440f0000 1}
+       {x44990000 x440f8000 1}
+       {x44990000 x44100000 1}
+       {x44990000 x44110000 1}
+       {x44990000 x44118000 1}
+       {x44990000 x44128000 1}
+       {x44990000 x44130000 1}
+       {x44994000 x44138000 1}
+       {x44994000 x44150000 1}
+       {x44994000 x44160000 1}
+       {x44994000 x44170000 1}
+       {x44994000 x44180000 1}
+       {x44994000 x44198000 1}
+       {x44994000 x441a0000 1}
+       {x44994000 x441a8000 1}
+       {x44994000 x441b8000 1}
+       {x44994000 x441c0000 1}
+       {x44994000 x441d0000 1}
+       {x44990000 x441d0000 1}
+       {x44990000 x441d8000 1}
+       {x44990000 x441e0000 1}
+       {x44988000 x441e0000 1}
+       {x44988000 x441f0000 1}
+       {x44984000 x441f0000 1}
+       {x44984000 x441f8000 1}
+       {x44980000 x441f8000 1}
+       {x44978000 x441f8000 1}
+       {x44974000 x441f8000 1}
+       {x4496c000 x441f8000 1}
+       {x44964000 x44208000 1}
+       {x4495c000 x44208000 1}
+       {x44950000 x44208000 1}
+       {x44948000 x44208000 1}
+       {x4493c000 x44208000 1}
+       {x44930000 x44208000 1}
+       {x4492c000 x44208000 1}
+       {x44920000 x44208000 1}
+       {x44918000 x44208000 1}
+       {x44914000 x44208000 1}
+       {x44910000 x44208000 1}
+       {x44908000 x44208000 1}
+       {x44904000 x44210000 1}
+       {x448fc000 x44210000 1}
+       {x448f8000 x44210000 1}
+       {x448f4000 x44210000 1}
+       {x448ec000 x44210000 1}
+       {x448e8000 x44210000 1}
+       {x448e8000 x44218000 1}
+       {x448e0000 x44218000 1}
+       {x448dc000 x44218000 1}
+       {x448dc000 x44228000 1}
+       {x448d8000 x44228000 1}
+       {x448d0000 x44228000 1}
+       {x448d0000 x44230000 1}
+       {x448cc000 x44230000 1}
+       {x448c4000 x44240000 1}
+       {x448bc000 x44248000 1}
+       {x448bc000 x44250000 1}
+       {x448bc000 x44260000 1}
+       {x448bc000 x44268000 1}
+       {x448bc000 x44278000 1}
+       {x448bc000 x44280000 1}
+       {x448c0000 x44280000 1}
+       {x448c4000 x44288000 1}
+       {x448cc000 x44288000 1}
+       {x448d8000 x44298000 1}
+       {x448dc000 x442a0000 1}
+       {x448e0000 x442b0000 1}
+       {x448f4000 x442b8000 1}
+       {x448f8000 x442c0000 1}
+       {x44904000 x442d0000 1}
+       {x44910000 x442d0000 1}
+       {x44914000 x442d8000 1}
+       {x44920000 x442e8000 1}
+       {x4492c000 x442f0000 1}
+       {x44930000 x442f0000 1}
+       {x44934000 x442f0000 1}
+       {x44940000 x442f0000 1}
+       {x44948000 x442f0000 1}
+       {x4494c000 x442f0000 1}
+       {x44950000 x442f0000 1}
+       {x4495c000 x442f0000 1}
+       {x44964000 x442f0000 1}
+       {x44968000 x442f0000 1}
+       {x4496c000 x442f0000 1}
+       {x44974000 x442f0000 1}
+       {x44978000 x442f0000 1}
+       {x44980000 x442f0000 1}
+       {x44984000 x442e8000 1}
+       {x44988000 x442e8000 1}
+       {x44990000 x442d8000 1}
+       {x44994000 x442d0000 1}
+       {x44994000 x442c0000 1}
+       {x44994000 x442b8000 1}
+       {x4499c000 x442b0000 1}
+       {x4499c000 x442a0000 1}
+       {x4499c000 x44298000 1}
+       {x4499c000 x44280000 1}
+       {x4499c000 x44278000 1}
+       {x4499c000 x44260000 1}
+       {x4499c000 x44250000 1}
+       {x4499c000 x44240000 1}
+       {x4499c000 x44230000 1}
+       {x4499c000 x44218000 1}
+       {x4499c000 x44210000 1}
+       {x4499c000 x441f8000 1}
+       {x44994000 x441f0000 1}
+       {x44994000 x441d8000 1}
+       {x44994000 x441c0000 1}
+       {x44994000 x441b8000 1}
+       {x44994000 x44198000 1}
+       {x44994000 x44180000 1}
+       {x44994000 x44168000 1}
+       {x44994000 x44150000 1}
+       {x44994000 x44138000 1}
+       {x44994000 x44128000 1}
+       {x44994000 x44110000 1}
+       {x44994000 x440f8000 1}
+       {x44994000 x440e0000 1}
+       {x44990000 x440c8000 1}
+       {x44990000 x440c0000 1}
+       {x44990000 x440a8000 1}
+       {x44990000 x44088000 1}
+       {x44990000 x44068000 1}
+       {x44990000 x44050000 1}
+       {x44990000 x44020000 1}
+       {x44990000 x44000000 1}
+       {x44990000 x43fb0000 1}
+       {x44988000 x43f50000 1}
+       {x44988000 x43f20000 1}
+       {x44988000 x43ed0000 1}
+       {x44988000 x43e80000 1}
+       {x44988000 x43e60000 1}
+       {x44984000 x43e10000 1}
+       {x44984000 x43df0000 1}
+       {x44984000 x43dc0000 1}
+       {x44984000 x43d90000 1}
+       {x44984000 x43d50000 1}
+       {x44984000 x43d20000 1}
+       {x44984000 x43ce0000 1}
+       {x44984000 x43ca0000 1}
+       {x44984000 x43c50000 1}
+       {x44980000 x43c30000 1}
+       {x44980000 x43be0000 1}
+       {x44980000 x43bc0000 1}
+       {x44980000 x43b70000 1}
+       {x44978000 x43b50000 1}
+       {x44978000 x43b20000 1}
+       {x44978000 x43af0000 1}
+       {x44978000 x43ac0000 1}
+       {x44978000 x43ab0000 1}
+       {x44978000 x43a80000 1}
+       {x44978000 x43a50000 1}
+       {x44978000 x43a10000 1}
+       {x44978000 x439e0000 1}
+       {x44978000 x439a0000 1}
+       {x44978000 x43960000 1}
+       {x44978000 x43930000 1}
+       {x44978000 x438f0000 1}
+       {x44978000 x438c0000 1}
+       {x44978000 x43880000 1}
+       {x44978000 x43850000 1}
+       {x44978000 x43820000 1}
+       {x44978000 x437e0000 1}
+       {x44978000 x437a0000 1}
+       {x44978000 x43760000 1}
+       {x44978000 x43700000 1}
+       {x44978000 x436c0000 1}
+       {x44978000 x43660000 1}
+       {x44978000 x43620000 1}
+       {x44978000 x435a0000 1}
+       {x44978000 x43520000 1}
+       {x44978000 x434c0000 1}
+       {x44978000 x43440000 1}
+       {x44978000 x43420000 1}
+       {x44978000 x433c0000 1}
+       {x44978000 x43340000 1}
+       {x44978000 x432a0000 1}
+       {x44978000 x43260000 1}
+       {x44978000 x43200000 1}
+       {x44978000 x431a0000 1}
+       {x44978000 x43120000 1}
+       {x44978000 x430c0000 1}
+       {x44978000 x43060000 1}
+       {x44978000 x43000000 1}
+       {x44978000 x42f80000 1}
+       {x44978000 x42f00000 1}
+       {x44978000 x42ec0000 1}
+       {x44978000 x42e00000 1}
+       {x44978000 x42dc0000 1}
+       {x44978000 x42d40000 1}
+       {x44978000 x42d00000 1}
+       {x44978000 x42c80000 1}
+       {x44978000 x42c40000 1}
+       {x44978000 x42c00000 1}
+       {x44978000 x42b80000 1}
+       {x44978000 x42b40000 1}
+       {x44978000 x42ac0000 1}
+       {x44974000 x42a80000 1}
+       {x44974000 x42a40000 1}
+       {x44974000 x429c0000 1}
+       {x44974000 x42980000 1}
+       {x44974000 x42900000 1}
+       {x44974000 x428c0000 1}
+       {x44974000 x42880000 1}
+       {x44974000 x42800000 1}
+       {x44974000 x42780000 1}
+       {x44974000 x42680000 1}
+       {x44974000 x42600000 1}
+       {x44974000 x42580000 1}
+       {x44974000 x42480000 1}
+       {x44974000 x42400000 1}
+       {x44974000 x42300000 1}
+       {x44974000 x42280000 1}
+       {x44974000 x42200000 1}
+       {x44974000 x42100000 1}
+       {x4496c000 x42100000 1}
+       {x44968000 x42100000 1}
+       {x44964000 x42100000 1}
+       {x4495c000 x42100000 1}
+       {x44958000 x42100000 1}
+       {x44950000 x42100000 1}
+       {x4494c000 x42100000 1}
+       {x44948000 x42100000 1}
+       {x44940000 x42100000 1}
+       {x4493c000 x42100000 1}
+       {x44930000 x42100000 1}
+       {x4492c000 x42100000 1}
+       {x44920000 x42100000 1}
+       {x44914000 x42100000 1}
+       {x44910000 x42100000 1}
+       {x44908000 x42100000 1}
+       {x44904000 x42100000 1}
+       {x448fc000 x42100000 1}
+       {x448f8000 x42100000 1}
+       {x448f4000 x42100000 1}
+       {x448ec000 x42100000 1}
+       {x448e8000 x42200000 1}
+       {x448e0000 x42200000 1}
+       {x448e0000 x42280000 1}
+       {x448e0000 x42300000 1}
+       {x448dc000 x42400000 1}
+       {x448dc000 x42480000 1}
+       {x448dc000 x42580000 1}
+       {x448dc000 x42600000 1}
+       {x448d8000 x42600000 1}
+       {x448d8000 x42780000 1}
+       {x448d8000 x42880000 1}
+       {x448d0000 x42900000 1}
+       {x448d0000 x429c0000 1}
+       {x448cc000 x42ac0000 1}
+       {x448c4000 x42c40000 1}
+       {x448c0000 x42dc0000 1}
+       {x448bc000 x42f80000 1}
+       {x448b4000 x430a0000 1}
+       {x448b4000 x43180000 1}
+       {x448b0000 x43260000 1}
+       {x448a8000 x43340000 1}
+       {x448a8000 x43380000 1}
+       {x448a8000 x43460000 1}
+       {x448a8000 x43500000 1}
+       {x448a8000 x43580000 1}
+       {x448a8000 x43600000 1}
+       {x448a8000 x436c0000 1}
+       {x448a8000 x43740000 1}
+       {x448a8000 x437e0000 1}
+       {x448a8000 x43840000 1}
+       {x448a8000 x438b0000 1}
+       {x448a8000 x438d0000 1}
+       {x448a8000 x43930000 1}
+       {x448a8000 x439b0000 1}
+       {x448a8000 x43a00000 1}
+       {x448a8000 x43a50000 1}
+       {x448a8000 x43a90000 1}
+       {x448a8000 x43af0000 1}
+       {x448b0000 x43b50000 1}
+       {x448b0000 x43ba0000 1}
+       {x448b0000 x43c30000 1}
+       {x448b4000 x43cb0000 1}
+       {x448b4000 x43d60000 1}
+       {x448b4000 x43dd0000 1}
+       {x448bc000 x43e10000 1}
+       {x448bc000 x43e80000 1}
+       {x448bc000 x43ed0000 1}
+       {x448bc000 x43f10000 1}
+       {x448bc000 x43f50000 1}
+       {x448bc000 x43f80000 1}
+       {x448bc000 x43f90000 1}
+       {x448bc000 x43fb0000 1}
+       {x448bc000 x43fc0000 1}
+       {x448bc000 x43fd0000 1}
+       {x448bc000 x43ff0000 1}
+       {x448bc000 x44000000 1}
+       {x448bc000 x44010000 1}
+       {x448bc000 x44018000 1}
+       {x448bc000 x44020000 1}
+       {x448bc000 x44030000 1}
+       {x448bc000 x44038000 1}}}
+     {tx 1 x4493f676 x43cbdc39}
+     {a ro 0 go 0 bo 0 ao 0 bs x438a8000 bm 1 bu 1 src 1 stx x44710000 str 1 spx x44200000 spy x43b40000 sb 1 ltt x40000000 tt x41980000 h 0}}
+    {cubiccurve Clone1 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x42b40000 x43c40000 1}
+       {x42b40000 x43c50000 1}
+       {x42b40000 x43c70000 1}
+       {x42b40000 x43c80000 1}
+       {x42b40000 x43ca0000 1}
+       {x42b40000 x43cc0000 1}
+       {x42b40000 x43ce0000 1}
+       {x42b40000 x43d60000 1}
+       {x42b40000 x43d80000 1}
+       {x42b40000 x43df0000 1}
+       {x42b40000 x43e10000 1}
+       {x42b40000 x43e30000 1}
+       {x42b40000 x43e60000 1}
+       {x42b40000 x43e70000 1}
+       {x42b80000 x43e70000 1}
+       {x42b80000 x43e80000 1}
+       {x42b80000 x43ea0000 1}
+       {x42b80000 x43eb0000 1}
+       {x42b80000 x43ed0000 1}
+       {x42b80000 x43eb0000 1}
+       {x42b80000 x43ea0000 1}
+       {x42b80000 x43e80000 1}
+       {x42b80000 x43e70000 1}
+       {x42b80000 x43e60000 1}
+       {x42b80000 x43e40000 1}
+       {x42b80000 x43e10000 1}
+       {x42c00000 x43e00000 1}
+       {x42c00000 x43df0000 1}
+       {x42c00000 x43dc0000 1}
+       {x42c00000 x43d90000 1}
+       {x42c00000 x43d80000 1}
+       {x42c40000 x43d20000 1}
+       {x42c40000 x43cf0000 1}
+       {x42c40000 x43cc0000 1}
+       {x42c40000 x43c50000 1}
+       {x42c40000 x43c10000 1}
+       {x42c40000 x43be0000 1}
+       {x42c40000 x43b50000 1}
+       {x42c40000 x43b30000 1}
+       {x42c40000 x43ac0000 1}
+       {x42c40000 x43ab0000 1}
+       {x42c40000 x43a70000 1}
+       {x42c40000 x43a50000 1}
+       {x42c40000 x43a40000 1}
+       {x42c40000 x43a20000 1}
+       {x42c40000 x43a10000 1}
+       {x42c40000 x43a00000 1}
+       {x42c00000 x43a00000 1}
+       {x42c00000 x439e0000 1}
+       {x42c00000 x43a00000 1}
+       {x42c00000 x43a20000 1}
+       {x42c00000 x43a40000 1}
+       {x42c00000 x43a50000 1}
+       {x42c00000 x43a70000 1}
+       {x42c00000 x43a80000 1}
+       {x42c00000 x43ab0000 1}
+       {x42c00000 x43ac0000 1}
+       {x42c00000 x43ae0000 1}
+       {x42c00000 x43af0000 1}
+       {x42c00000 x43b00000 1}
+       {x42c00000 x43b20000 1}
+       {x42c00000 x43b30000 1}
+       {x42c00000 x43b60000 1}
+       {x42c00000 x43b70000 1}
+       {x42c00000 x43bd0000 1}
+       {x42c00000 x43be0000 1}
+       {x42c40000 x43c40000 1}
+       {x42c40000 x43c70000 1}
+       {x42c80000 x43ce0000 1}
+       {x42c80000 x43cf0000 1}
+       {x42c80000 x43d50000 1}
+       {x42c80000 x43d60000 1}
+       {x42c80000 x43d80000 1}
+       {x42c80000 x43dc0000 1}
+       {x42d00000 x43dd0000 1}
+       {x42d00000 x43e00000 1}
+       {x42d00000 x43e30000 1}
+       {x42d00000 x43e60000 1}
+       {x42d00000 x43ea0000 1}
+       {x42d00000 x43eb0000 1}
+       {x42d00000 x43ee0000 1}
+       {x42d40000 x43f20000 1}
+       {x42d40000 x43f40000 1}
+       {x42dc0000 x43fd0000 1}
+       {x42dc0000 x43ff0000 1}
+       {x42e00000 x44030000 1}
+       {x42e00000 x44038000 1}
+       {x42e00000 x44050000 1}
+       {x42e00000 x44058000 1}
+       {x42e00000 x44068000 1}
+       {x42e00000 x44088000 1}
+       {x42e00000 x44090000 1}
+       {x42e00000 x440a8000 1}
+       {x42e00000 x440c8000 1}
+       {x42e00000 x440d8000 1}
+       {x42e00000 x440e0000 1}
+       {x42e00000 x440f8000 1}
+       {x42e00000 x44110000 1}
+       {x42e00000 x44118000 1}
+       {x42e00000 x44148000 1}
+       {x42e00000 x44160000 1}
+       {x42e40000 x44170000 1}
+       {x42e40000 x441a8000 1}
+       {x42e40000 x441c0000 1}
+       {x42e40000 x441e0000 1}
+       {x42e40000 x441f0000 1}
+       {x42e40000 x441f8000 1}
+       {x42e40000 x44208000 1}
+       {x42e00000 x44210000 1}
+       {x42e00000 x44218000 1}
+       {x42e00000 x44228000 1}
+       {x42e00000 x44230000 1}
+       {x42dc0000 x44230000 1}
+       {x42dc0000 x44240000 1}
+       {x42dc0000 x44248000 1}
+       {x42dc0000 x44250000 1}
+       {x42dc0000 x44260000 1}
+       {x42d40000 x44268000 1}
+       {x42d40000 x44278000 1}
+       {x42d40000 x44280000 1}
+       {x42d00000 x44280000 1}
+       {x42d00000 x44288000 1}
+       {x42d00000 x44298000 1}
+       {x42c80000 x44298000 1}
+       {x42c80000 x442a0000 1}
+       {x42c80000 x442b0000 1}
+       {x42c40000 x442b0000 1}
+       {x42c40000 x442b8000 1}
+       {x42c00000 x442c0000 1}
+       {x42b80000 x442c0000 1}
+       {x42b40000 x442c0000 1}
+       {x42ac0000 x442c0000 1}
+       {x42a80000 x442c0000 1}
+       {x42a40000 x442c0000 1}
+       {x429c0000 x442c0000 1}
+       {x42980000 x442c0000 1}
+       {x42900000 x442c0000 1}
+       {x428c0000 x442c0000 1}
+       {x42880000 x442c0000 1}
+       {x42800000 x442c0000 1}
+       {x42780000 x442c0000 1}
+       {x42680000 x442c0000 1}
+       {x42600000 x442c0000 1}
+       {x42580000 x442c0000 1}
+       {x42480000 x442c0000 1}
+       {x42480000 x442b8000 1}
+       {x42400000 x442b8000 1}
+       {x42300000 x442b8000 1}
+       {x42280000 x442b0000 1}
+       {x42200000 x442b0000 1}
+       {x42100000 x442b0000 1}
+       {x42100000 x442a0000 1}
+       {x42080000 x44298000 1}
+       {x42080000 x44288000 1}
+       {x41f00000 x44288000 1}
+       {x41f00000 x44280000 1}
+       {x41e00000 x44280000 1}
+       {x41e00000 x44278000 1}
+       {x41d00000 x44268000 1}
+       {x41d00000 x44260000 1}
+       {x41d00000 x44250000 1}
+       {x41b00000 x44248000 1}
+       {x41b00000 x44240000 1}
+       {x41a00000 x44230000 1}
+       {x41a00000 x44228000 1}
+       {x41800000 x44228000 1}
+       {x41800000 x44218000 1}
+       {x41800000 x44210000 1}
+       {x41600000 x44210000 1}
+       {x41600000 x44208000 1}
+       {x41600000 x441f8000 1}
+       {x41600000 x441f0000 1}
+       {x41600000 x441e0000 1}
+       {x41600000 x441d8000 1}
+       {x41600000 x441d0000 1}
+       {x41600000 x441c0000 1}
+       {x41800000 x441c0000 1}
+       {x41a00000 x441c0000 1}
+       {x41b00000 x441d0000 1}
+       {x41e00000 x441d0000 1}
+       {x42080000 x441d0000 1}
+       {x42200000 x441d8000 1}
+       {x42400000 x441d8000 1}
+       {x42480000 x441d8000 1}
+       {x42680000 x441d8000 1}
+       {x42800000 x441d8000 1}
+       {x42900000 x441d8000 1}
+       {x429c0000 x441d8000 1}
+       {x42a40000 x441e0000 1}
+       {x42ac0000 x441e0000 1}
+       {x42b40000 x441e0000 1}
+       {x42b80000 x441e0000 1}
+       {x42c00000 x441e0000 1}
+       {x42c40000 x441f0000 1}
+       {x42c80000 x441f0000 1}
+       {x42c80000 x441f8000 1}
+       {x42c80000 x44208000 1}
+       {x42c80000 x44210000 1}
+       {x42d00000 x44218000 1}
+       {x42d00000 x44228000 1}
+       {x42d00000 x44230000 1}
+       {x42d00000 x44240000 1}
+       {x42d00000 x44248000 1}
+       {x42d40000 x44248000 1}
+       {x42d40000 x44240000 1}
+       {x42d40000 x44230000 1}
+       {x42d40000 x44228000 1}
+       {x42d40000 x44218000 1}
+       {x42d40000 x44210000 1}
+       {x42d40000 x44208000 1}
+       {x42d00000 x44208000 1}
+       {x42d00000 x441f8000 1}
+       {x42c80000 x441f0000 1}
+       {x42c80000 x441e0000 1}
+       {x42c40000 x441d8000 1}
+       {x42c40000 x441d0000 1}
+       {x42c40000 x441c0000 1}
+       {x42c40000 x441b8000 1}
+       {x42c40000 x441a8000 1}
+       {x42c40000 x441a0000 1}
+       {x42c40000 x44198000 1}
+       {x42c40000 x44188000 1}
+       {x42c40000 x44180000 1}
+       {x42c40000 x44168000 1}
+       {x42c40000 x44160000 1}
+       {x42c40000 x44150000 1}
+       {x42c40000 x44138000 1}
+       {x42c40000 x44130000 1}
+       {x42c40000 x44128000 1}
+       {x42c40000 x44110000 1}
+       {x42c40000 x44100000 1}
+       {x42c40000 x440f0000 1}
+       {x42c40000 x440e0000 1}
+       {x42c40000 x440d8000 1}
+       {x42c40000 x440c0000 1}
+       {x42c40000 x440b8000 1}
+       {x42c40000 x440a8000 1}
+       {x42c40000 x44090000 1}
+       {x42c40000 x44080000 1}
+       {x42c40000 x44070000 1}
+       {x42c40000 x44058000 1}
+       {x42c40000 x44048000 1}
+       {x42c40000 x44030000 1}
+       {x42c40000 x44018000 1}
+       {x42c40000 x44010000 1}
+       {x42c80000 x44000000 1}
+       {x42c80000 x43fd0000 1}
+       {x42c80000 x43fc0000 1}
+       {x42c80000 x43fb0000 1}
+       {x42c80000 x43f90000 1}
+       {x42c80000 x43f80000 1}
+       {x42c80000 x43f60000 1}
+       {x42c80000 x43f50000 1}
+       {x42d00000 x43f40000 1}
+       {x42d00000 x43f10000 1}
+       {x42d00000 x43ef0000 1}
+       {x42d00000 x43ee0000 1}
+       {x42d00000 x43eb0000 1}
+       {x42d00000 x43ea0000 1}
+       {x42d00000 x43e70000 1}
+       {x42d00000 x43e60000 1}
+       {x42d00000 x43e40000 1}
+       {x42d00000 x43e10000 1}
+       {x42d00000 x43e00000 1}
+       {x42d00000 x43dd0000 1}
+       {x42d00000 x43da0000 1}
+       {x42d00000 x43d80000 1}
+       {x42d00000 x43d20000 1}
+       {x42d00000 x43d10000 1}
+       {x42d00000 x43cb0000 1}
+       {x42d00000 x43c70000 1}
+       {x42d00000 x43c40000 1}
+       {x42d00000 x43c00000 1}
+       {x42d00000 x43ba0000 1}
+       {x42d00000 x43b60000 1}
+       {x42d00000 x43b30000 1}
+       {x42d00000 x43af0000 1}
+       {x42d00000 x43ac0000 1}
+       {x42d40000 x43a80000 1}
+       {x42d40000 x43a40000 1}
+       {x42d40000 x439d0000 1}
+       {x42d40000 x43990000 1}
+       {x42d40000 x43940000 1}
+       {x42d40000 x43900000 1}
+       {x42d40000 x438b0000 1}
+       {x42dc0000 x43860000 1}
+       {x42dc0000 x43810000 1}
+       {x42dc0000 x43760000 1}
+       {x42dc0000 x43740000 1}
+       {x42dc0000 x436c0000 1}
+       {x42dc0000 x43620000 1}
+       {x42dc0000 x435a0000 1}
+       {x42dc0000 x43540000 1}
+       {x42dc0000 x43500000 1}
+       {x42dc0000 x434a0000 1}
+       {x42dc0000 x43440000 1}
+       {x42dc0000 x433e0000 1}
+       {x42dc0000 x433c0000 1}
+       {x42dc0000 x43340000 1}
+       {x42dc0000 x432a0000 1}
+       {x42dc0000 x43260000 1}
+       {x42dc0000 x43220000 1}
+       {x42dc0000 x43140000 1}
+       {x42dc0000 x43120000 1}
+       {x42dc0000 x430a0000 1}
+       {x42dc0000 x43040000 1}
+       {x42dc0000 x42f80000 1}
+       {x42dc0000 x42ec0000 1}
+       {x42dc0000 x42e00000 1}
+       {x42dc0000 x42d40000 1}
+       {x42dc0000 x42d00000 1}
+       {x42dc0000 x42c40000 1}
+       {x42d40000 x42b80000 1}
+       {x42d40000 x42ac0000 1}
+       {x42d40000 x42a80000 1}
+       {x42d40000 x42a40000 1}
+       {x42d40000 x429c0000 1}
+       {x42d40000 x42980000 1}
+       {x42d40000 x428c0000 1}
+       {x42d00000 x42880000 1}
+       {x42d00000 x42800000 1}
+       {x42d00000 x42780000 1}
+       {x42d00000 x42680000 1}
+       {x42c80000 x42600000 1}
+       {x42c80000 x42580000 1}
+       {x42c80000 x42480000 1}
+       {x42c40000 x42400000 1}
+       {x42c40000 x42300000 1}
+       {x42c40000 x42280000 1}
+       {x42c40000 x42200000 1}
+       {x42c00000 x42100000 1}
+       {x42c00000 x42080000 1}
+       {x42c00000 x41f00000 1}
+       {x42c00000 x41e00000 1}
+       {x42c00000 x41d00000 1}
+       {x42b80000 x41b00000 1}
+       {x42b80000 x41a00000 1}
+       {x42b80000 x41800000 1}
+       {x42b80000 x41600000 1}
+       {x42b80000 x41400000 1}
+       {x42b40000 x41400000 1}
+       {x42b40000 x41000000 1}
+       {x42b40000 x40c00000 1}
+       {x42ac0000 x40000000 1}
+       {x42ac0000 0 1}
+       {x42ac0000 xc0000000 1}
+       {x42a80000 xc0c00000 1}
+       {x42a80000 xc1000000 1}
+       {x42a40000 xc1000000 1}
+       {x42a40000 xc1400000 1}
+       {x429c0000 xc1600000 1}
+       {x42980000 xc1600000 1}
+       {x42900000 xc1600000 1}
+       {x428c0000 xc1600000 1}
+       {x42880000 xc1600000 1}
+       {x42800000 xc1600000 1}
+       {x42800000 xc1400000 1}
+       {x42800000 xc1000000 1}
+       {x42780000 xc0c00000 1}
+       {x42780000 xc0000000 1}
+       {x42780000 0 1}
+       {x42780000 x40000000 1}
+       {x42780000 x40c00000 1}
+       {x42780000 x41000000 1}
+       {x42780000 x41400000 1}
+       {x42780000 x41600000 1}
+       {x42780000 x41800000 1}
+       {x42780000 x41a00000 1}
+       {x42780000 x41d00000 1}
+       {x42780000 x41f00000 1}
+       {x42780000 x42100000 1}
+       {x42780000 x42300000 1}
+       {x42780000 x42600000 1}
+       {x42780000 x42880000 1}
+       {x42780000 x42b40000 1}
+       {x42780000 x42c80000 1}
+       {x42780000 x42f00000 1}
+       {x42780000 x430c0000 1}
+       {x42780000 x43200000 1}
+       {x42780000 x43300000 1}
+       {x42780000 x43420000 1}
+       {x42780000 x43540000 1}
+       {x42780000 x43680000 1}
+       {x42780000 x437a0000 1}
+       {x42780000 x43860000 1}
+       {x42780000 x438f0000 1}
+       {x42780000 x439e0000 1}
+       {x42780000 x43ab0000 1}
+       {x42780000 x43b00000 1}
+       {x42780000 x43bc0000 1}
+       {x42780000 x43c50000 1}
+       {x42780000 x43ca0000 1}
+       {x42780000 x43d10000 1}
+       {x42780000 x43d50000 1}
+       {x42780000 x43da0000 1}
+       {x42780000 x43df0000 1}
+       {x42780000 x43e10000 1}
+       {x42780000 x43e80000 1}
+       {x42780000 x43ed0000 1}
+       {x42780000 x43f10000 1}
+       {x42800000 x43f80000 1}
+       {x42800000 x43ff0000 1}
+       {x42880000 x44030000 1}
+       {x42880000 x44050000 1}
+       {x42880000 x44070000 1}
+       {x428c0000 x440a0000 1}
+       {x428c0000 x440b8000 1}
+       {x428c0000 x440d8000 1}
+       {x428c0000 x440f0000 1}
+       {x428c0000 x440f8000 1}
+       {x428c0000 x44100000 1}
+       {x428c0000 x44110000 1}
+       {x428c0000 x44118000 1}
+       {x428c0000 x44128000 1}
+       {x428c0000 x44130000 1}
+       {x428c0000 x44138000 1}
+       {x428c0000 x44148000 1}
+       {x428c0000 x44150000 1}
+       {x428c0000 x44160000 1}
+       {x428c0000 x44168000 1}
+       {x428c0000 x44170000 1}
+       {x428c0000 x44180000 1}
+       {x428c0000 x44188000 1}
+       {x428c0000 x44198000 1}
+       {x428c0000 x441a0000 1}
+       {x428c0000 x441a8000 1}
+       {x428c0000 x441b8000 1}
+       {x428c0000 x441c0000 1}
+       {x428c0000 x441d0000 1}
+       {x428c0000 x441d8000 1}
+       {x428c0000 x441e0000 1}
+       {x428c0000 x441f0000 1}
+       {x428c0000 x441f8000 1}
+       {x428c0000 x44208000 1}
+       {x428c0000 x44210000 1}
+       {x428c0000 x44218000 1}
+       {x428c0000 x44228000 1}
+       {x428c0000 x44230000 1}
+       {x42880000 x44230000 1}}}
+     {tx 1 x42ac06ff x43d87121}
+     {a ro 0 go 0 bo 0 ao 0 bs x438a8000 bm 1 bu 1 src 1 stx xc4600000 str 1 spx x44200000 spy x43b40000 sb 1 ltt x40000000 tt x41980000 h 0}}}}}}
+ toolbox {clone {
+  { selectAll bs 277 src 1 str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone bs 277 src 1 stx 964 str 1 ssx 1 ssy 1 sf 1 sb 1 tt 19 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_show_clone_settings true
+ toolbar_brush_size 277
+ toolbar_brush_hardness 0.200000003
+ toolbar_lifetime_type single
+ toolbar_paint_source fg
+ toolbar_source_transform_translate {964 0}
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {240 135}
+ colorOverlay {0 0 0 0}
+ paint_source foreground
+ blending_mode max
+ motionblur_on true
+ brush_size 277
+ brush_spacing 0.05000000075
+ brush_hardness 0
+ source_black_outside true
+ name RotoPaint1
+ xpos 1390
+ ypos -129
+}
+Reformat {
+ filter Lanczos4
+ name Reformat11
+ xpos 1390
+ ypos -33
+}
+Write {
+ file ../2019/img/thumbs/music_03.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 20
+ in_colorspace linear
+ out_colorspace linear
+ name Write11
+ xpos 1390
+ ypos 35
+}
+Read {
+ inputs 0
+ file _input/HJhf9cyJN.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read8
+ xpos -35
+ ypos 151
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat6
+ xpos -35
+ ypos 251
+}
+Write {
+ file ../2019/img/thumbs/tvc_06.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 20
+ in_colorspace linear
+ out_colorspace linear
+ name Write6
+ xpos -35
+ ypos 319
+}
+Read {
+ inputs 0
+ file _input/BkVlwcykE.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read7
+ xpos -255
+ ypos 151
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat5
+ xpos -255
+ ypos 251
+}
+Write {
+ file ../2019/img/thumbs/tvc_05.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 20
+ in_colorspace linear
+ out_colorspace linear
+ name Write5
+ xpos -255
+ ypos 319
+}
+Read {
+ inputs 0
+ file _input/rJ8b4ckyV.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read4
+ xpos 185
+ ypos -137
+ postage_stamp false
+}
+Transform {
+ scale {1.2 1.25}
+ center {640 360}
+ name Transform1
+ xpos 185
+ ypos -85
+ addUserKnob {20 User}
+ addUserKnob {22 center_trans l "Center Transform" -STARTLINE T "n = nuke.thisNode(); xVal = n\['center'].value(0); yVal = n\['center'].value(1); rVal = nuke.Root(); xfVal = rVal.width(); yfVal = rVal.height(); txVal = n\['translate'].value(0); tyVal = n\['translate'].value(1); cxVal = xfVal/2-xVal; cyVal = yfVal/2-yVal; n\['translate'].setValue(cxVal, 0); n\['translate'].setValue(cyVal, 1);"}
+ addUserKnob {22 centre_bbox l "Center Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0); xVal = i.bbox().x() + (i.bbox().w()/2); yVal = i.bbox().y() + (i.bbox().h()/2); n\['center'].setValue(xVal, 0); n\['center'].setValue(yVal, 1);"}
+}
+Reformat {
+ filter Lanczos4
+ name Reformat3
+ xpos 185
+ ypos -37
+}
+Write {
+ file ../2019/img/thumbs/tvc_03.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 20
+ in_colorspace linear
+ out_colorspace linear
+ name Write3
+ xpos 185
+ ypos 31
+}
+Read {
+ inputs 0
+ file _input/H1veVq1J4.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read5
+ xpos -35
+ ypos -137
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat2
+ xpos -35
+ ypos -37
+}
+Write {
+ file ../2019/img/thumbs/tvc_02.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 20
+ in_colorspace linear
+ out_colorspace linear
+ name Write2
+ xpos -35
+ ypos 31
+}
+Read {
+ inputs 0
+ file _input/HJUAmqkJE.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read6
+ xpos -255
+ ypos -137
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat1
+ xpos -255
+ ypos -37
+}
+Write {
+ file ../2019/img/thumbs/tvc_01.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 20
+ in_colorspace linear
+ out_colorspace linear
+ name Write1
+ xpos -255
+ ypos 31
+}
+Read {
+ inputs 0
+ file _input/HJzPScJ14.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read3
+ xpos 405
+ ypos -137
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos6
+ name Reformat4
+ xpos 405
+ ypos -37
+}
+Write {
+ file ../2019/img/thumbs/tvc_04.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 21
+ in_colorspace linear
+ out_colorspace linear
+ name Write4
+ xpos 405
+ ypos 31
+}
+Read {
+ inputs 0
+ file _input/rkNFIjyyV.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read10
+ xpos 185
+ ypos 151
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat7
+ xpos 185
+ ypos 251
+}
+Write {
+ file ../2019/img/thumbs/tvc_07.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 21
+ in_colorspace linear
+ out_colorspace linear
+ name Write7
+ xpos 185
+ ypos 319
+}
+Read {
+ inputs 0
+ file _input/r1Crwj1yN.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read11
+ xpos -35
+ ypos 463
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat15
+ xpos -35
+ ypos 587
+}
+Write {
+ file ../2019/img/thumbs/tvc_10.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 21
+ in_colorspace linear
+ out_colorspace linear
+ name Write15
+ xpos -35
+ ypos 655
+}
+Read {
+ inputs 0
+ file _input/BkaTPjJkE.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read12
+ xpos 185
+ ypos 463
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat14
+ xpos 185
+ ypos 587
+}
+Write {
+ file ../2019/img/thumbs/tvc_11.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 22
+ in_colorspace linear
+ out_colorspace linear
+ name Write14
+ xpos 185
+ ypos 655
+}
+Read {
+ inputs 0
+ file _input/HJNOKjJk4.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read15
+ xpos 1170
+ ypos -157
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat10
+ xpos 1170
+ ypos -33
+}
+Write {
+ file ../2019/img/thumbs/music_02.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 21
+ in_colorspace linear
+ out_colorspace linear
+ name Write10
+ xpos 1170
+ ypos 35
+}
+Read {
+ inputs 0
+ file _input/HyWWsiky4.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read16
+ xpos 405
+ ypos 463
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat13
+ xpos 405
+ ypos 587
+}
+Write {
+ file ../2019/img/thumbs/tvc_12.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 21
+ in_colorspace linear
+ out_colorspace linear
+ name Write13
+ xpos 405
+ ypos 655
+}
+Read {
+ inputs 0
+ file _input/HyaDch11V.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read20
+ xpos 1390
+ ypos 179
+ postage_stamp false
+}
+Transform {
+ translate {100 0}
+ scale 1.35
+ center {640 360}
+ name Transform4
+ xpos 1390
+ ypos 211
+ addUserKnob {20 User}
+ addUserKnob {22 center_trans l "Center Transform" -STARTLINE T "n = nuke.thisNode(); xVal = n\['center'].value(0); yVal = n\['center'].value(1); rVal = nuke.Root(); xfVal = rVal.width(); yfVal = rVal.height(); txVal = n\['translate'].value(0); tyVal = n\['translate'].value(1); cxVal = xfVal/2-xVal; cyVal = yfVal/2-yVal; n\['translate'].setValue(cxVal, 0); n\['translate'].setValue(cyVal, 1);"}
+ addUserKnob {22 centre_bbox l "Center Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0); xVal = i.bbox().x() + (i.bbox().w()/2); yVal = i.bbox().y() + (i.bbox().h()/2); n\['center'].setValue(xVal, 0); n\['center'].setValue(yVal, 1);"}
+}
+Reformat {
+ filter Lanczos4
+ name Reformat18
+ xpos 1390
+ ypos 255
+}
+Write {
+ file ../2019/img/thumbs/music_07.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 22
+ in_colorspace linear
+ out_colorspace linear
+ name Write18
+ xpos 1390
+ ypos 299
+}
+Read {
+ inputs 0
+ file _input/r19Y92kJN.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read18
+ xpos 950
+ ypos 179
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat20
+ xpos 950
+ ypos 255
+}
+Write {
+ file ../2019/img/thumbs/music_05.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 22
+ in_colorspace linear
+ out_colorspace linear
+ name Write20
+ xpos 950
+ ypos 299
+}
+Read {
+ inputs 0
+ file _input/S16EKpJ1N.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read21
+ xpos 2270
+ ypos -157
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat22
+ xpos 2270
+ ypos -125
+}
+Write {
+ file ../2019/img/thumbs/film_02.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 23
+ in_colorspace linear
+ out_colorspace linear
+ name Write22
+ xpos 2270
+ ypos -85
+}
+Read {
+ inputs 0
+ file _input/HkIsYTkk4.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read22
+ xpos 2050
+ ypos -181
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat21
+ xpos 2050
+ ypos -125
+}
+Write {
+ file ../2019/img/thumbs/film_01.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 23
+ in_colorspace linear
+ out_colorspace linear
+ name Write21
+ xpos 2050
+ ypos -85
+}
+Constant {
+ inputs 0
+ channels rgb
+ color 1
+ name Constant1
+ xpos 1940
+ ypos 15
+}
+Reformat {
+ inputs 0
+ type "to box"
+ box_width 386
+ box_height 48
+ box_fixed true
+ name Reformat23
+ xpos 2050
+ ypos 231
+}
+set N28af87c0 [stack 0]
+Text2 {
+ font_size_toolbar 48
+ font_width_toolbar 100
+ font_height_toolbar 100
+ message ...comMercials...
+ old_message {{46 46 46 99 111 109 77 101 114 99 105 97 108 115 46 46 46}
+   }
+ box {0 0 386 48}
+ xjustify center
+ yjustify center
+ transforms {{0 2}
+   }
+ font_size_values {{0 48 1 48 2 48 3 48 4 48 5 48 6 48 7 48 8 48 9 48 10 48 11 48 12 48 13 48 14 48 15 48 16 48}
+   }
+ font_width_values {{0 100 0 99}
+   }
+ cursor_position 13
+ font {{ TrashCinema BB : Regular : TrashCinemaBB.otf : 0 }}
+ font_size 48
+ scale {1 1}
+ cursor_initialised true
+ autofit_bbox false
+ initial_cursor_position {{232.9999695 115.9999847}
+   }
+ group_animations {{0} imported: 0 selected: items: "root transform/"}
+ animation_layers {{1 11 240 135 0 0 1 1 0 0 0 0}
+   }
+ color {0 0 0 1}
+ name Text2
+ xpos 2050
+ ypos 375
+}
+Write {
+ channels rgba
+ file /Users/davidabbott/Dropbox/Website/Blocs/_output/img/tvc@1x.png
+ file_type png
+ create_directories true
+ checkHashOnRead false
+ version 1
+ in_colorspace linear
+ out_colorspace linear
+ name Write24
+ xpos 2050
+ ypos 462
+}
+Read {
+ inputs 0
+ file _input/Hkon1RyJN.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read23
+ xpos 2490
+ ypos -181
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat24
+ xpos 2490
+ ypos -129
+}
+Write {
+ file ../2019/img/thumbs/film_03.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 24
+ in_colorspace linear
+ out_colorspace linear
+ name Write26
+ xpos 2490
+ ypos -89
+}
+Read {
+ inputs 0
+ file _input/ByYhlA1kE.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read24
+ xpos 2710
+ ypos -373
+ postage_stamp false
+}
+Read {
+ inputs 0
+ file _input/512989657_1280x720.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read25
+ xpos 2490
+ ypos 155
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat25
+ xpos 2710
+ ypos -197
+}
+Write {
+ file ../2019/img/thumbs/film_04.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 26
+ in_colorspace linear
+ out_colorspace linear
+ name Write27
+ xpos 2710
+ ypos -157
+}
+CheckerBoard2 {
+ inputs 0
+ format "480 270 0 0 480 270 1 thumbnail"
+ boxsize {120 67.5}
+ centerlinewidth 0
+ name CheckerBoard9
+ xpos 405
+ ypos 131
+}
+Read {
+ inputs 0
+ file _input/HJfFhc1kV.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read9
+ xpos -590
+ ypos 467
+ postage_stamp false
+}
+push $N28af87c0
+Text2 {
+ font_size_toolbar 48
+ font_width_toolbar 100
+ font_height_toolbar 100
+ message "...music vIdEOS..."
+ old_message {{46 46 46 109 117 115 105 99 32 118 73 100 69 79 83 46 46 46}
+   }
+ box {0 0 386 48}
+ xjustify center
+ yjustify center
+ transforms {{0 2}
+   }
+ font_size_values {{0 48 1 48 2 48 3 48 4 48 5 48 6 48 7 48 8 48 9 48 10 48 11 48 12 48 13 48 14 48 15 48 16 48 17 48 0 102}
+   }
+ font_width_values {{0 100 1 100 2 100 3 100 4 100 5 100 6 100 7 100 8 100 9 100 11 100 15 100 16 100 17 100 0 99 1 99 2 99 3 99 4 99 5 99 6 99 7 99 8 99 9 99 11 99 15 99 16 99 17 99}
+   }
+ cursor_position 14
+ font {{ TrashCinema BB : Regular : TrashCinemaBB.otf : 0 }}
+ font_size 48
+ scale {1 1}
+ cursor_initialised true
+ autofit_bbox false
+ initial_cursor_position {{232.9999695 115.9999847}
+   }
+ group_animations {{0} imported: 0 selected: items: "root transform/"}
+ animation_layers {{1 11 240 135 0 0 1 1 0 0 0 0}
+   }
+ color {0 0 0 1}
+ name Text1
+ xpos 1940
+ ypos 375
+}
+Write {
+ channels rgba
+ file /Users/davidabbott/Dropbox/Website/Blocs/_output/img/musicvideos@1x.png
+ file_type png
+ create_directories true
+ checkHashOnRead false
+ version 1
+ in_colorspace linear
+ out_colorspace linear
+ name Write23
+ xpos 1940
+ ypos 462
+}
+push $N28af87c0
+Text2 {
+ font_size_toolbar 48
+ font_width_toolbar 100
+ font_height_toolbar 100
+ message ...fiLm...
+ old_message {{46 46 46 102 105 76 109 46 46 46}
+   }
+ box {0 0 386 48}
+ xjustify center
+ yjustify center
+ transforms {{0 2}
+   }
+ font_size_values {{0 48 1 48 2 48 3 48 4 48 5 48 6 48 7 48 8 48 9 48 0 48}
+   }
+ font_width_values {{0 100 0 99}
+   }
+ cursor_position 10
+ font {{ TrashCinema BB : Regular : TrashCinemaBB.otf : 0 }}
+ font_size 48
+ scale {1 1}
+ cursor_initialised true
+ autofit_bbox false
+ initial_cursor_position {{232.9999695 115.9999847}
+   }
+ group_animations {{0} imported: 0 selected: items: "root transform/"}
+ animation_layers {{1 11 240 135 0 0 1 1 0 0 0 0}
+   }
+ color {0 0 0 1}
+ name Text3
+ xpos 2160
+ ypos 375
+}
+Write {
+ channels rgba
+ file /Users/davidabbott/Dropbox/Website/Blocs/_output/img/film@1x.png
+ file_type png
+ create_directories true
+ checkHashOnRead false
+ version 1
+ in_colorspace linear
+ out_colorspace linear
+ name Write25
+ xpos 2160
+ ypos 462
+}
+push $N28af87c0
+Text2 {
+ font_size_toolbar 48
+ font_width_toolbar 100
+ font_height_toolbar 100
+ message ...AwardeD...
+ old_message {{46 46 46 65 119 97 114 100 101 68 46 46 46}
+   }
+ box {0 0 386 48}
+ xjustify center
+ yjustify center
+ transforms {{0 2}
+   }
+ font_size_values {{0 48 1 48 2 48 3 48 4 48 5 48 6 48 7 48 8 48 9 48 10 48 11 48 12 48 0 48}
+   }
+ font_width_values {{0 100 0 99}
+   }
+ cursor_position 10
+ font {{ TrashCinema BB : Regular : TrashCinemaBB.otf : 0 }}
+ font_size 48
+ scale {1 1}
+ cursor_initialised true
+ autofit_bbox false
+ initial_cursor_position {{232.9999695 115.9999847}
+   }
+ group_animations {{0} imported: 0 selected: items: "root transform/"}
+ animation_layers {{1 11 240 135 0 0 1 1 0 0 0 0}
+   }
+ color {0 0 0 1}
+ name Text4
+ xpos 2270
+ ypos 375
+}
+Write {
+ channels rgba
+ file /Users/davidabbott/Dropbox/Website/Blocs/_output/img/featured@1x.png
+ file_type png
+ create_directories true
+ checkHashOnRead false
+ version 3
+ in_colorspace linear
+ out_colorspace linear
+ name Write28
+ xpos 2270
+ ypos 462
+}
+Read {
+ inputs 0
+ file "_input/Screenshot 2018-12-06 07.56.06.png"
+ format "3360 2100 0 0 3360 2100 1 "
+ origset true
+ name Read26
+ xpos 510
+ ypos 139
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat8
+ xpos 405
+ ypos 251
+}
+Write {
+ file ../2019/img/thumbs/tvc_08.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 21
+ in_colorspace linear
+ out_colorspace linear
+ name Write8
+ xpos 405
+ ypos 319
+}
+Read {
+ inputs 0
+ file "_input/Screenshot 2019-03-30 17.05.15.png"
+ format "3360 2100 0 0 3360 2100 1 "
+ origset true
+ name Read28
+ xpos -255
+ ypos 511
+ postage_stamp false
+}
+Crop {
+ box {0 125 3360 1975}
+ reformat true
+ crop false
+ name Crop2
+ xpos -255
+ ypos 543
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ name Reformat16
+ xpos -255
+ ypos 587
+}
+Write {
+ file ../2019/img/thumbs/tvc_09.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 26
+ name Write16
+ xpos -255
+ ypos 655
+}
+Read {
+ inputs 0
+ file _input/rkq8wnkJ4.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read17
+ xpos 1610
+ ypos 179
+ postage_stamp false
+}
+Transform {
+ scale 1.35
+ center {640 360}
+ name Transform2
+ xpos 1610
+ ypos 207
+ addUserKnob {20 User}
+ addUserKnob {22 center_trans l "Center Transform" -STARTLINE T "n = nuke.thisNode(); xVal = n\['center'].value(0); yVal = n\['center'].value(1); rVal = nuke.Root(); xfVal = rVal.width(); yfVal = rVal.height(); txVal = n\['translate'].value(0); tyVal = n\['translate'].value(1); cxVal = xfVal/2-xVal; cyVal = yfVal/2-yVal; n\['translate'].setValue(cxVal, 0); n\['translate'].setValue(cyVal, 1);"}
+ addUserKnob {22 centre_bbox l "Center Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0); xVal = i.bbox().x() + (i.bbox().w()/2); yVal = i.bbox().y() + (i.bbox().h()/2); n\['center'].setValue(xVal, 0); n\['center'].setValue(yVal, 1);"}
+}
+Reformat {
+ filter Lanczos4
+ name Reformat17
+ xpos 1610
+ ypos 255
+}
+Write {
+ file ../2019/img/thumbs/music_08.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 22
+ in_colorspace linear
+ out_colorspace linear
+ name Write17
+ xpos 1610
+ ypos 299
+}
+Read {
+ inputs 0
+ file _input/ry6u93kkE.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read19
+ xpos 1170
+ ypos 179
+ postage_stamp false
+}
+Transform {
+ scale 1.35
+ center {640 360}
+ name Transform3
+ xpos 1170
+ ypos 211
+ addUserKnob {20 User}
+ addUserKnob {22 center_trans l "Center Transform" -STARTLINE T "n = nuke.thisNode(); xVal = n\['center'].value(0); yVal = n\['center'].value(1); rVal = nuke.Root(); xfVal = rVal.width(); yfVal = rVal.height(); txVal = n\['translate'].value(0); tyVal = n\['translate'].value(1); cxVal = xfVal/2-xVal; cyVal = yfVal/2-yVal; n\['translate'].setValue(cxVal, 0); n\['translate'].setValue(cyVal, 1);"}
+ addUserKnob {22 centre_bbox l "Center Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0); xVal = i.bbox().x() + (i.bbox().w()/2); yVal = i.bbox().y() + (i.bbox().h()/2); n\['center'].setValue(xVal, 0); n\['center'].setValue(yVal, 1);"}
+}
+Reformat {
+ filter Lanczos4
+ name Reformat19
+ xpos 1170
+ ypos 255
+}
+Write {
+ file ../2019/img/thumbs/music_06.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 22
+ in_colorspace linear
+ out_colorspace linear
+ name Write19
+ xpos 1170
+ ypos 299
+}
+Read {
+ inputs 0
+ file "/Users/davidabbott/Dropbox/Website/assets/_input/Screenshot 2019-03-30 17.34.02.png"
+ format "3360 2100 0 0 3360 2100 1 "
+ origset true
+ name Read33
+ xpos 1610
+ ypos 395
+ postage_stamp false
+}
+RotoPaint {
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44d20000 x44834000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {cubiccurve Clone7 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44e7a000 x43a28000 1}
+       {x44e7c000 x43a30000 1}
+       {x44e80000 x43a40000 1}
+       {x44e86000 x43a40000 1}
+       {x44e8a000 x43a48000 1}
+       {x44e90000 x43a48000 1}
+       {x44e96000 x43a48000 1}
+       {x44ea0000 x43a48000 1}
+       {x44ea4000 x43a48000 1}
+       {x44eae000 x43a48000 1}
+       {x44eb4000 x43a50000 1}
+       {x44eba000 x43a50000 1}
+       {x44ebc000 x43a58000 1}
+       {x44ec0000 x43a58000 1}
+       {x44ec2000 x43a58000 1}
+       {x44ec2000 x43a60000 1}
+       {x44ec4000 x43a60000 1}
+       {x44ec6000 x43a60000 1}
+       {x44ecc000 x43a60000 1}
+       {x44ece000 x43a60000 1}
+       {x44ed0000 x43a60000 1}
+       {x44ed2000 x43a60000 1}
+       {x44ed8000 x43a60000 1}
+       {x44ed8000 x43a58000 1}
+       {x44eda000 x43a58000 1}
+       {x44edc000 x43a58000 1}
+       {x44ede000 x43a50000 1}
+       {x44ee0000 x43a50000 1}
+       {x44ee4000 x43a50000 1}
+       {x44ee6000 x43a48000 1}
+       {x44eea000 x43a40000 1}
+       {x44eec000 x43a30000 1}
+       {x44ef2000 x43a30000 1}
+       {x44ef4000 x43a30000 1}
+       {x44ef6000 x43a30000 1}
+       {x44ef8000 x43a30000 1}
+       {x44efc000 x43a30000 1}
+       {x44efc000 x43a28000 1}
+       {x44efe000 x43a28000 1}
+       {x44f00000 x43a28000 1}
+       {x44f00000 x43a20000 1}
+       {x44f02000 x43a20000 1}
+       {x44f04000 x43a20000 1}
+       {x44f08000 x43a18000 1}
+       {x44f0a000 x43a18000 1}
+       {x44f0c000 x43a10000 1}
+       {x44f0e000 x43a00000 1}
+       {x44f14000 x43a00000 1}}}
+     {tx 1 x44ed3755 x43a3f800}
+     {a ro 0 go 0 bo 0 ao 0 bs x42ae0000 bu 1 src 1 stx xc3480000 sty x41100000 str 1 spx x44d20000 spy x44834000 sb 1 ltt x40000000 tt x41980000}}
+    {cubiccurve Clone6 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44d24000 x43b50000 1}
+       {x44d24000 x43b60000 1}
+       {x44d22000 x43b60000 1}
+       {x44d20000 x43b68000 1}
+       {x44d20000 x43b70000 1}
+       {x44d1e000 x43b70000 1}
+       {x44d1e000 x43b78000 1}
+       {x44d1c000 x43b80000 1}
+       {x44d1c000 x43b90000 1}
+       {x44d18000 x43b90000 1}
+       {x44d16000 x43b80000 1}
+       {x44d14000 x43b80000 1}
+       {x44d12000 x43b80000 1}
+       {x44d10000 x43b80000 1}
+       {x44d0c000 x43b80000 1}
+       {x44d0a000 x43b78000 1}
+       {x44d08000 x43b78000 1}
+       {x44d0a000 x43b78000 1}
+       {x44d0c000 x43b70000 1}
+       {x44d10000 x43b70000 1}
+       {x44d14000 x43b70000 1}
+       {x44d18000 x43b70000 1}
+       {x44d1c000 x43b70000 1}
+       {x44d20000 x43b70000 1}
+       {x44d22000 x43b70000 1}
+       {x44d24000 x43b68000 1}
+       {x44d28000 x43b68000 1}
+       {x44d2a000 x43b60000 1}
+       {x44d2c000 x43b60000 1}
+       {x44d2c000 x43b50000 1}
+       {x44d2c000 x43b48000 1}
+       {x44d2c000 x43b40000 1}
+       {x44d2c000 x43b38000 1}
+       {x44d2a000 x43b30000 1}
+       {x44d2a000 x43b20000 1}
+       {x44d2a000 x43b18000 1}
+       {x44d28000 x43b18000 1}
+       {x44d28000 x43b10000 1}
+       {x44d24000 x43b08000 1}
+       {x44d22000 x43b00000 1}
+       {x44d1e000 x43af0000 1}
+       {x44d1c000 x43ae0000 1}
+       {x44d18000 x43ad8000 1}
+       {x44d16000 x43ad0000 1}
+       {x44d14000 x43ac0000 1}
+       {x44d12000 x43ab0000 1}
+       {x44d10000 x43aa8000 1}
+       {x44d0c000 x43aa8000 1}
+       {x44d0c000 x43aa0000 1}
+       {x44d0c000 x43a90000 1}
+       {x44d0c000 x43a88000 1}
+       {x44d0c000 x43a80000 1}
+       {x44d0c000 x43a78000 1}
+       {x44d0c000 x43a70000 1}
+       {x44d0c000 x43a60000 1}
+       {x44d0c000 x43a58000 1}
+       {x44d0c000 x43a50000 1}
+       {x44d10000 x43a48000 1}
+       {x44d12000 x43a40000 1}
+       {x44d14000 x43a30000 1}
+       {x44d14000 x43a28000 1}
+       {x44d16000 x43a28000 1}
+       {x44d16000 x43a20000 1}
+       {x44d18000 x43a18000 1}
+       {x44d1c000 x43a10000 1}
+       {x44d1e000 x43a10000 1}
+       {x44d22000 x439f8000 1}
+       {x44d24000 x439f0000 1}
+       {x44d28000 x439f0000 1}
+       {x44d28000 x439e8000 1}
+       {x44d28000 x439e0000 1}
+       {x44d28000 x439d0000 1}
+       {x44d2a000 x439d0000 1}
+       {x44d2a000 x439c8000 1}
+       {x44d2c000 x439c8000 1}
+       {x44d2c000 x439c0000 1}
+       {x44d2c000 x439b8000 1}
+       {x44d2e000 x439b8000 1}
+       {x44d30000 x439b8000 1}
+       {x44d30000 x439b0000 1}
+       {x44d34000 x439b0000 1}
+       {x44d38000 x439b8000 1}
+       {x44d3a000 x439b8000 1}
+       {x44d3c000 x439b8000 1}
+       {x44d40000 x439b8000 1}
+       {x44d44000 x439b8000 1}
+       {x44d46000 x439b8000 1}
+       {x44d46000 x439c0000 1}
+       {x44d48000 x439c0000 1}
+       {x44d4c000 x439c0000 1}
+       {x44d4e000 x439c8000 1}
+       {x44d50000 x439c8000 1}
+       {x44d52000 x439c8000 1}
+       {x44d54000 x439c8000 1}
+       {x44d5a000 x439c8000 1}
+       {x44d5c000 x439c8000 1}
+       {x44d5e000 x439c8000 1}
+       {x44d60000 x439c8000 1}
+       {x44d64000 x439c8000 1}
+       {x44d66000 x439c0000 1}
+       {x44d68000 x439c0000 1}
+       {x44d6a000 x439c0000 1}
+       {x44d6a000 x439b8000 1}
+       {x44d6a000 x439b0000 1}
+       {x44d68000 x439a0000 1}
+       {x44d66000 x43998000 1}
+       {x44d64000 x43998000 1}
+       {x44d60000 x43998000 1}
+       {x44d5c000 x43998000 1}
+       {x44d5a000 x43998000 1}
+       {x44d52000 x43998000 1}
+       {x44d50000 x439a0000 1}
+       {x44d4c000 x439a0000 1}
+       {x44d46000 x439a0000 1}
+       {x44d44000 x439a0000 1}
+       {x44d40000 x439b0000 1}
+       {x44d3c000 x439b8000 1}
+       {x44d3a000 x439b8000 1}
+       {x44d38000 x439c0000 1}
+       {x44d36000 x439c0000 1}
+       {x44d34000 x439c0000 1}
+       {x44d2e000 x439c8000 1}
+       {x44d2c000 x439c8000 1}
+       {x44d2a000 x439c8000 1}
+       {x44d24000 x439c8000 1}
+       {x44d20000 x439c8000 1}
+       {x44d1e000 x439d0000 1}
+       {x44d18000 x439d0000 1}
+       {x44d16000 x439d0000 1}
+       {x44d14000 x439d0000 1}
+       {x44d12000 x439e0000 1}
+       {x44d0c000 x439e0000 1}
+       {x44d0a000 x439e0000 1}
+       {x44d08000 x439e0000 1}
+       {x44d04000 x439e0000 1}
+       {x44d00000 x439e0000 1}
+       {x44cfe000 x439e8000 1}
+       {x44cfc000 x439e8000 1}
+       {x44cfa000 x439e8000 1}
+       {x44cf8000 x439e8000 1}
+       {x44cf4000 x439e8000 1}
+       {x44cf2000 x439e8000 1}
+       {x44cf0000 x439e8000 1}
+       {x44cee000 x439e8000 1}
+       {x44cec000 x439e8000 1}
+       {x44ce8000 x439e8000 1}
+       {x44ce6000 x439e8000 1}
+       {x44ce4000 x439e8000 1}
+       {x44ce2000 x439e8000 1}
+       {x44ce2000 x439f0000 1}
+       {x44ce0000 x439f0000 1}
+       {x44cda000 x439f0000 1}
+       {x44cd8000 x439f8000 1}
+       {x44cd6000 x439f8000 1}
+       {x44cd4000 x439f8000 1}
+       {x44cd0000 x439f8000 1}
+       {x44cce000 x439f8000 1}
+       {x44ccc000 x439f8000 1}
+       {x44ccc000 x43a00000 1}
+       {x44cca000 x43a00000 1}
+       {x44cc8000 x43a00000 1}
+       {x44cc4000 x43a00000 1}
+       {x44cc2000 x43a00000 1}
+       {x44cc0000 x43a00000 1}
+       {x44cbe000 x43a00000 1}
+       {x44cbc000 x43a00000 1}
+       {x44cb8000 x43a00000 1}
+       {x44cb8000 x43a10000 1}
+       {x44cb6000 x43a10000 1}
+       {x44cb4000 x43a10000 1}
+       {x44cb2000 x43a10000 1}
+       {x44cb0000 x43a10000 1}
+       {x44cac000 x43a10000 1}
+       {x44caa000 x43a10000 1}
+       {x44ca8000 x43a18000 1}
+       {x44ca6000 x43a18000 1}
+       {x44ca4000 x43a18000 1}
+       {x44ca0000 x43a18000 1}
+       {x44c9e000 x43a18000 1}
+       {x44c9c000 x43a18000 1}
+       {x44c9a000 x43a18000 1}
+       {x44c98000 x43a18000 1}
+       {x44c94000 x43a18000 1}
+       {x44c92000 x43a18000 1}}}
+     {tx 1 x44d1177a x43a44216}
+     {a ro 0 go 0 bo 0 ao 0 bs x42ae0000 bu 1 src 1 stx xc3c68000 sty x41b80000 str 1 spx x44d20000 spy x44834000 sb 1 ltt x40000000 tt x41980000}}
+    {cubiccurve Clone5 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44c6c000 x43b60000 1}
+       {x44c6e000 x43b68000 1}
+       {x44c6e000 x43b70000 1}
+       {x44c70000 x43b80000 1}
+       {x44c74000 x43b90000 1}
+       {x44c74000 x43b80000 1}
+       {x44c76000 x43b80000 1}
+       {x44c76000 x43b78000 1}
+       {x44c76000 x43b70000 1}
+       {x44c76000 x43b68000 1}
+       {x44c76000 x43b60000 1}
+       {x44c76000 x43b50000 1}
+       {x44c76000 x43b48000 1}
+       {x44c76000 x43b40000 1}
+       {x44c74000 x43b40000 1}
+       {x44c74000 x43b38000 1}
+       {x44c74000 x43b20000 1}
+       {x44c74000 x43b18000 1}
+       {x44c70000 x43b08000 1}
+       {x44c70000 x43b00000 1}
+       {x44c6e000 x43ae8000 1}
+       {x44c6e000 x43ae0000 1}
+       {x44c6e000 x43ad8000 1}
+       {x44c6e000 x43ad0000 1}
+       {x44c6e000 x43ac0000 1}
+       {x44c6e000 x43ab8000 1}
+       {x44c6e000 x43aa8000 1}
+       {x44c6e000 x43aa0000 1}
+       {x44c6e000 x43a90000 1}
+       {x44c6e000 x43a88000 1}
+       {x44c6e000 x43a80000 1}
+       {x44c6e000 x43a78000 1}
+       {x44c6e000 x43a70000 1}
+       {x44c6e000 x43a60000 1}
+       {x44c6e000 x43a58000 1}
+       {x44c6e000 x43a50000 1}
+       {x44c6e000 x43a48000 1}
+       {x44c70000 x43a40000 1}
+       {x44c70000 x43a28000 1}
+       {x44c74000 x43a28000 1}
+       {x44c74000 x43a20000 1}
+       {x44c74000 x43a18000 1}
+       {x44c74000 x43a10000 1}
+       {x44c74000 x43a00000 1}
+       {x44c74000 x439f8000 1}
+       {x44c70000 x439f0000 1}
+       {x44c70000 x439e8000 1}
+       {x44c70000 x439e0000 1}
+       {x44c70000 x439d0000 1}
+       {x44c6e000 x439d0000 1}
+       {x44c6e000 x439c8000 1}
+       {x44c70000 x439c8000 1}
+       {x44c70000 x439c0000 1}
+       {x44c70000 x439b8000 1}
+       {x44c74000 x439b8000 1}
+       {x44c70000 x439b8000 1}
+       {x44c6e000 x439b8000 1}
+       {x44c6c000 x439b8000 1}
+       {x44c6a000 x439b8000 1}
+       {x44c68000 x439b8000 1}
+       {x44c64000 x439b8000 1}
+       {x44c62000 x439b8000 1}
+       {x44c5e000 x439b8000 1}
+       {x44c58000 x439b8000 1}
+       {x44c54000 x439b8000 1}
+       {x44c50000 x439b8000 1}
+       {x44c4c000 x439b8000 1}
+       {x44c48000 x439b0000 1}
+       {x44c44000 x439b0000 1}
+       {x44c40000 x439b0000 1}
+       {x44c3e000 x439b0000 1}
+       {x44c3c000 x439b0000 1}
+       {x44c3a000 x439b0000 1}
+       {x44c38000 x439b0000 1}
+       {x44c34000 x439b0000 1}
+       {x44c32000 x439b0000 1}
+       {x44c30000 x439b0000 1}
+       {x44c2e000 x439b0000 1}
+       {x44c2c000 x439b0000 1}
+       {x44c28000 x439b8000 1}
+       {x44c28000 x439c0000 1}
+       {x44c26000 x439c8000 1}
+       {x44c26000 x439d0000 1}
+       {x44c24000 x439d0000 1}
+       {x44c24000 x439e0000 1}
+       {x44c24000 x439e8000 1}
+       {x44c24000 x439f8000 1}
+       {x44c24000 x43a00000 1}
+       {x44c22000 x43a10000 1}
+       {x44c22000 x43a18000 1}
+       {x44c22000 x43a20000 1}
+       {x44c22000 x43a28000 1}
+       {x44c22000 x43a40000 1}
+       {x44c22000 x43a48000 1}
+       {x44c22000 x43a58000 1}
+       {x44c22000 x43a60000 1}
+       {x44c22000 x43a78000 1}
+       {x44c22000 x43a80000 1}
+       {x44c24000 x43a88000 1}
+       {x44c24000 x43a90000 1}
+       {x44c26000 x43aa0000 1}
+       {x44c28000 x43aa8000 1}
+       {x44c28000 x43ab0000 1}
+       {x44c2c000 x43ab0000 1}
+       {x44c2c000 x43ab8000 1}
+       {x44c2c000 x43ac0000 1}
+       {x44c2e000 x43ad0000 1}
+       {x44c2e000 x43ad8000 1}
+       {x44c30000 x43ae0000 1}
+       {x44c30000 x43ae8000 1}
+       {x44c30000 x43af0000 1}
+       {x44c30000 x43b00000 1}
+       {x44c30000 x43b10000 1}
+       {x44c30000 x43b18000 1}
+       {x44c30000 x43b20000 1}
+       {x44c30000 x43b30000 1}
+       {x44c30000 x43b38000 1}
+       {x44c2e000 x43b38000 1}
+       {x44c2e000 x43b40000 1}
+       {x44c2c000 x43b40000 1}
+       {x44c2c000 x43b48000 1}
+       {x44c2c000 x43b50000 1}
+       {x44c2c000 x43b60000 1}
+       {x44c2c000 x43b68000 1}
+       {x44c28000 x43b68000 1}
+       {x44c28000 x43b70000 1}
+       {x44c28000 x43b78000 1}
+       {x44c26000 x43b80000 1}
+       {x44c24000 x43b80000 1}
+       {x44c24000 x43b90000 1}
+       {x44c24000 x43b98000 1}
+       {x44c22000 x43b98000 1}
+       {x44c24000 x43b98000 1}
+       {x44c24000 x43ba0000 1}
+       {x44c22000 x43ba0000 1}
+       {x44c24000 x43ba0000 1}}}
+     {tx 1 x44c4bf4b x43a8a5a6}
+     {a ro 0 go 0 bo 0 ao 0 bs x42ae0000 bu 1 src 1 stx xc3a60000 sty x41b80000 str 1 spx x44d20000 spy x44834000 sb 1 ltt x40000000 tt x41980000}}
+    {cubiccurve Clone4 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44b9c000 x43a90000 1}
+       {x44b9c000 x43aa0000 1}
+       {x44b9c000 x43aa8000 1}
+       {x44b9c000 x43ab0000 1}
+       {x44b9c000 x43ac0000 1}
+       {x44b9c000 x43ad0000 1}
+       {x44b9c000 x43ad8000 1}
+       {x44b9c000 x43ae0000 1}
+       {x44b9c000 x43ae8000 1}
+       {x44b9c000 x43af0000 1}
+       {x44b9c000 x43b00000 1}
+       {x44b9c000 x43b08000 1}
+       {x44b9c000 x43b10000 1}
+       {x44b98000 x43b10000 1}
+       {x44b98000 x43b18000 1}
+       {x44b98000 x43b20000 1}
+       {x44b98000 x43b30000 1}
+       {x44b96000 x43b38000 1}
+       {x44b96000 x43b40000 1}
+       {x44b94000 x43b40000 1}
+       {x44b94000 x43b48000 1}
+       {x44b92000 x43b50000 1}
+       {x44b90000 x43b50000 1}
+       {x44b90000 x43b60000 1}
+       {x44b8c000 x43b60000 1}
+       {x44b8a000 x43b60000 1}
+       {x44b88000 x43b60000 1}
+       {x44b86000 x43b68000 1}
+       {x44b84000 x43b70000 1}
+       {x44b80000 x43b70000 1}
+       {x44b7e000 x43b70000 1}
+       {x44b7c000 x43b70000 1}
+       {x44b7c000 x43b78000 1}
+       {x44b7a000 x43b78000 1}
+       {x44b78000 x43b78000 1}
+       {x44b74000 x43b78000 1}}}
+     {tx 1 x44b909c7 x43b2638e}
+     {a ro 0 go 0 bo 0 ao 0 bs x42ae0000 bu 1 src 1 stx x42920000 sty x40400000 str 1 spx x44d20000 spy x44834000 sb 1 ltt x40000000 tt x41980000}}
+    {cubiccurve Clone3 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44b4c000 x43ac0000 1}
+       {x44b4c000 x43ad0000 1}
+       {x44b4e000 x43ad0000 1}
+       {x44b50000 x43ad0000 1}
+       {x44b56000 x43ad0000 1}
+       {x44b58000 x43ad0000 1}
+       {x44b5a000 x43ad8000 1}
+       {x44b5c000 x43ad8000 1}
+       {x44b60000 x43ae8000 1}
+       {x44b62000 x43af0000 1}
+       {x44b64000 x43b00000 1}
+       {x44b64000 x43b08000 1}
+       {x44b64000 x43b10000 1}
+       {x44b64000 x43b18000 1}
+       {x44b64000 x43b20000 1}
+       {x44b64000 x43b30000 1}
+       {x44b66000 x43b30000 1}
+       {x44b68000 x43b38000 1}
+       {x44b6c000 x43b38000 1}
+       {x44b6e000 x43b38000 1}
+       {x44b70000 x43b38000 1}
+       {x44b6e000 x43b38000 1}
+       {x44b68000 x43b40000 1}
+       {x44b66000 x43b40000 1}
+       {x44b64000 x43b48000 1}
+       {x44b62000 x43b48000 1}
+       {x44b62000 x43b50000 1}
+       {x44b60000 x43b50000 1}
+       {x44b5c000 x43b50000 1}
+       {x44b5a000 x43b50000 1}
+       {x44b58000 x43b48000 1}
+       {x44b56000 x43b48000 1}
+       {x44b5a000 x43b40000 1}
+       {x44b5c000 x43b38000 1}
+       {x44b62000 x43b38000 1}
+       {x44b64000 x43b30000 1}
+       {x44b66000 x43b30000 1}
+       {x44b6c000 x43b30000 1}
+       {x44b6c000 x43b20000 1}
+       {x44b6e000 x43b18000 1}
+       {x44b70000 x43b18000 1}
+       {x44b70000 x43b10000 1}
+       {x44b72000 x43b08000 1}
+       {x44b72000 x43b00000 1}
+       {x44b74000 x43b00000 1}
+       {x44b78000 x43af0000 1}
+       {x44b7c000 x43ae8000 1}
+       {x44b7e000 x43ae0000 1}
+       {x44b80000 x43ad8000 1}
+       {x44b84000 x43ad0000 1}
+       {x44b86000 x43ac0000 1}
+       {x44b86000 x43ab8000 1}
+       {x44b88000 x43ab8000 1}
+       {x44b88000 x43ab0000 1}
+       {x44b8a000 x43aa8000 1}
+       {x44b8c000 x43aa8000 1}
+       {x44b8c000 x43aa0000 1}
+       {x44b90000 x43aa0000 1}
+       {x44b90000 x43a90000 1}
+       {x44b92000 x43a90000 1}
+       {x44b92000 x43a88000 1}
+       {x44b92000 x43a80000 1}
+       {x44b90000 x43a78000 1}
+       {x44b8c000 x43a78000 1}
+       {x44b8a000 x43a78000 1}
+       {x44b8a000 x43a70000 1}
+       {x44b88000 x43a70000 1}
+       {x44b86000 x43a70000 1}
+       {x44b84000 x43a70000 1}
+       {x44b80000 x43a78000 1}
+       {x44b7e000 x43a78000 1}
+       {x44b7a000 x43a78000 1}
+       {x44b78000 x43a78000 1}
+       {x44b72000 x43a78000 1}
+       {x44b70000 x43a78000 1}
+       {x44b6c000 x43a78000 1}
+       {x44b68000 x43a70000 1}
+       {x44b64000 x43a70000 1}
+       {x44b62000 x43a70000 1}
+       {x44b5c000 x43a60000 1}
+       {x44b5a000 x43a60000 1}
+       {x44b58000 x43a60000 1}
+       {x44b56000 x43a60000 1}
+       {x44b56000 x43a58000 1}
+       {x44b54000 x43a58000 1}
+       {x44b54000 x43a50000 1}
+       {x44b54000 x43a48000 1}
+       {x44b54000 x43a40000 1}
+       {x44b50000 x43a30000 1}
+       {x44b50000 x43a28000 1}
+       {x44b50000 x43a18000 1}
+       {x44b50000 x43a10000 1}
+       {x44b54000 x439f8000 1}
+       {x44b54000 x439f0000 1}
+       {x44b54000 x439e8000 1}
+       {x44b54000 x439e0000 1}
+       {x44b56000 x439d0000 1}
+       {x44b56000 x439c8000 1}
+       {x44b56000 x439c0000 1}
+       {x44b58000 x439c0000 1}
+       {x44b58000 x439b8000 1}
+       {x44b5a000 x439b0000 1}
+       {x44b5a000 x439a0000 1}
+       {x44b5c000 x43998000 1}
+       {x44b60000 x43990000 1}
+       {x44b62000 x43990000 1}
+       {x44b66000 x43990000 1}
+       {x44b68000 x43990000 1}
+       {x44b6c000 x43990000 1}
+       {x44b70000 x43990000 1}
+       {x44b74000 x43990000 1}
+       {x44b78000 x43990000 1}
+       {x44b7a000 x43990000 1}
+       {x44b7c000 x43990000 1}
+       {x44b7e000 x43990000 1}
+       {x44b80000 x43990000 1}
+       {x44b86000 x43990000 1}
+       {x44b88000 x43990000 1}
+       {x44b8a000 x43990000 1}
+       {x44b8c000 x43990000 1}
+       {x44b90000 x43998000 1}
+       {x44b92000 x43998000 1}
+       {x44b94000 x43998000 1}
+       {x44b94000 x439a0000 1}
+       {x44b96000 x439a0000 1}
+       {x44b98000 x439b0000 1}
+       {x44b9c000 x439b8000 1}
+       {x44b9c000 x439b0000 1}
+       {x44b9e000 x439b0000 1}
+       {x44b9e000 x439a0000 1}
+       {x44ba0000 x439a0000 1}
+       {x44ba2000 x439a0000 1}
+       {x44ba4000 x43998000 1}
+       {x44ba8000 x43998000 1}
+       {x44ba8000 x43990000 1}
+       {x44baa000 x43990000 1}
+       {x44bac000 x43990000 1}
+       {x44bae000 x43990000 1}}}
+     {tx 1 x44b72129 x43a68b21}
+     {a ro 0 go 0 bo 0 ao 0 bs x42ae0000 bu 1 src 1 stx x42920000 sty x40400000 str 1 spx x44d20000 spy x44834000 sb 1 ltt x40000000 tt x41980000}}
+    {cubiccurve Clone2 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44e2a000 x43b48000 1}
+       {x44e28000 x43b48000 1}
+       {x44e26000 x43b48000 1}
+       {x44e20000 x43b48000 1}
+       {x44e1e000 x43b48000 1}
+       {x44e18000 x43b50000 1}
+       {x44e10000 x43b50000 1}
+       {x44e08000 x43b50000 1}
+       {x44e04000 x43b50000 1}
+       {x44e00000 x43b50000 1}
+       {x44dfc000 x43b50000 1}
+       {x44dfa000 x43b50000 1}
+       {x44dfa000 x43b48000 1}
+       {x44df8000 x43b48000 1}
+       {x44df6000 x43b48000 1}
+       {x44df0000 x43b48000 1}
+       {x44dee000 x43b48000 1}
+       {x44dec000 x43b48000 1}
+       {x44dea000 x43b48000 1}
+       {x44de8000 x43b48000 1}
+       {x44de4000 x43b48000 1}
+       {x44de2000 x43b48000 1}
+       {x44de2000 x43b50000 1}
+       {x44de0000 x43b50000 1}
+       {x44dde000 x43b50000 1}
+       {x44dde000 x43b60000 1}
+       {x44ddc000 x43b60000 1}
+       {x44dd6000 x43b60000 1}
+       {x44dd4000 x43b60000 1}
+       {x44dd2000 x43b60000 1}
+       {x44dd2000 x43b50000 1}
+       {x44dd0000 x43b50000 1}
+       {x44dcc000 x43b50000 1}
+       {x44dca000 x43b48000 1}
+       {x44dc8000 x43b48000 1}
+       {x44dc6000 x43b48000 1}
+       {x44dc6000 x43b40000 1}
+       {x44dc4000 x43b40000 1}
+       {x44dc0000 x43b40000 1}
+       {x44dbe000 x43b38000 1}
+       {x44dbc000 x43b38000 1}
+       {x44dbc000 x43b30000 1}
+       {x44dbe000 x43b30000 1}
+       {x44dbe000 x43b20000 1}
+       {x44dc0000 x43b20000 1}
+       {x44dc4000 x43b18000 1}
+       {x44dc6000 x43b10000 1}
+       {x44dc8000 x43b08000 1}
+       {x44dcc000 x43b00000 1}
+       {x44dd0000 x43af0000 1}
+       {x44dd2000 x43af0000 1}
+       {x44dd4000 x43ae8000 1}
+       {x44dd4000 x43ae0000 1}
+       {x44dd6000 x43ad8000 1}
+       {x44dd8000 x43ac0000 1}
+       {x44dd8000 x43ab8000 1}
+       {x44dd8000 x43ab0000 1}
+       {x44ddc000 x43aa8000 1}
+       {x44ddc000 x43aa0000 1}
+       {x44ddc000 x43a90000 1}
+       {x44ddc000 x43a88000 1}
+       {x44ddc000 x43a80000 1}
+       {x44ddc000 x43a78000 1}
+       {x44dde000 x43a70000 1}
+       {x44dde000 x43a60000 1}
+       {x44de0000 x43a58000 1}
+       {x44de2000 x43a50000 1}
+       {x44de2000 x43a48000 1}
+       {x44de4000 x43a48000 1}
+       {x44de8000 x43a48000 1}
+       {x44dec000 x43a50000 1}
+       {x44df4000 x43a50000 1}
+       {x44df8000 x43a58000 1}
+       {x44e00000 x43a58000 1}
+       {x44e02000 x43a60000 1}
+       {x44e04000 x43a70000 1}
+       {x44e06000 x43a70000 1}
+       {x44e06000 x43a78000 1}
+       {x44e08000 x43a70000 1}
+       {x44e0c000 x43a70000 1}
+       {x44e0e000 x43a70000 1}
+       {x44e10000 x43a60000 1}
+       {x44e10000 x43a58000 1}
+       {x44e10000 x43a50000 1}
+       {x44e12000 x43a50000 1}
+       {x44e12000 x43a48000 1}
+       {x44e14000 x43a40000 1}
+       {x44e18000 x43a30000 1}
+       {x44e18000 x43a28000 1}
+       {x44e18000 x43a20000 1}
+       {x44e1a000 x43a18000 1}
+       {x44e1a000 x43a10000 1}
+       {x44e1c000 x43a00000 1}
+       {x44e1c000 x439f8000 1}
+       {x44e1e000 x439f0000 1}
+       {x44e1e000 x439e8000 1}
+       {x44e1c000 x439e8000 1}
+       {x44e1e000 x439e8000 1}
+       {x44e1e000 x439f0000 1}
+       {x44e1e000 x439f8000 1}
+       {x44e1e000 x439f0000 1}
+       {x44e1e000 x439e8000 1}
+       {x44e1c000 x439e8000 1}
+       {x44e1c000 x439e0000 1}
+       {x44e1a000 x439e0000 1}
+       {x44e1a000 x439d0000 1}
+       {x44e18000 x439c8000 1}
+       {x44e14000 x439c8000 1}
+       {x44e12000 x439c8000 1}
+       {x44e10000 x439c8000 1}
+       {x44e0c000 x439c8000 1}
+       {x44e06000 x439c8000 1}
+       {x44e00000 x439c8000 1}
+       {x44dfc000 x439c8000 1}
+       {x44dfa000 x439c8000 1}
+       {x44df8000 x439c8000 1}
+       {x44df6000 x439c8000 1}
+       {x44df4000 x439c8000 1}
+       {x44dee000 x439c8000 1}
+       {x44dec000 x439c8000 1}
+       {x44dea000 x439c8000 1}
+       {x44de8000 x439d0000 1}
+       {x44de4000 x439d0000 1}
+       {x44de2000 x439d0000 1}
+       {x44de0000 x439d0000 1}
+       {x44dde000 x439d0000 1}
+       {x44ddc000 x439d0000 1}
+       {x44dd8000 x439d0000 1}
+       {x44dd4000 x439d0000 1}
+       {x44dd2000 x439c8000 1}
+       {x44dd0000 x439c8000 1}
+       {x44dcc000 x439c0000 1}
+       {x44dcc000 x439b8000 1}
+       {x44dca000 x439b0000 1}
+       {x44dc8000 x439b0000 1}
+       {x44dc6000 x439b8000 1}
+       {x44dc4000 x439b8000 1}}}
+     {tx 1 x44defe99 x43a88869}
+     {a ro 0 go 0 bo 0 ao 0 bs x42ae0000 bu 1 src 1 stx xc2cc0000 sty x40a00000 str 1 spx x44d20000 spy x44834000 sb 1 ltt x40000000 tt x41980000}}
+    {cubiccurve Clone1 512 catmullrom
+     {cc
+      {f 2080}
+      {px 1
+       {x44f32000 x43aa0000 1}
+       {x44f30000 x43aa0000 1}
+       {x44f2e000 x43aa0000 1}
+       {x44f2c000 x43aa0000 1}
+       {x44f24000 x43aa0000 1}
+       {x44f22000 x43aa8000 1}
+       {x44f20000 x43aa8000 1}
+       {x44f1c000 x43aa8000 1}
+       {x44f18000 x43aa8000 1}
+       {x44f14000 x43aa8000 1}
+       {x44f0e000 x43aa8000 1}
+       {x44f0a000 x43ab0000 1}
+       {x44f04000 x43ab8000 1}
+       {x44efe000 x43ac0000 1}
+       {x44efc000 x43ad0000 1}
+       {x44ef6000 x43ad0000 1}
+       {x44ef6000 x43ad8000 1}
+       {x44ef4000 x43ad8000 1}
+       {x44ef4000 x43ae0000 1}
+       {x44ef2000 x43ae0000 1}
+       {x44ef0000 x43ae8000 1}
+       {x44eec000 x43ae8000 1}
+       {x44eec000 x43af0000 1}
+       {x44eea000 x43af0000 1}
+       {x44ee8000 x43b00000 1}
+       {x44ee6000 x43b00000 1}
+       {x44ee6000 x43b08000 1}
+       {x44ee4000 x43b08000 1}
+       {x44ee0000 x43b10000 1}
+       {x44ede000 x43b10000 1}
+       {x44ede000 x43b18000 1}
+       {x44edc000 x43b20000 1}
+       {x44eda000 x43b30000 1}
+       {x44ed8000 x43b30000 1}
+       {x44ed4000 x43b38000 1}
+       {x44ed0000 x43b38000 1}
+       {x44ecc000 x43b38000 1}
+       {x44ec8000 x43b38000 1}
+       {x44ec4000 x43b38000 1}
+       {x44ec2000 x43b38000 1}
+       {x44ec0000 x43b38000 1}
+       {x44ec0000 x43b30000 1}
+       {x44ebc000 x43b30000 1}
+       {x44eba000 x43b30000 1}
+       {x44eba000 x43b20000 1}
+       {x44eb8000 x43b20000 1}
+       {x44eb6000 x43b20000 1}
+       {x44eb4000 x43b20000 1}
+       {x44eb0000 x43b20000 1}
+       {x44eae000 x43b20000 1}
+       {x44eac000 x43b20000 1}
+       {x44eaa000 x43b20000 1}
+       {x44eaa000 x43b30000 1}
+       {x44ea8000 x43b30000 1}
+       {x44eaa000 x43b38000 1}
+       {x44eac000 x43b40000 1}
+       {x44eb0000 x43b48000 1}
+       {x44eb6000 x43b50000 1}
+       {x44eb8000 x43b50000 1}
+       {x44eba000 x43b60000 1}
+       {x44ebc000 x43b60000 1}
+       {x44ec0000 x43b60000 1}
+       {x44ec2000 x43b60000 1}
+       {x44ec4000 x43b60000 1}
+       {x44ec6000 x43b60000 1}
+       {x44ec8000 x43b60000 1}
+       {x44ec8000 x43b50000 1}
+       {x44ecc000 x43b48000 1}
+       {x44ecc000 x43b40000 1}
+       {x44ece000 x43b40000 1}
+       {x44ece000 x43b38000 1}
+       {x44ecc000 x43b38000 1}
+       {x44ec8000 x43b38000 1}
+       {x44ec6000 x43b38000 1}
+       {x44ec4000 x43b30000 1}
+       {x44ec0000 x43b30000 1}
+       {x44ebc000 x43b30000 1}
+       {x44eb8000 x43b30000 1}
+       {x44eb0000 x43b30000 1}
+       {x44eaa000 x43b30000 1}
+       {x44ea4000 x43b30000 1}
+       {x44e9e000 x43b30000 1}
+       {x44e98000 x43b20000 1}
+       {x44e96000 x43b20000 1}
+       {x44e94000 x43b18000 1}
+       {x44e94000 x43b08000 1}
+       {x44e92000 x43b00000 1}
+       {x44e92000 x43af0000 1}
+       {x44e92000 x43ae8000 1}
+       {x44e90000 x43ad8000 1}
+       {x44e90000 x43ac0000 1}
+       {x44e90000 x43ab8000 1}
+       {x44e92000 x43aa8000 1}
+       {x44e94000 x43a90000 1}
+       {x44e94000 x43a80000 1}
+       {x44e96000 x43a70000 1}
+       {x44e98000 x43a50000 1}
+       {x44e98000 x43a48000 1}
+       {x44e9e000 x43a28000 1}
+       {x44ea0000 x43a20000 1}
+       {x44ea2000 x43a00000 1}
+       {x44ea8000 x439f8000 1}
+       {x44eaa000 x439f0000 1}
+       {x44eac000 x439e0000 1}
+       {x44eae000 x439e0000 1}
+       {x44eb0000 x439e0000 1}
+       {x44eb4000 x439d0000 1}
+       {x44eb6000 x439d0000 1}
+       {x44eb8000 x439d0000 1}
+       {x44eba000 x439d0000 1}
+       {x44ec0000 x439d0000 1}
+       {x44ec2000 x439d0000 1}
+       {x44ec4000 x439d0000 1}
+       {x44ec6000 x439d0000 1}
+       {x44ec8000 x439d0000 1}
+       {x44ece000 x439d0000 1}
+       {x44ed0000 x439e0000 1}
+       {x44ed2000 x439e0000 1}
+       {x44ed4000 x439e0000 1}
+       {x44ed8000 x439e0000 1}
+       {x44eda000 x439e0000 1}
+       {x44edc000 x439e0000 1}
+       {x44ee0000 x439e0000 1}
+       {x44ee4000 x439e0000 1}
+       {x44ee6000 x439e0000 1}
+       {x44ee8000 x439e0000 1}
+       {x44eea000 x439e0000 1}
+       {x44eec000 x439e0000 1}
+       {x44ef0000 x439e0000 1}
+       {x44ef2000 x439e0000 1}
+       {x44ef4000 x439e0000 1}
+       {x44ef6000 x439e0000 1}
+       {x44ef8000 x439e0000 1}
+       {x44efc000 x439e0000 1}
+       {x44efe000 x439e8000 1}
+       {x44f00000 x439f0000 1}
+       {x44f02000 x439f0000 1}
+       {x44f04000 x439f0000 1}}}
+     {tx 1 x44ece216 x43ab0ed7}
+     {a ro 0 go 0 bo 0 ao 0 bs x42ae0000 bu 1 src 1 stx xc2cc0000 sty x40a00000 str 1 spx x44d20000 spy x44834000 sb 1 ltt x40000000 tt x41980000}}}}}}
+ toolbox {clone {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone bs 87 src 1 stx -200 sty 9 str 1 ssx 1 ssy 1 sf 1 sb 1 tt 19 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_size 87
+ toolbar_brush_hardness 0.200000003
+ toolbar_lifetime_type single
+ toolbar_paint_source fg
+ toolbar_source_transform_translate {-200 9}
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1680 1050}
+ colorOverlay {0 0 0 0}
+ paint_source foreground
+ feather_type smooth
+ brush_size 87
+ brush_spacing 0.05000000075
+ brush_hardness 0.200000003
+ source_black_outside true
+ name RotoPaint2
+ xpos 1610
+ ypos 471
+}
+Crop {
+ box {0 135 3360 1975}
+ reformat true
+ crop false
+ name Crop3
+ xpos 1610
+ ypos 543
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ name Reformat29
+ xpos 1610
+ ypos 591
+}
+Write {
+ file ../2019/img/thumbs/music_12.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 23
+ name Write32
+ xpos 1610
+ ypos 659
+}
+Read {
+ inputs 0
+ file /Users/davidabbott/Dropbox/Website/assets/_input/708685488_1280x720.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read32
+ xpos 950
+ ypos 467
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat27
+ xpos 950
+ ypos 539
+}
+Write {
+ file ../2019/img/thumbs/music_09.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 23
+ name Write30
+ xpos 950
+ ypos 587
+}
+Read {
+ inputs 0
+ file /Users/davidabbott/Dropbox/Website/assets/_input/maxresdefault.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read29
+ xpos 1390
+ ypos 443
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat26
+ xpos 1390
+ ypos 539
+}
+Write {
+ file ../2019/img/thumbs/music_11.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 25
+ name Write29
+ xpos 1390
+ ypos 587
+}
+Read {
+ inputs 0
+ file "_input/Screenshot 2018-12-01 19.24.32.png"
+ format "1926 1082 0 0 1926 1082 1 "
+ origset true
+ name Read13
+ xpos -700
+ ypos 515
+ postage_stamp false
+}
+Crop {
+ box {1 0 1926 1080}
+ reformat true
+ crop false
+ name Crop1
+ xpos -700
+ ypos 567
+}
+Read {
+ inputs 0
+ file /Users/davidabbott/Dropbox/Website/assets/_input/541545517_1280x720.jpg
+ format "1280 720 0 0 1280 720 1 HD_720"
+ origset true
+ name Read27
+ xpos 1170
+ ypos 467
+ postage_stamp false
+}
+Reformat {
+ filter Lanczos4
+ name Reformat28
+ xpos 1170
+ ypos 539
+}
+Write {
+ file ../2019/img/thumbs/music_10.jpeg
+ file_type jpeg
+ _jpeg_sub_sampling 4:2:2
+ create_directories true
+ checkHashOnRead false
+ version 24
+ name Write31
+ selected true
+ xpos 1170
+ ypos 587
+}
+Viewer {
+ inputs 2
+ frame_range 1-1
+ fps 25
+ name Viewer1
+ xpos -475
+ ypos 371
+ addUserKnob {20 Lock}
+ addUserKnob {6 lock_all_buffers l "lock all buffers" -STARTLINE}
+ addUserKnob {6 lock_buffer_1 l "lock buffer 1" +STARTLINE}
+ addUserKnob {6 lock_buffer_2 l "lock buffer 2" +STARTLINE}
+ addUserKnob {6 lock_buffer_3 l "lock buffer 3" +STARTLINE}
+ addUserKnob {6 lock_buffer_4 l "lock buffer 4" +STARTLINE}
+ addUserKnob {6 lock_buffer_5 l "lock buffer 5" +STARTLINE}
+ addUserKnob {6 lock_buffer_6 l "lock buffer 6" +STARTLINE}
+ addUserKnob {6 lock_buffer_7 l "lock buffer 7" +STARTLINE}
+ addUserKnob {6 lock_buffer_8 l "lock buffer 8" +STARTLINE}
+ addUserKnob {6 lock_buffer_9 l "lock buffer 9" +STARTLINE}
+ addUserKnob {6 lock_buffer_0 l "lock buffer 0" +STARTLINE}
+}
