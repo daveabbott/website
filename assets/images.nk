@@ -33,7 +33,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 }
 Root {
  inputs 0
- name /mnt/kabbalah/active/_WEBSITE/assets/images.nk
+ name /mnt/kabbalah/repos/github/website/assets/images.nk
  project_directory "\[python \{nuke.script_directory()\}]"
  last_frame 1
  lock_range true
@@ -70,7 +70,7 @@ Reformat {
  xpos 2050
  ypos 230
 }
-set Nf72e950 [stack 0]
+set Nfa9f550 [stack 0]
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -116,7 +116,7 @@ Write {
  xpos 2050
  ypos 460
 }
-push $Nf72e950
+push $Nfa9f550
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -162,7 +162,7 @@ Write {
  xpos 1940
  ypos 460
 }
-push $Nf72e950
+push $Nfa9f550
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -208,7 +208,7 @@ Write {
  xpos 2160
  ypos 460
 }
-push $Nf72e950
+push $Nfa9f550
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -1109,7 +1109,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/huuper.png
+ file ./_input/huuper.png
  localizationPolicy off
  format "1920 1080 0 0 1920 1080 1 HD_1080"
  origset true
@@ -1158,7 +1158,7 @@ Reformat {
  xpos 2710
  ypos -490
 }
-set Nfd00c80 [stack 0]
+set Nffdeba0 [stack 0]
 Read {
  inputs 0
  file_type jpeg
@@ -1178,7 +1178,7 @@ Reformat {
  xpos 2600
  ypos -490
 }
-set Nfd79d80 [stack 0]
+set N10057ca0 [stack 0]
 Read {
  inputs 0
  file_type jpeg
@@ -1198,7 +1198,7 @@ Reformat {
  xpos 2490
  ypos -490
 }
-set Nfdf2dd0 [stack 0]
+set N100d0cf0 [stack 0]
 Read {
  inputs 0
  file_type jpeg
@@ -1218,11 +1218,11 @@ Reformat {
  xpos 2380
  ypos -490
 }
-set Nfe6be50 [stack 0]
-push $Nfd00c80
-push $Nfd79d80
-push $Nfdf2dd0
-push $Nfe6be50
+set N10149d70 [stack 0]
+push $Nffdeba0
+push $N10057ca0
+push $N100d0cf0
+push $N10149d70
 Read {
  inputs 0
  file_type jpeg
@@ -2809,7 +2809,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /Volumes/Active/_WEBSITE/assets/_input/vbb.png
+ file ./_input/vbb.png
  localizationPolicy off
  format "1990 1108 0 0 1990 1108 1 "
  origset true
@@ -2854,13 +2854,12 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /Volumes/Active/_WEBSITE/assets/_input/cl_trt.jpg
+ file ./_input/cl_trt.jpg
  localizationPolicy off
  format "1280 720 0 0 1280 720 1 HD_720"
  origset true
  name Read60
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
- selected true
  xpos 2820
  ypos -598
  postage_stamp false
@@ -2899,7 +2898,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /Volumes/Active/_WEBSITE/assets/_input/oneplus_9.jpg
+ file ./_input/oneplus_9.jpg
  localizationPolicy off
  format "1280 720 0 0 1280 720 1 HD_720"
  origset true
@@ -2932,7 +2931,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /Volumes/Active/_WEBSITE/assets/_input/zeller.png
+ file ./_input/zeller.png
  localizationPolicy off
  format "1280 718 0 0 1280 718 1 "
  origset true
@@ -2973,7 +2972,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /Volumes/Active/_WEBSITE/assets/_input/noah_fttdm.png
+ file ./_input/noah_fttdm.png
  localizationPolicy off
  format "1278 718 0 0 1278 718 1 "
  origset true
@@ -3015,7 +3014,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /Volumes/Active/_WEBSITE/assets/_input/noah_openroad.jpg
+ file ./_input/noah_openroad.jpg
  localizationPolicy off
  format "1280 720 0 0 1280 720 1 HD_720"
  origset true
@@ -3107,14 +3106,14 @@ Group {
   xpos 68
   ypos -58
  }
-set N1195ccf0 [stack 0]
+set N11c3ab60 [stack 0]
  Dot {
   name Dot5
   tile_color 0xcccccc00
   xpos -75
   ypos -58
  }
-set N11961d90 [stack 0]
+set N11c3fc00 [stack 0]
  Dot {
   name Dot6
   tile_color 0xcccccc00
@@ -3127,7 +3126,7 @@ set N11961d90 [stack 0]
   xpos -146
   ypos 679
  }
-push $N11961d90
+push $N11c3fc00
  Shuffle {
   alpha white
   name Shuffle1
@@ -3141,14 +3140,14 @@ push $N11961d90
   xpos -76
   ypos 557
  }
-push $N1195ccf0
+push $N11c3ab60
  Dot {
   name Dot2
   tile_color 0xcccccc00
   xpos 164
   ypos -58
  }
-set N11986f70 [stack 0]
+set N11c64de0 [stack 0]
  Noise {
   output {rgba.red -rgba.green -rgba.blue -rgba.alpha}
   cliptype none
@@ -3231,7 +3230,7 @@ set N11986f70 [stack 0]
   xpos 252
   ypos 295
  }
-push $N11986f70
+push $N11c64de0
  Grade {
   black {{parent.red_i} {parent.green_i} {parent.blue_i} {curve}}
   white {{parent.red_m} {parent.green_m} {parent.blue_m} {curve}}
@@ -3259,7 +3258,7 @@ push $N11986f70
   xpos 286
   ypos 557
  }
-push $N1195ccf0
+push $N11c3ab60
  Merge2 {
   inputs 2+1
   operation plus
@@ -3309,7 +3308,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /Volumes/Active/_WEBSITE/assets/_input/cadbury_darkmilk.png
+ file ./_input/cadbury_darkmilk.png
  localizationPolicy off
  format "1944 842 0 0 1944 842 1 "
  origset true
@@ -3349,7 +3348,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /Volumes/Active/_WEBSITE/assets/_input/tvc_sammyj.jpg
+ file ./_input/tvc_sammyj.jpg
  localizationPolicy off
  format "1280 720 0 0 1280 720 1 HD_720"
  origset true
@@ -3383,7 +3382,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /Volumes/Active/_WEBSITE/assets/_input/short_tsiarv.png
+ file ./_input/short_tsiarv.png
  localizationPolicy off
  format "1950 1106 0 0 1950 1106 1 "
  origset true
@@ -3425,7 +3424,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/planpartners.jpg
+ file ./_input/planpartners.jpg
  localizationPolicy off
  format "1920 1080 0 0 1920 1080 1 HD_1080"
  origset true
@@ -3445,7 +3444,7 @@ Reformat {
  ypos -202
 }
 Write {
- file /mnt/kabbalah/active/_WEBSITE/assets/_output/planpartners.jpeg
+ file ./_output/planpartners.jpeg
  file_type jpeg
  _jpeg_quality 1
  _jpeg_sub_sampling 4:4:4
@@ -3461,7 +3460,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/nrl.jpg
+ file ./_input/nrl.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -3504,7 +3503,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/OUA_explore.jpg
+ file ./_input/OUA_explore.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -3547,7 +3546,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/GTM_2014.jpg
+ file ./_input/GTM_2014.jpg
  localizationPolicy off
  format "640 262 0 0 640 262 1 "
  origset true
@@ -3582,7 +3581,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_BMW.jpg
+ file ./_input/2022_BMW.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -3617,7 +3616,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_OUA.jpg
+ file ./_input/2022_OUA.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -3660,7 +3659,7 @@ StickyNote {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2020_GMHBA.jpg
+ file ./_input/2020_GMHBA.jpg
  localizationPolicy off
  format "1280 720 0 0 1280 720 1 HD_720"
  origset true
@@ -3707,7 +3706,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_XSHOT.jpg
+ file ./_input/2022_XSHOT.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -3748,7 +3747,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_AMPOL.jpg
+ file ./_input/2022_AMPOL.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -3782,7 +3781,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_Xero.png
+ file ./_input/2022_Xero.png
  localizationPolicy off
  format "1998 1126 0 0 1998 1126 1 "
  origset true
@@ -3823,7 +3822,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_SCA.png
+ file ./_input/2022_SCA.png
  localizationPolicy off
  format "1931 1085 0 0 1931 1085 1 "
  origset true
@@ -3864,7 +3863,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_WW.png
+ file ./_input/2022_WW.png
  localizationPolicy off
  format "1931 1085 0 0 1931 1085 1 "
  origset true
@@ -3905,7 +3904,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_RUEL_YAY.jpg
+ file ./_input/2022_RUEL_YAY.jpg
  localizationPolicy off
  format "1280 720 0 0 1280 720 1 HD_720"
  origset true
@@ -3946,7 +3945,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_PERINO.jpg
+ file ./_input/2022_PERINO.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -3987,7 +3986,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_JAFA2.png
+ file ./_input/2022_JAFA2.png
  localizationPolicy off
  format "3840 2160 0 0 3840 2160 1 UHD_4K"
  origset true
@@ -4041,7 +4040,7 @@ Premult {
  xpos 8760
  ypos 782
 }
-set N12ad58f0 [stack 0]
+set N12db3500 [stack 0]
 FilterErode {
  size -10
  name FilterErode1
@@ -4056,7 +4055,7 @@ Blur {
  xpos 8870
  ypos 866
 }
-push $N12ad58f0
+push $N12db3500
 Dissolve {
  inputs 2
  which 0.67
@@ -4067,7 +4066,7 @@ Dissolve {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_JAFA.png
+ file ./_input/2022_JAFA.png
  localizationPolicy off
  format "3840 2160 0 0 3840 2160 1 UHD_4K"
  origset true
@@ -4121,7 +4120,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_YALE.jpg
+ file ./_input/2022_YALE.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -4155,7 +4154,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2020_WSTAR.png
+ file ./_input/2020_WSTAR.png
  localizationPolicy off
  format "3840 2160 0 0 3840 2160 1 UHD_4K"
  origset true
@@ -4196,7 +4195,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_QV.png
+ file ./_input/2022_QV.png
  localizationPolicy off
  format "3840 2160 0 0 3840 2160 1 UHD_4K"
  origset true
@@ -4461,14 +4460,14 @@ Group {
   xpos -1238
   ypos -298
  }
-set N12f3ca90 [stack 0]
+set N1321a520 [stack 0]
  Dot {
   name Dot29
   note_font Verdana
   xpos -1204
   ypos -109
  }
-set N12f41c10 [stack 0]
+set N1321f6a0 [stack 0]
  Dot {
   name Dot7
   xpos -1204
@@ -4480,15 +4479,15 @@ set N12f41c10 [stack 0]
   xpos -1204
   ypos 1564
  }
-set N12f4bce0 [stack 0]
-push $N12f41c10
+set N13229770 [stack 0]
+push $N1321f6a0
  Unpremult {
   name Unpremult2
   note_font Verdana
   xpos -1073
   ypos -108
  }
-push $N12f41c10
+push $N1321f6a0
  Switch {
   inputs 2
   which {{"\[value parent.already_premulted]" i}}
@@ -4503,41 +4502,41 @@ push $N12f41c10
   xpos -901
   ypos -52
  }
-set N12f61b60 [stack 0]
+set N1323f5f0 [stack 0]
  Dot {
   name Dot5
   xpos -562
   ypos -52
  }
-set N12f66d70 [stack 0]
+set N13244800 [stack 0]
  Dot {
   name Dot17
   note_font Verdana
   xpos 42
   ypos -52
  }
-set N12f6bd70 [stack 0]
+set N13249800 [stack 0]
  Dot {
   name Dot38
   note_font Verdana
   xpos 42
   ypos 122
  }
-set N12f70f30 [stack 0]
+set N1324e9c0 [stack 0]
  Dot {
   name Dot145
   note_font Verdana
   xpos -39
   ypos 122
  }
-set N12f76060 [stack 0]
+set N13253af0 [stack 0]
  Dot {
   name Dot138
   note_font Verdana
   xpos -92
   ypos 185
  }
-push $N12f76060
+push $N13253af0
  Dot {
   name Dot39
   note_font Verdana
@@ -4588,7 +4587,7 @@ push $N12f76060
   xpos -37
   ypos 659
  }
-push $N12f70f30
+push $N1324e9c0
  Dot {
   name Dot20
   note_font Verdana
@@ -4648,7 +4647,7 @@ push $N12f70f30
   xpos 7
   ypos 747
  }
-push $N12f6bd70
+push $N13249800
  Dot {
   name Dot71
   note_font Verdana
@@ -4661,8 +4660,8 @@ push $N12f6bd70
   xpos 1045
   ypos 100
  }
-set N13033ba0 [stack 0]
-push $N13033ba0
+set N13311630 [stack 0]
+push $N13311630
  Input {
   inputs 0
   name OMIT
@@ -4678,7 +4677,7 @@ push $N13033ba0
   xpos 1616
   ypos 50
  }
-set N1303ddb0 [stack 0]
+set N1331b840 [stack 0]
  Merge2 {
   inputs 2
   operation out
@@ -4771,7 +4770,7 @@ set N1303ddb0 [stack 0]
   xpos 41
   ypos 1122
  }
-set N130d4330 [stack 0]
+set N133b1dc0 [stack 0]
  Merge2 {
   inputs 2
   operation mask
@@ -4779,15 +4778,15 @@ set N130d4330 [stack 0]
   xpos -498
   ypos 1611
  }
-push $N12f4bce0
-push $N12f66d70
+push $N13229770
+push $N13244800
  Dot {
   name Dot6
   xpos -562
   ypos 162
  }
-set N130ea370 [stack 0]
-push $N130ea370
+set N133c7e00 [stack 0]
+push $N133c7e00
  Blur {
   size {{"\[value parent.sharpness]"}}
   name Blur1
@@ -4812,9 +4811,9 @@ push $N130ea370
   xpos -554
   ypos 1268
  }
-push $N130d4330
-push $N130d4330
-push $N1303ddb0
+push $N133b1dc0
+push $N133b1dc0
+push $N1331b840
  Dot {
   name Dot3
   note_font Verdana
@@ -4855,7 +4854,7 @@ push $N1303ddb0
   xpos -588
   ypos 1393
  }
-push $N12f61b60
+push $N1323f5f0
  Merge2 {
   inputs 2
   name Merge13
@@ -4870,14 +4869,14 @@ push $N12f61b60
   xpos -1238
   ypos 1725
  }
-set N131800c0 [stack 0]
+set N1345db50 [stack 0]
  Premult {
   name Premult10
   note_font Verdana
   xpos -1130
   ypos 1789
  }
-push $N131800c0
+push $N1345db50
  Switch {
   inputs 2
   which {{"\[value parent.output_premulted]" i}}
@@ -4891,7 +4890,7 @@ push $N131800c0
   xpos -1204
   ypos 1996
  }
-set N131a1c40 [stack 0]
+set N1347f6d0 [stack 0]
 add_layer {smearmask smearmask.a}
  ShuffleCopy {
   inputs 2
@@ -4903,7 +4902,7 @@ add_layer {smearmask smearmask.a}
   xpos -1140
   ypos 2066
  }
-push $N131a1c40
+push $N1347f6d0
  Switch {
   inputs 2
   which {{"\[value parent.outputmask]"}}
@@ -4912,7 +4911,7 @@ push $N131a1c40
   xpos -1238
   ypos 2141
  }
-set N131b7fa0 [stack 0]
+set N13495a30 [stack 0]
  Dot {
   name Dot19
   note_font Verdana
@@ -4925,13 +4924,13 @@ set N131b7fa0 [stack 0]
   xpos -1238
   ypos 2422
  }
-push $N131a1c40
+push $N1347f6d0
 push 0
 push 0
 push 0
 push 0
-push $N12f3ca90
-push $N131b7fa0
+push $N1321a520
+push $N13495a30
  Viewer {
   inputs 7
   frame 1059
@@ -4962,10 +4961,11 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2019_OPTUS.jpg
+ file ./_input/2019_OPTUS.jpg
  localizationPolicy off
  format "640 360 0 0 640 360 1 "
  origset true
+ version 1
  name Read88
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
@@ -5065,14 +5065,14 @@ Group {
   xpos 68
   ypos -58
  }
-set N133adf10 [stack 0]
+set N13686ab0 [stack 0]
  Dot {
   name Dot5
   tile_color 0xcccccc00
   xpos -75
   ypos -58
  }
-set N133b2fb0 [stack 0]
+set N1368bb50 [stack 0]
  Dot {
   name Dot6
   tile_color 0xcccccc00
@@ -5085,7 +5085,7 @@ set N133b2fb0 [stack 0]
   xpos -146
   ypos 679
  }
-push $N133b2fb0
+push $N1368bb50
  Shuffle {
   alpha white
   name Shuffle1
@@ -5099,14 +5099,14 @@ push $N133b2fb0
   xpos -76
   ypos 557
  }
-push $N133adf10
+push $N13686ab0
  Dot {
   name Dot2
   tile_color 0xcccccc00
   xpos 164
   ypos -58
  }
-set N133d7f00 [stack 0]
+set N136b0aa0 [stack 0]
  Noise {
   output {rgba.red -rgba.green -rgba.blue -rgba.alpha}
   cliptype none
@@ -5189,7 +5189,7 @@ set N133d7f00 [stack 0]
   xpos 252
   ypos 295
  }
-push $N133d7f00
+push $N136b0aa0
  Grade {
   black {{parent.red_i} {parent.green_i} {parent.blue_i} {curve}}
   white {{parent.red_m} {parent.green_m} {parent.blue_m} {curve}}
@@ -5217,7 +5217,7 @@ push $N133d7f00
   xpos 286
   ypos 557
  }
-push $N133adf10
+push $N13686ab0
  Merge2 {
   inputs 2+1
   operation plus
@@ -5268,7 +5268,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_LRP.png
+ file ./_input/2022_LRP.png
  localizationPolicy off
  format "979 557 0 0 979 557 1 "
  origset true
@@ -5310,7 +5310,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/listnr.jpg
+ file ./_input/listnr.jpg
  localizationPolicy off
  format "1920 1080 0 0 1920 1080 1 HD_1080"
  origset true
@@ -5330,7 +5330,7 @@ Reformat {
  ypos -202
 }
 Write {
- file /mnt/kabbalah/active/_WEBSITE/assets/_output/listnr.jpeg
+ file ./_output/listnr.jpeg
  file_type jpeg
  _jpeg_quality 1
  _jpeg_sub_sampling 4:4:4
@@ -5346,7 +5346,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_CVE.png
+ file ./_input/2022_CVE.png
  localizationPolicy off
  format "979 557 0 0 979 557 1 "
  origset true
@@ -5404,7 +5404,7 @@ StickyNote {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2021_MOM.png
+ file ./_input/2021_MOM.png
  localizationPolicy off
  format "979 557 0 0 979 557 1 "
  origset true
@@ -5447,7 +5447,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2021_POR1.png
+ file ./_input/2021_POR1.png
  localizationPolicy off
  format "979 557 0 0 979 557 1 "
  origset true
@@ -5490,7 +5490,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2020_POR1.png
+ file ./_input/2020_POR1.png
  localizationPolicy off
  format "979 557 0 0 979 557 1 "
  origset true
@@ -5533,7 +5533,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_KAHLUA.png
+ file ./_input/2022_KAHLUA.png
  localizationPolicy off
  format "979 557 0 0 979 557 1 "
  origset true
@@ -5567,7 +5567,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_NIKE.png
+ file ./_input/2022_NIKE.png
  localizationPolicy off
  format "1299 735 0 0 1299 735 1 "
  origset true
@@ -5609,49 +5609,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2022_DTA.png
- localizationPolicy off
- format "1299 735 0 0 1299 735 1 "
- origset true
- name Read96
- label "\[lindex \[file split \[value \[topnode].file]] end-2]"
- xpos 10630
- ypos 554
- postage_stamp false
-}
-Crop {
- box {167.6999969 8.680000305 1128.119995 729.2349854}
- reformat true
- crop false
- name Crop25
- xpos 10630
- ypos 686
-}
-Reformat {
- resize fill
- filter Lanczos4
- name Reformat96
- xpos 10630
- ypos 734
-}
-Write {
- file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
- file_type jpeg
- _jpeg_quality 1
- _jpeg_sub_sampling 4:4:4
- create_directories true
- checkHashOnRead false
- version 53
- in_colorspace scene_linear
- out_colorspace scene_linear
- name Write45
- xpos 10630
- ypos 776
-}
-Read {
- inputs 0
- file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2021_SLANT.png
+ file ./_input/2021_SLANT.png
  localizationPolicy off
  format "979 557 0 0 979 557 1 "
  origset true
@@ -5705,7 +5663,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2021_SWEAT.jpg
+ file ./_input/2021_SWEAT.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -5748,7 +5706,7 @@ StickyNote {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2023_BWS.jpg
+ file ./_input/2023_BWS.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -5783,7 +5741,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2023_NBN.jpg
+ file ./_input/2023_NBN.jpg
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -5819,7 +5777,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2023_Deadloch.jpg
+ file ./_input/2023_Deadloch.jpg
  localizationPolicy off
  format "1066 600 0 0 1066 600 1 "
  origset true
@@ -5854,7 +5812,7 @@ Write {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2023_NorthShore.jpg
+ file ./_input/2023_NorthShore.jpg
  localizationPolicy off
  format "1066 600 0 0 1066 600 1 "
  origset true
@@ -6753,7 +6711,7 @@ RotoPaint {
 Read {
  inputs 0
  file_type jpeg
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2023_StrangeBeasts.jpg
+ file ./_input/2023_StrangeBeasts.jpg
  localizationPolicy off
  format "2048 2048 0 0 2048 2048 1 square_2K"
  origset true
@@ -6783,7 +6741,7 @@ Dot {
  xpos 7804
  ypos 1602
 }
-set N1459ea10 [stack 0]
+set N14877090 [stack 0]
 Dot {
  name Dot1
  xpos 7694
@@ -7012,7 +6970,7 @@ Dot {
  xpos 7694
  ypos 1746
 }
-set N14630f40 [stack 0]
+set N149095c0 [stack 0]
 Erode {
  size 0
  name Erode1
@@ -7059,14 +7017,14 @@ Group {
   xpos 301
   ypos -414
  }
-set N146db140 [stack 0]
+set N149b37a0 [stack 0]
  Dot {
   name Dot13
   xpos 301
   ypos -138
  }
-set N146e0080 [stack 0]
-push $N146db140
+set N149b86e0 [stack 0]
+push $N149b37a0
  Dot {
   name Dot1
   xpos 555
@@ -7079,7 +7037,7 @@ push $N146db140
   ypos -387
   disable {{parent.factor>0}}
  }
-set N146ea1b0 [stack 0]
+set N149c2810 [stack 0]
  Dot {
   name Dot28
   xpos 741
@@ -7090,43 +7048,43 @@ set N146ea1b0 [stack 0]
   xpos 741
   ypos -360
  }
-set N146fb3e0 [stack 0]
+set N149d3a40 [stack 0]
  Dot {
   name Dot27
   xpos 741
   ypos -336
  }
-set N14700470 [stack 0]
+set N149d8ad0 [stack 0]
  Dot {
   name Dot30
   xpos 741
   ypos -312
  }
-set N14705500 [stack 0]
+set N149ddb60 [stack 0]
  Dot {
   name Dot31
   xpos 741
   ypos -288
  }
-set N1470a590 [stack 0]
+set N149e2bf0 [stack 0]
  Dot {
   name Dot32
   xpos 741
   ypos -264
  }
-set N1470f660 [stack 0]
+set N149e7cc0 [stack 0]
  Dot {
   name Dot33
   xpos 741
   ypos -240
  }
-set N147146f0 [stack 0]
+set N149ecd50 [stack 0]
  Dot {
   name Dot34
   xpos 741
   ypos -216
  }
-set N14719780 [stack 0]
+set N149f1de0 [stack 0]
  Dot {
   name Dot35
   xpos 741
@@ -7139,7 +7097,7 @@ set N14719780 [stack 0]
   xpos 631
   ypos -195
  }
-push $N14719780
+push $N149f1de0
  Blur {
   channels rgba
   size 64
@@ -7147,7 +7105,7 @@ push $N14719780
   xpos 631
   ypos -219
  }
-push $N147146f0
+push $N149ecd50
  Blur {
   channels rgba
   size 32
@@ -7155,7 +7113,7 @@ push $N147146f0
   xpos 631
   ypos -243
  }
-push $N1470f660
+push $N149e7cc0
  Blur {
   channels rgba
   size 16
@@ -7163,7 +7121,7 @@ push $N1470f660
   xpos 631
   ypos -267
  }
-push $N1470a590
+push $N149e2bf0
  Blur {
   channels rgba
   size 8
@@ -7171,7 +7129,7 @@ push $N1470a590
   xpos 631
   ypos -291
  }
-push $N14705500
+push $N149ddb60
  Blur {
   channels rgba
   size 4
@@ -7179,7 +7137,7 @@ push $N14705500
   xpos 631
   ypos -315
  }
-push $N14700470
+push $N149d8ad0
  Blur {
   channels rgba
   size 2
@@ -7187,7 +7145,7 @@ push $N14700470
   xpos 631
   ypos -339
  }
-push $N146fb3e0
+push $N149d3a40
  Blur {
   channels rgba
   size 1
@@ -7195,7 +7153,7 @@ push $N146fb3e0
   xpos 631
   ypos -363
  }
-push $N146ea1b0
+push $N149c2810
  Merge2 {
   inputs 2
   operation under
@@ -7203,7 +7161,7 @@ push $N146ea1b0
   xpos 521
   ypos -363
  }
-set N147931d0 [stack 0]
+set N14a6b830 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7211,7 +7169,7 @@ set N147931d0 [stack 0]
   xpos 521
   ypos -339
  }
-set N147a3be0 [stack 0]
+set N14a7c240 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7219,7 +7177,7 @@ set N147a3be0 [stack 0]
   xpos 521
   ypos -315
  }
-set N147b48e0 [stack 0]
+set N14a8cf40 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7227,7 +7185,7 @@ set N147b48e0 [stack 0]
   xpos 521
   ypos -291
  }
-set N147c55e0 [stack 0]
+set N14a9dc40 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7235,7 +7193,7 @@ set N147c55e0 [stack 0]
   xpos 521
   ypos -267
  }
-set N147d62e0 [stack 0]
+set N14aae940 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7243,7 +7201,7 @@ set N147d62e0 [stack 0]
   xpos 521
   ypos -243
  }
-set N147e6fe0 [stack 0]
+set N14abf640 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7251,7 +7209,7 @@ set N147e6fe0 [stack 0]
   xpos 521
   ypos -219
  }
-set N147f7ce0 [stack 0]
+set N14ad0340 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7264,50 +7222,50 @@ set N147f7ce0 [stack 0]
   xpos 487
   ypos -192
  }
-push $N147f7ce0
+push $N14ad0340
  Dot {
   name Dot10
   xpos 485
   ypos -216
  }
-push $N147e6fe0
+push $N14abf640
  Dot {
   name Dot9
   xpos 476
   ypos -240
  }
-push $N147d62e0
+push $N14aae940
  Dot {
   name Dot8
   xpos 469
   ypos -264
  }
-push $N147c55e0
+push $N14a9dc40
  Dot {
   name Dot7
   xpos 463
   ypos -288
  }
-push $N147b48e0
+push $N14a8cf40
  Dot {
   name Dot6
   xpos 454
   ypos -312
  }
-push $N147a3be0
+push $N14a7c240
  Dot {
   name Dot5
   xpos 440
   ypos -336
  }
 push 0
-push $N147931d0
+push $N14a6b830
  Dot {
   name Dot4
   xpos 427
   ypos -360
  }
-push $N146ea1b0
+push $N149c2810
  Dot {
   name Dot3
   xpos 411
@@ -7339,7 +7297,7 @@ push $N146ea1b0
   xpos 411
   ypos -89
  }
-push $N146e0080
+push $N149b86e0
  Copy {
   inputs 2
   channels rgba
@@ -7364,7 +7322,7 @@ Blur {
  xpos 7440
  ypos 1814
 }
-push $N14630f40
+push $N149095c0
 STMap {
  inputs 2
  channels rgba
@@ -7374,7 +7332,7 @@ STMap {
  xpos 7550
  ypos 1814
 }
-push $N14630f40
+push $N149095c0
 Keymix {
  inputs 2
  invertMask true
@@ -7395,7 +7353,7 @@ Dot {
  xpos 7694
  ypos 2034
 }
-set N148bf3a0 [stack 0]
+set N14b97a00 [stack 0]
 Erode {
  size 0
  name Erode2
@@ -7442,14 +7400,14 @@ Group {
   xpos 301
   ypos -414
  }
-set N148ff710 [stack 0]
+set N14bd7d70 [stack 0]
  Dot {
   name Dot13
   xpos 301
   ypos -138
  }
-set N14904650 [stack 0]
-push $N148ff710
+set N14bdccb0 [stack 0]
+push $N14bd7d70
  Dot {
   name Dot1
   xpos 555
@@ -7462,7 +7420,7 @@ push $N148ff710
   ypos -387
   disable {{parent.factor>0}}
  }
-set N1490e780 [stack 0]
+set N14be6de0 [stack 0]
  Dot {
   name Dot28
   xpos 741
@@ -7473,43 +7431,43 @@ set N1490e780 [stack 0]
   xpos 741
   ypos -360
  }
-set N1491f9b0 [stack 0]
+set N14bf8010 [stack 0]
  Dot {
   name Dot27
   xpos 741
   ypos -336
  }
-set N14924a40 [stack 0]
+set N14bfd0a0 [stack 0]
  Dot {
   name Dot30
   xpos 741
   ypos -312
  }
-set N14929ad0 [stack 0]
+set N14c02130 [stack 0]
  Dot {
   name Dot31
   xpos 741
   ypos -288
  }
-set N1492eb60 [stack 0]
+set N14c071c0 [stack 0]
  Dot {
   name Dot32
   xpos 741
   ypos -264
  }
-set N14933c30 [stack 0]
+set N14c0c290 [stack 0]
  Dot {
   name Dot33
   xpos 741
   ypos -240
  }
-set N14938cc0 [stack 0]
+set N14c11320 [stack 0]
  Dot {
   name Dot34
   xpos 741
   ypos -216
  }
-set N1493dd50 [stack 0]
+set N14c163b0 [stack 0]
  Dot {
   name Dot35
   xpos 741
@@ -7522,7 +7480,7 @@ set N1493dd50 [stack 0]
   xpos 631
   ypos -195
  }
-push $N1493dd50
+push $N14c163b0
  Blur {
   channels rgba
   size 64
@@ -7530,7 +7488,7 @@ push $N1493dd50
   xpos 631
   ypos -219
  }
-push $N14938cc0
+push $N14c11320
  Blur {
   channels rgba
   size 32
@@ -7538,7 +7496,7 @@ push $N14938cc0
   xpos 631
   ypos -243
  }
-push $N14933c30
+push $N14c0c290
  Blur {
   channels rgba
   size 16
@@ -7546,7 +7504,7 @@ push $N14933c30
   xpos 631
   ypos -267
  }
-push $N1492eb60
+push $N14c071c0
  Blur {
   channels rgba
   size 8
@@ -7554,7 +7512,7 @@ push $N1492eb60
   xpos 631
   ypos -291
  }
-push $N14929ad0
+push $N14c02130
  Blur {
   channels rgba
   size 4
@@ -7562,7 +7520,7 @@ push $N14929ad0
   xpos 631
   ypos -315
  }
-push $N14924a40
+push $N14bfd0a0
  Blur {
   channels rgba
   size 2
@@ -7570,7 +7528,7 @@ push $N14924a40
   xpos 631
   ypos -339
  }
-push $N1491f9b0
+push $N14bf8010
  Blur {
   channels rgba
   size 1
@@ -7578,7 +7536,7 @@ push $N1491f9b0
   xpos 631
   ypos -363
  }
-push $N1490e780
+push $N14be6de0
  Merge2 {
   inputs 2
   operation under
@@ -7586,7 +7544,7 @@ push $N1490e780
   xpos 521
   ypos -363
  }
-set N149b7ad0 [stack 0]
+set N14c90130 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7594,7 +7552,7 @@ set N149b7ad0 [stack 0]
   xpos 521
   ypos -339
  }
-set N149c8790 [stack 0]
+set N14ca0df0 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7602,7 +7560,7 @@ set N149c8790 [stack 0]
   xpos 521
   ypos -315
  }
-set N149d9490 [stack 0]
+set N14cb1af0 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7610,7 +7568,7 @@ set N149d9490 [stack 0]
   xpos 521
   ypos -291
  }
-set N149ea190 [stack 0]
+set N14cc27f0 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7618,7 +7576,7 @@ set N149ea190 [stack 0]
   xpos 521
   ypos -267
  }
-set N149fae90 [stack 0]
+set N14cd34f0 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7626,7 +7584,7 @@ set N149fae90 [stack 0]
   xpos 521
   ypos -243
  }
-set N14a0bb90 [stack 0]
+set N14ce41f0 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7634,7 +7592,7 @@ set N14a0bb90 [stack 0]
   xpos 521
   ypos -219
  }
-set N14a1c890 [stack 0]
+set N14cf4ef0 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7647,50 +7605,50 @@ set N14a1c890 [stack 0]
   xpos 487
   ypos -192
  }
-push $N14a1c890
+push $N14cf4ef0
  Dot {
   name Dot10
   xpos 485
   ypos -216
  }
-push $N14a0bb90
+push $N14ce41f0
  Dot {
   name Dot9
   xpos 476
   ypos -240
  }
-push $N149fae90
+push $N14cd34f0
  Dot {
   name Dot8
   xpos 469
   ypos -264
  }
-push $N149ea190
+push $N14cc27f0
  Dot {
   name Dot7
   xpos 463
   ypos -288
  }
-push $N149d9490
+push $N14cb1af0
  Dot {
   name Dot6
   xpos 454
   ypos -312
  }
-push $N149c8790
+push $N14ca0df0
  Dot {
   name Dot5
   xpos 440
   ypos -336
  }
 push 0
-push $N149b7ad0
+push $N14c90130
  Dot {
   name Dot4
   xpos 427
   ypos -360
  }
-push $N1490e780
+push $N14be6de0
  Dot {
   name Dot3
   xpos 411
@@ -7722,7 +7680,7 @@ push $N1490e780
   xpos 411
   ypos -89
  }
-push $N14904650
+push $N14bdccb0
  Copy {
   inputs 2
   channels rgba
@@ -7748,7 +7706,7 @@ Blur {
  xpos 7440
  ypos 2102
 }
-push $N148bf3a0
+push $N14b97a00
 STMap {
  inputs 2
  channels rgba
@@ -7758,7 +7716,7 @@ STMap {
  xpos 7550
  ypos 2102
 }
-push $N148bf3a0
+push $N14b97a00
 Keymix {
  inputs 2
  invertMask true
@@ -7784,7 +7742,7 @@ Dot {
  xpos 7694
  ypos 2466
 }
-push $N1459ea10
+push $N14877090
 Merge2 {
  inputs 2+1
  invert_mask true
@@ -7881,14 +7839,14 @@ Group {
   xpos 68
   ypos -58
  }
-set N15bad9d0 [stack 0]
+set N15e86030 [stack 0]
  Dot {
   name Dot5
   tile_color 0xcccccc00
   xpos -75
   ypos -58
  }
-set N15bb2a70 [stack 0]
+set N15e8b0d0 [stack 0]
  Dot {
   name Dot6
   tile_color 0xcccccc00
@@ -7901,7 +7859,7 @@ set N15bb2a70 [stack 0]
   xpos -146
   ypos 679
  }
-push $N15bb2a70
+push $N15e8b0d0
  Shuffle {
   alpha white
   name Shuffle1
@@ -7915,14 +7873,14 @@ push $N15bb2a70
   xpos -76
   ypos 557
  }
-push $N15bad9d0
+push $N15e86030
  Dot {
   name Dot2
   tile_color 0xcccccc00
   xpos 164
   ypos -58
  }
-set N15c07570 [stack 0]
+set N15edfbd0 [stack 0]
  Noise {
   output {rgba.red -rgba.green -rgba.blue -rgba.alpha}
   cliptype none
@@ -8005,7 +7963,7 @@ set N15c07570 [stack 0]
   xpos 252
   ypos 295
  }
-push $N15c07570
+push $N15edfbd0
  Grade {
   black {{parent.red_i} {parent.green_i} {parent.blue_i} {curve}}
   white {{parent.red_m} {parent.green_m} {parent.blue_m} {curve}}
@@ -8033,7 +7991,7 @@ push $N15c07570
   xpos 286
   ypos 557
  }
-push $N15bad9d0
+push $N15e86030
  Merge2 {
   inputs 2+1
   operation plus
@@ -8067,6 +8025,8 @@ Write {
  create_directories true
  checkHashOnRead false
  version 49
+ in_colorspace scene_linear
+ out_colorspace scene_linear
  name Write53
  xpos 7770
  ypos 2888
@@ -8074,7 +8034,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2023_BOF.png
+ file ./_input/2023_BOF.png
  localizationPolicy off
  format "640 480 0 0 640 480 1 PC_Video"
  origset true
@@ -8100,6 +8060,8 @@ Write {
  create_directories true
  checkHashOnRead false
  version 43
+ in_colorspace scene_linear
+ out_colorspace scene_linear
  name Write52
  xpos 8100
  ypos 1592
@@ -8107,7 +8069,7 @@ Write {
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2019_PSO.png
+ file ./_input/2019_PSO.png
  localizationPolicy off
  format "640 360 0 0 640 360 1 "
  origset true
@@ -8142,6 +8104,8 @@ Write {
  create_directories true
  checkHashOnRead false
  version 44
+ in_colorspace scene_linear
+ out_colorspace scene_linear
  name Write54
  xpos 6890
  ypos -784
@@ -8162,10 +8126,18 @@ StickyNote {
  xpos 6549
  ypos -1609
 }
+StickyNote {
+ inputs 0
+ name StickyNote7
+ label 2014
+ note_font_size 40
+ xpos 6549
+ ypos -2281
+}
 Read {
  inputs 0
  file_type png
- file /mnt/kabbalah/active/_WEBSITE/assets/_input/2018_WORLDVISION.png
+ file ./_input/2018_WORLDVISION.png
  localizationPolicy off
  format "3840 2160 0 0 3840 2160 1 UHD_4K"
  origset true
@@ -8190,20 +8162,6 @@ Reformat {
  xpos 6560
  ypos -1330
 }
-set N1b71a760 [stack 0]
-Viewer {
- frame 1
- frame_range 1-1
- fps 25
- colour_sample_bbox {-0.1334166639 -0.0719999969 -0.06258333102 0.1280000061}
- samplepoints {{-0.1541666687 0.137500003}
-   }
- monitorOutOutputTransform rec709
- name Viewer1
- xpos 3700
- ypos -394
-}
-push $N1b71a760
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
  file_type jpeg
@@ -8212,7 +8170,112 @@ Write {
  create_directories true
  checkHashOnRead false
  version 45
+ in_colorspace scene_linear
+ out_colorspace scene_linear
  name Write55
  xpos 6560
  ypos -1288
+}
+Constant {
+ inputs 0
+ channels rgb
+ color {0.06051635742 0.0198059082 0.02801513672 0}
+ name Constant2
+ xpos 6670
+ ypos -2121
+}
+Constant {
+ inputs 0
+ channels rgb
+ color {0.01599121094 0.05285644531 0.08648681641 0}
+ name Constant3
+ xpos 6670
+ ypos -2025
+}
+Read {
+ inputs 0
+ file_type jpeg
+ file ./_input/2014_DP_REAPER.jpg
+ localizationPolicy off
+ format "640 480 0 0 640 480 1 PC_Video"
+ origset true
+ version 2
+ name Read107
+ label "\[lindex \[file split \[value \[topnode].file]] end-2]"
+ xpos 6560
+ ypos -2206
+ postage_stamp false
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ name Reformat107
+ xpos 6560
+ ypos -2098
+}
+Write {
+ file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
+ file_type jpeg
+ _jpeg_quality 1
+ _jpeg_sub_sampling 4:4:4
+ create_directories true
+ checkHashOnRead false
+ version 46
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ name Write56
+ xpos 6560
+ ypos -2008
+}
+Read {
+ inputs 0
+ file_type png
+ file ./_input/2022_DTL.png
+ localizationPolicy off
+ format "1299 735 0 0 1299 735 1 "
+ origset true
+ name Read96
+ label "\[lindex \[file split \[value \[topnode].file]] end-2]"
+ xpos 10630
+ ypos 554
+ postage_stamp false
+}
+Crop {
+ box {167.6999969 8.680000305 1128.119995 729.2349854}
+ reformat true
+ crop false
+ name Crop25
+ xpos 10630
+ ypos 686
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ name Reformat96
+ xpos 10630
+ ypos 734
+}
+Write {
+ file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
+ file_type jpeg
+ _jpeg_quality 1
+ _jpeg_sub_sampling 4:4:4
+ create_directories true
+ checkHashOnRead false
+ version 53
+ name Write45
+ xpos 10630
+ ypos 776
+}
+Viewer {
+ frame 1
+ frame_range 1-1
+ fps 25
+ colour_sample_bbox {0.8374999762 -0.1083333343 0.8416666389 -0.1041666642}
+ samplepoints {{-0.1541666687 0.137500003}
+   }
+ monitorOutOutputTransform rec709
+ name Viewer1
+ xpos 3700
+ ypos -394
 }
