@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="VFX, Visual Effects, Melbourne, Composite, Stop Motion, Live Action, Nuke, Houdini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dave Abbott</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon-32x32.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4b3e38">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/lity.css">
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/lazysizes.min.js" defer></script>
+    <script src="./js/lity.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Showreel -->
+        <div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="lazyload" src="img/lazyload-ph.png" data-src="https://player.vimeo.com/video/154007587?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- Filters -->
+        <div id="filter" class="filter">
+            <p>Filter by:
+                <input type="checkbox" id="tvcCheckbox" value="tvc" checked>
+                <label for="tvcCheckbox">Commercials</label>
+                <input type="checkbox" id="musicCheckbox" value="music" checked>
+                <label for="musicCheckbox">Music Videos</label>
+                <input type="checkbox" id="longCheckbox" value="long" checked>
+                <label for="longCheckbox">Long Form</label>
+                <input type="checkbox" id="shortCheckbox" value="short" checked>
+                <label for="shortCheckbox">Short Form</label>
+                <button id="showAllButton">Show All</button>
+            </p>
+        </div>
+        <!-- Portfolio -->
+        <div id="grid">
+            <div id="work" class="cards"></div>
+        </div>
+        <!-- Counter -->
+        <div id="counter" class="counter">
+            <p>Count: <span id="displayedCount">0</span></p>
+        </div>
+    </div>
+    <script>
+fetch('./work.json')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data.filter(function(x){return x.visible === true; }));
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+    });
+
+function appendData(data) {
+    var mainContainer = document.getElementById("work");
+    var filterCheckboxes = document.querySelectorAll("#filter input[type='checkbox']");
+    var showAllButton = document.getElementById("showAllButton");
+    var displayedCountSpan = document.getElementById("displayedCount");
+
+    function filterData() {
+        var selectedTypes = Array.from(filterCheckboxes)
+            .filter(function(checkbox) {
+                return checkbox.checked;
+            })
+            .map(function(checkbox) {
+                return checkbox.value;
+            });
+
+        // sort data by date then featured
+        data.sort(function(a, b){ return b.id - a.id; });
+        data.sort(function(a, b){ return b.featured - a.featured; });
+
+        var filteredData = data.filter(function(item) {
+            return selectedTypes.includes(item.type);
+        });
+
+        renderData(filteredData);
+        displayedCountSpan.textContent = filteredData.length;
+    }
+
+    function renderData(data) {
+        mainContainer.innerHTML = "";
+
+        data.forEach(function(item) {
+            var divCard = document.createElement('div');
+            var divThumb = document.createElement('div');
+            var divInfo = document.createElement('div');
+            var vClient = item.client ? item.client + ": " : "";
+            var vProject = item.project || "";
+            var vRole = item.role || "";
+            var vAwards = item.awards ? "Awards: <br>" + item.awards : "";
+            var vNoms = item.nominated ? "Nominations: <br>" + item.nominated : "";
+
+            var divInfoTitle = "<p class='thumb-title'>" + vClient + vProject + "</p>";
+            var divInfoRole = "<p class='thumb-role'>" + vRole + "</p>";
+            var divInfoAwards = "<p class='thumb-awards'>" + vAwards + "</p>";
+            var divInfoNominations = "<p class='thumb-awards'>" + vNoms + "</p>";
+            divInfo.innerHTML = divInfoTitle + divInfoRole + divInfoAwards + divInfoNominations;
+
+            var divThumbHTML = "<a href='" + item.video + "' data-lity=''> <img src='" + item.thumb + "' class='lazyload'" + "style='max-width: 100%'" + "/></a>"
+            divThumb.innerHTML = divThumbHTML;
+
+            divCard.appendChild(divThumb);
+            divCard.appendChild(divInfo);
+            divCard.setAttribute('class', 'card');
+            mainContainer.appendChild(divCard);
+        });
+    }
+
+    filterCheckboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', filterData);
+    });
+
+            function showAll() {
+                filterCheckboxes.forEach(function(checkbox) {
+                    checkbox.checked = true;
+                });
+                filterData();
+                showAllButton.textContent = "Hide All";
+                showAllButton.removeEventListener('click', showAll);
+                showAllButton.addEventListener('click', hideAll);
+            }
+
+            function hideAll() {
+                filterCheckboxes.forEach(function(checkbox) {
+                    checkbox.checked = false;
+                });
+                filterData();
+                showAllButton.textContent = "Show All";
+                showAllButton.removeEventListener('click', hideAll);
+                showAllButton.addEventListener('click', showAll);
+            }
+
+            showAll(); // Set the default state to "Hide All"
+        }
+
+    </script>
+</body>
+</html>
