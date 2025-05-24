@@ -1,28 +1,28 @@
-#! /mnt/DATUMS/opt/Nuke/Nuke14.0v5/libnuke-14.0.5.so -nx
-version 14.0 v5
+#! /Applications/Nuke14.0v6/Nuke14.0v6.app/Contents/MacOS/libnuke-14.0.6.dylib -nx
+version 14.0 v6
 define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 <layout version="1.0">
-    <window x="0" y="21" w="2560" h="1373" maximized="1" screen="0">
+    <window x="69" y="25" w="1851" h="1147" maximized="1" screen="0">
         <splitter orientation="1">
             <split size="40"/>
             <dock id="" hideTitles="1" activePageId="Toolbar.1">
                 <page id="Toolbar.1"/>
             </dock>
-            <split size="1897" stretch="1"/>
+            <split size="1188" stretch="1"/>
             <splitter orientation="2">
-                <split size="781"/>
+                <split size="662"/>
                 <dock id="" activePageId="Viewer.1">
                     <page id="Viewer.1"/>
                 </dock>
-                <split size="549"/>
-                <dock id="" activePageId="DAG.1" focus="true">
+                <split size="465"/>
+                <dock id="" activePageId="DAG.1">
                     <page id="DAG.1"/>
                     <page id="Curve Editor.1"/>
                     <page id="DopeSheet.1"/>
                 </dock>
             </splitter>
             <split size="615"/>
-            <dock id="" activePageId="Properties.1">
+            <dock id="" activePageId="Properties.1" focus="true">
                 <page id="Properties.1"/>
                 <page id="uk.co.thefoundry.backgroundrenderview.1"/>
                 <page id="Scenegraph.1"/>
@@ -33,7 +33,7 @@ define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
 }
 Root {
  inputs 0
- name /mnt/kabbalah/repos/github/website/assets/images.nk
+ name /Volumes/Repositories/github/website/assets/images.nk
  project_directory "\[python \{nuke.script_directory()\}]"
  last_frame 1
  lock_range true
@@ -68,9 +68,9 @@ Reformat {
  box_fixed true
  name Reformat23
  xpos 2050
- ypos 230
+ ypos 231
 }
-set Nfa9f550 [stack 0]
+set Ndd8f3800 [stack 0]
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -101,7 +101,7 @@ Text2 {
  color {0 0 0 1}
  name Text2
  xpos 2050
- ypos 374
+ ypos 375
 }
 Write {
  channels rgba
@@ -114,9 +114,9 @@ Write {
  out_colorspace scene_linear
  name Write24
  xpos 2050
- ypos 460
+ ypos 462
 }
-push $Nfa9f550
+push $Ndd8f3800
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -147,7 +147,7 @@ Text2 {
  color {0 0 0 1}
  name Text1
  xpos 1940
- ypos 374
+ ypos 375
 }
 Write {
  channels rgba
@@ -160,9 +160,9 @@ Write {
  out_colorspace scene_linear
  name Write23
  xpos 1940
- ypos 460
+ ypos 462
 }
-push $Nfa9f550
+push $Ndd8f3800
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -193,7 +193,7 @@ Text2 {
  color {0 0 0 1}
  name Text3
  xpos 2160
- ypos 374
+ ypos 375
 }
 Write {
  channels rgba
@@ -206,9 +206,9 @@ Write {
  out_colorspace scene_linear
  name Write25
  xpos 2160
- ypos 460
+ ypos 462
 }
-push $Nfa9f550
+push $Ndd8f3800
 Text2 {
  font_size_toolbar 48
  font_width_toolbar 100
@@ -239,7 +239,7 @@ Text2 {
  color {0 0 0 1}
  name Text4
  xpos 2270
- ypos 374
+ ypos 375
 }
 Write {
  channels rgba
@@ -252,7 +252,7 @@ Write {
  out_colorspace scene_linear
  name Write28
  xpos 2270
- ypos 460
+ ypos 462
 }
 Read {
  inputs 0
@@ -264,7 +264,7 @@ Read {
  out_colorspace scene_linear
  name Read25
  xpos 2490
- ypos 152
+ ypos 155
  postage_stamp false
 }
 Read {
@@ -277,14 +277,14 @@ Read {
  name Read53
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2050
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat53
  xpos 2050
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -296,14 +296,14 @@ Read {
  name Read42
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1940
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat41
  xpos 1940
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -315,14 +315,14 @@ Read {
  name Read52
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1830
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat42
  xpos 1830
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -334,14 +334,14 @@ Read {
  name Read51
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1720
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat43
  xpos 1720
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -353,14 +353,14 @@ Read {
  name Read50
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1610
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat44
  xpos 1610
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -372,7 +372,7 @@ Read {
  name Read49
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1500
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
@@ -380,7 +380,7 @@ Reformat {
  black_outside true
  name Reformat45
  xpos 1500
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -392,14 +392,14 @@ Read {
  name Read48
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1390
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat46
  xpos 1390
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -411,21 +411,21 @@ Read {
  name Read47
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1280
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Crop {
  box {0 52 1821 1024}
  name Crop1
  xpos 1280
- ypos -538
+ ypos -537
 }
 Reformat {
  filter Lanczos4
  black_outside true
  name Reformat47
  xpos 1280
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -437,7 +437,7 @@ Read {
  name Read46
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1170
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Crop {
@@ -445,13 +445,13 @@ Crop {
  crop false
  name Crop2
  xpos 1170
- ypos -538
+ ypos -537
 }
 Reformat {
  filter Lanczos4
  name Reformat48
  xpos 1170
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -463,14 +463,14 @@ Read {
  name Read11
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 730
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat52
  xpos 730
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -482,14 +482,14 @@ Read {
  name Read43
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 840
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat51
  xpos 840
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -501,7 +501,7 @@ Read {
  name Read44
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 950
- ypos -598
+ ypos -594
  postage_stamp false
 }
 RotoPaint {
@@ -1057,13 +1057,13 @@ RotoPaint {
  source_black_outside true
  name RotoPaint2
  xpos 950
- ypos -538
+ ypos -537
 }
 Reformat {
  filter Lanczos4
  name Reformat50
  xpos 950
- ypos -490
+ ypos -489
 }
 Read {
  inputs 0
@@ -1075,14 +1075,14 @@ Read {
  name Read45
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1060
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat49
  xpos 1060
- ypos -490
+ ypos -489
 }
 AppendClip {
  inputs 13
@@ -1090,7 +1090,7 @@ AppendClip {
  time ""
  name AppendClip2
  xpos 1280
- ypos -274
+ ypos -273
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -1104,7 +1104,7 @@ Write {
  out_colorspace scene_linear
  name Write2
  xpos 1280
- ypos -184
+ ypos -181
 }
 Read {
  inputs 0
@@ -1116,14 +1116,14 @@ Read {
  name Read59
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3370
- ypos 2
+ ypos 6
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat59
  xpos 3370
- ypos 62
+ ypos 63
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -1137,7 +1137,7 @@ Write {
  out_colorspace scene_linear
  name Write3
  xpos 3370
- ypos 104
+ ypos 107
 }
 Read {
  inputs 0
@@ -1149,16 +1149,16 @@ Read {
  name Read58
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2710
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat58
  xpos 2710
- ypos -490
+ ypos -489
 }
-set Nffdeba0 [stack 0]
+set Nddd6b000 [stack 0]
 Read {
  inputs 0
  file_type jpeg
@@ -1169,16 +1169,16 @@ Read {
  name Read57
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2600
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat57
  xpos 2600
- ypos -490
+ ypos -489
 }
-set N10057ca0 [stack 0]
+set Nddd97a00 [stack 0]
 Read {
  inputs 0
  file_type jpeg
@@ -1189,16 +1189,16 @@ Read {
  name Read56
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2490
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat56
  xpos 2490
- ypos -490
+ ypos -489
 }
-set N100d0cf0 [stack 0]
+set Nddd87800 [stack 0]
 Read {
  inputs 0
  file_type jpeg
@@ -1209,20 +1209,20 @@ Read {
  name Read55
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2380
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat55
  xpos 2380
- ypos -490
+ ypos -489
 }
-set N10149d70 [stack 0]
-push $Nffdeba0
-push $N10057ca0
-push $N100d0cf0
-push $N10149d70
+set Nddda5400 [stack 0]
+push $Nddd6b000
+push $Nddd97a00
+push $Nddd87800
+push $Nddda5400
 Read {
  inputs 0
  file_type jpeg
@@ -1233,14 +1233,14 @@ Read {
  name Read54
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2270
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat54
  xpos 2270
- ypos -490
+ ypos -489
 }
 AppendClip {
  inputs 9
@@ -1248,7 +1248,7 @@ AppendClip {
  time ""
  name AppendClip3
  xpos 2490
- ypos -394
+ ypos -393
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -1262,7 +1262,7 @@ Write {
  out_colorspace scene_linear
  name Write4
  xpos 2490
- ypos -304
+ ypos -301
 }
 Read {
  inputs 0
@@ -1274,14 +1274,14 @@ Read {
  name Read12
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1610
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat12
  xpos 1610
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1293,14 +1293,14 @@ Read {
  name Read13
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1720
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat13
  xpos 1720
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1312,14 +1312,14 @@ Read {
  name Read14
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1830
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat14
  xpos 1830
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1331,14 +1331,14 @@ Read {
  name Read15
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1940
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat15
  xpos 1940
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1350,14 +1350,14 @@ Read {
  name Read33
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3810
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat32
  xpos 3810
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1369,14 +1369,14 @@ Read {
  name Read35
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4030
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat34
  xpos 4030
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1388,14 +1388,14 @@ Read {
  name Read16
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2050
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat16
  xpos 2050
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1408,14 +1408,14 @@ Read {
  name Read17
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2160
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat17
  xpos 2160
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1427,14 +1427,14 @@ Read {
  name Read18
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2270
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat18
  xpos 2270
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1446,14 +1446,14 @@ Read {
  name Read19
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2380
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat11
  xpos 2380
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1465,7 +1465,7 @@ Read {
  name Read20
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2490
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Transform {
@@ -1474,7 +1474,7 @@ Transform {
  shutteroffset centred
  name Transform1
  xpos 2490
- ypos -874
+ ypos -873
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -1483,7 +1483,7 @@ Reformat {
  filter Lanczos4
  name Reformat19
  xpos 2490
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1495,14 +1495,14 @@ Read {
  name Read21
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2600
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat20
  xpos 2600
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1514,14 +1514,14 @@ Read {
  name Read22
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2710
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat21
  xpos 2710
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1533,14 +1533,14 @@ Read {
  name Read23
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2820
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat22
  xpos 2820
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1552,14 +1552,14 @@ Read {
  name Read24
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2930
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat24
  xpos 2930
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1571,14 +1571,14 @@ Read {
  name Read26
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3040
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat25
  xpos 3040
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1590,14 +1590,14 @@ Read {
  name Read27
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3150
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat26
  xpos 3150
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1609,14 +1609,14 @@ Read {
  name Read28
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3260
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat27
  xpos 3260
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1628,14 +1628,14 @@ Read {
  name Read29
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3370
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat28
  xpos 3370
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1647,14 +1647,14 @@ Read {
  name Read30
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3480
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat29
  xpos 3480
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1666,7 +1666,7 @@ Read {
  name Read31
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3590
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Transform {
@@ -1675,7 +1675,7 @@ Transform {
  shutteroffset centred
  name Transform2
  xpos 3590
- ypos -874
+ ypos -873
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -1684,7 +1684,7 @@ Reformat {
  filter Lanczos4
  name Reformat30
  xpos 3590
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1696,7 +1696,7 @@ Read {
  name Read32
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3700
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Transform {
@@ -1705,7 +1705,7 @@ Transform {
  shutteroffset centred
  name Transform3
  xpos 3700
- ypos -874
+ ypos -873
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -1714,7 +1714,7 @@ Reformat {
  filter Lanczos4
  name Reformat31
  xpos 3700
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1726,14 +1726,14 @@ Read {
  name Read34
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3920
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat33
  xpos 3920
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1745,7 +1745,7 @@ Read {
  name Read36
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4140
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Transform {
@@ -1754,7 +1754,7 @@ Transform {
  shutteroffset centred
  name Transform4
  xpos 4140
- ypos -874
+ ypos -873
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -1763,7 +1763,7 @@ Reformat {
  filter Lanczos4
  name Reformat35
  xpos 4140
- ypos -826
+ ypos -825
 }
 push 0
 Read {
@@ -1776,14 +1776,14 @@ Read {
  name Read38
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4360
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat37
  xpos 4360
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -1795,7 +1795,7 @@ Read {
  name Read39
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4470
- ypos -1030
+ ypos -1026
  postage_stamp false
 }
 RotoPaint {
@@ -2526,7 +2526,7 @@ RotoPaint {
  source_black_outside true
  name RotoPaint1
  xpos 4470
- ypos -970
+ ypos -969
 }
 Transform {
  scale 1.05
@@ -2534,7 +2534,7 @@ Transform {
  shutteroffset centred
  name Transform5
  xpos 4470
- ypos -898
+ ypos -897
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -2543,7 +2543,7 @@ Reformat {
  filter Lanczos4
  name Reformat38
  xpos 4470
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2555,7 +2555,7 @@ Read {
  name Read40
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4580
- ypos -1198
+ ypos -1194
  postage_stamp false
 }
 Transform {
@@ -2564,7 +2564,7 @@ Transform {
  shutteroffset centred
  name Transform6
  xpos 4580
- ypos -1162
+ ypos -1161
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -2573,7 +2573,7 @@ Reformat {
  filter Lanczos4
  name Reformat39
  xpos 4580
- ypos -874
+ ypos -873
 }
 Read {
  inputs 0
@@ -2585,14 +2585,14 @@ Read {
  name Read41
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4690
- ypos -958
+ ypos -954
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat40
  xpos 4690
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2604,14 +2604,14 @@ Read {
  name Read6
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 950
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat6
  xpos 950
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2623,14 +2623,14 @@ Read {
  name Read7
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1060
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat7
  xpos 1060
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2642,14 +2642,14 @@ Read {
  name Read8
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1170
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat8
  xpos 1170
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2661,14 +2661,14 @@ Read {
  name Read9
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1280
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat9
  xpos 1280
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2680,14 +2680,14 @@ Read {
  name Read10
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 1390
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat10
  xpos 1390
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2699,14 +2699,14 @@ Read {
  name Read5
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 840
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat5
  xpos 840
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2718,14 +2718,14 @@ Read {
  name Read3
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 620
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat3
  xpos 620
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2737,14 +2737,14 @@ Read {
  name Read4
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 730
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat4
  xpos 730
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2756,14 +2756,14 @@ Read {
  name Read2
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 510
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat2
  xpos 510
- ypos -826
+ ypos -825
 }
 Read {
  inputs 0
@@ -2775,14 +2775,14 @@ Read {
  name Read1
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 400
- ypos -1150
+ ypos -1146
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat1
  xpos 400
- ypos -826
+ ypos -825
 }
 AppendClip {
  inputs 39
@@ -2790,7 +2790,7 @@ AppendClip {
  time ""
  name AppendClip1
  xpos 400
- ypos -706
+ ypos -705
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -2804,7 +2804,7 @@ Write {
  out_colorspace scene_linear
  name Write1
  xpos 400
- ypos -616
+ ypos -613
 }
 Read {
  inputs 0
@@ -2816,7 +2816,7 @@ Read {
  name Read62
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4250
- ypos -1102
+ ypos -1098
  postage_stamp false
 }
 Transform {
@@ -2826,7 +2826,7 @@ Transform {
  shutteroffset centred
  name Transform8
  xpos 4250
- ypos -1018
+ ypos -1017
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -2835,7 +2835,7 @@ Reformat {
  filter Lanczos4
  name Reformat36
  xpos 4250
- ypos -754
+ ypos -753
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -2849,7 +2849,7 @@ Write {
  out_colorspace scene_linear
  name Write7
  xpos 4250
- ypos -712
+ ypos -709
 }
 Read {
  inputs 0
@@ -2861,14 +2861,14 @@ Read {
  name Read60
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2820
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat60
  xpos 2820
- ypos -538
+ ypos -537
 }
 Transform {
  scale 1.32
@@ -2876,7 +2876,7 @@ Transform {
  shutteroffset centred
  name Transform7
  xpos 2820
- ypos -514
+ ypos -513
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -2893,7 +2893,7 @@ Write {
  out_colorspace scene_linear
  name Write5
  xpos 2820
- ypos -448
+ ypos -445
 }
 Read {
  inputs 0
@@ -2905,14 +2905,14 @@ Read {
  name Read61
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 2930
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Reformat {
  filter Lanczos4
  name Reformat61
  xpos 2930
- ypos -538
+ ypos -537
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -2926,7 +2926,7 @@ Write {
  out_colorspace scene_linear
  name Write6
  xpos 2930
- ypos -448
+ ypos -445
 }
 Read {
  inputs 0
@@ -2938,7 +2938,7 @@ Read {
  name Read37
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3040
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Crop {
@@ -2947,13 +2947,13 @@ Crop {
  crop false
  name Crop3
  xpos 3040
- ypos -562
+ ypos -561
 }
 Reformat {
  filter Lanczos4
  name Reformat62
  xpos 3040
- ypos -490
+ ypos -489
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -2967,7 +2967,7 @@ Write {
  out_colorspace scene_linear
  name Write8
  xpos 3040
- ypos -472
+ ypos -469
 }
 Read {
  inputs 0
@@ -2979,7 +2979,7 @@ Read {
  name Read63
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3260
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Crop {
@@ -2988,14 +2988,14 @@ Crop {
  crop false
  name Crop4
  xpos 3260
- ypos -562
+ ypos -561
 }
 Reformat {
  resize fit
  filter Lanczos4
  name Reformat63
  xpos 3260
- ypos -490
+ ypos -489
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3009,7 +3009,7 @@ Write {
  out_colorspace scene_linear
  name Write9
  xpos 3260
- ypos -472
+ ypos -469
 }
 Read {
  inputs 0
@@ -3021,7 +3021,7 @@ Read {
  name Read64
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3370
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Blur {
@@ -3030,7 +3030,7 @@ Blur {
  name Blur1
  label "\[value size] px"
  xpos 3370
- ypos -544
+ ypos -541
 }
 Group {
  name Group1
@@ -3038,7 +3038,7 @@ Group {
  tile_color 0x323232ff
  note_font_color 0xb80045ff
  xpos 3370
- ypos -514
+ ypos -513
  addUserKnob {20 grain_tab l Grain}
  addUserKnob {3 seed t "Change this value to make different instances of this operator produce different noise"}
  seed 134
@@ -3106,14 +3106,14 @@ Group {
   xpos 68
   ypos -58
  }
-set N11c3ab60 [stack 0]
+set Ne0064800 [stack 0]
  Dot {
   name Dot5
   tile_color 0xcccccc00
   xpos -75
   ypos -58
  }
-set N11c3fc00 [stack 0]
+set Ne0064c00 [stack 0]
  Dot {
   name Dot6
   tile_color 0xcccccc00
@@ -3126,7 +3126,7 @@ set N11c3fc00 [stack 0]
   xpos -146
   ypos 679
  }
-push $N11c3fc00
+push $Ne0064c00
  Shuffle {
   alpha white
   name Shuffle1
@@ -3140,14 +3140,14 @@ push $N11c3fc00
   xpos -76
   ypos 557
  }
-push $N11c3ab60
+push $Ne0064800
  Dot {
   name Dot2
   tile_color 0xcccccc00
   xpos 164
   ypos -58
  }
-set N11c64de0 [stack 0]
+set Ndd335200 [stack 0]
  Noise {
   output {rgba.red -rgba.green -rgba.blue -rgba.alpha}
   cliptype none
@@ -3230,7 +3230,7 @@ set N11c64de0 [stack 0]
   xpos 252
   ypos 295
  }
-push $N11c64de0
+push $Ndd335200
  Grade {
   black {{parent.red_i} {parent.green_i} {parent.blue_i} {curve}}
   white {{parent.red_m} {parent.green_m} {parent.blue_m} {curve}}
@@ -3258,7 +3258,7 @@ push $N11c64de0
   xpos 286
   ypos 557
  }
-push $N11c3ab60
+push $Ne0064800
  Merge2 {
   inputs 2+1
   operation plus
@@ -3289,7 +3289,7 @@ Reformat {
  filter Lanczos4
  name Reformat64
  xpos 3370
- ypos -490
+ ypos -489
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3303,7 +3303,7 @@ Write {
  out_colorspace scene_linear
  name Write10
  xpos 3370
- ypos -472
+ ypos -469
 }
 Read {
  inputs 0
@@ -3315,7 +3315,7 @@ Read {
  name Read65
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3590
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Crop {
@@ -3323,13 +3323,13 @@ Crop {
  reformat true
  name Crop5
  xpos 3590
- ypos -562
+ ypos -561
 }
 Reformat {
  resize fit
  name Reformat65
  xpos 3590
- ypos -490
+ ypos -489
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3343,7 +3343,7 @@ Write {
  out_colorspace scene_linear
  name Write11
  xpos 3590
- ypos -472
+ ypos -469
 }
 Read {
  inputs 0
@@ -3355,7 +3355,7 @@ Read {
  name Read67
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3920
- ypos -646
+ ypos -642
  postage_stamp false
 }
 Reformat {
@@ -3363,7 +3363,7 @@ Reformat {
  filter Lanczos4
  name Reformat67
  xpos 3920
- ypos -610
+ ypos -609
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3377,7 +3377,7 @@ Write {
  out_colorspace scene_linear
  name Write13
  xpos 3920
- ypos -568
+ ypos -565
 }
 Read {
  inputs 0
@@ -3389,7 +3389,7 @@ Read {
  name Read66
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 3810
- ypos -598
+ ypos -594
  postage_stamp false
 }
 Crop {
@@ -3398,14 +3398,14 @@ Crop {
  crop false
  name Crop6
  xpos 3810
- ypos -562
+ ypos -561
 }
 Reformat {
  resize fit
  filter Lanczos4
  name Reformat66
  xpos 3810
- ypos -490
+ ypos -489
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3419,7 +3419,7 @@ Write {
  out_colorspace scene_linear
  name Write12
  xpos 3810
- ypos -472
+ ypos -469
 }
 Read {
  inputs 0
@@ -3433,7 +3433,7 @@ Read {
  name Read69
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4140
- ypos -286
+ ypos -282
  postage_stamp false
 }
 Reformat {
@@ -3441,7 +3441,7 @@ Reformat {
  filter Lanczos4
  name Reformat69
  xpos 4140
- ypos -202
+ ypos -201
 }
 Write {
  file ./_output/planpartners.jpeg
@@ -3455,7 +3455,7 @@ Write {
  out_colorspace scene_linear
  name Write14
  xpos 4140
- ypos -160
+ ypos -157
 }
 Read {
  inputs 0
@@ -3467,7 +3467,7 @@ Read {
  name Read70
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4250
- ypos -286
+ ypos -282
  postage_stamp false
 }
 Crop {
@@ -3477,14 +3477,14 @@ Crop {
  crop false
  name Crop7
  xpos 4250
- ypos -226
+ ypos -225
 }
 Reformat {
  resize fit
  filter Lanczos4
  name Reformat70
  xpos 4250
- ypos -178
+ ypos -177
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3498,7 +3498,7 @@ Write {
  out_colorspace scene_linear
  name Write16
  xpos 4250
- ypos -136
+ ypos -133
 }
 Read {
  inputs 0
@@ -3510,7 +3510,7 @@ Read {
  name Read71
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4360
- ypos -286
+ ypos -282
  postage_stamp false
 }
 Crop {
@@ -3520,14 +3520,14 @@ Crop {
  crop false
  name Crop8
  xpos 4360
- ypos -226
+ ypos -225
 }
 Reformat {
  resize fit
  filter Lanczos4
  name Reformat71
  xpos 4360
- ypos -178
+ ypos -177
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3541,7 +3541,7 @@ Write {
  out_colorspace scene_linear
  name Write17
  xpos 4360
- ypos -136
+ ypos -133
 }
 Read {
  inputs 0
@@ -3553,7 +3553,7 @@ Read {
  name Read72
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4470
- ypos -310
+ ypos -306
  postage_stamp false
 }
 Reformat {
@@ -3562,7 +3562,7 @@ Reformat {
  black_outside true
  name Reformat72
  xpos 4580
- ypos -154
+ ypos -153
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3576,7 +3576,7 @@ Write {
  out_colorspace scene_linear
  name Write18
  xpos 4580
- ypos -136
+ ypos -133
 }
 Read {
  inputs 0
@@ -3588,7 +3588,7 @@ Read {
  name Read73
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Reformat {
@@ -3597,7 +3597,7 @@ Reformat {
  black_outside true
  name Reformat73
  xpos 6560
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3611,7 +3611,7 @@ Write {
  out_colorspace scene_linear
  name Write19
  xpos 6560
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3623,7 +3623,7 @@ Read {
  name Read74
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6780
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Reformat {
@@ -3632,7 +3632,7 @@ Reformat {
  black_outside true
  name Reformat74
  xpos 6780
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3646,15 +3646,15 @@ Write {
  out_colorspace scene_linear
  name Write20
  xpos 6780
- ypos 752
+ ypos 755
 }
 StickyNote {
  inputs 0
  name StickyNote1
  label 2020
  note_font_size 40
- xpos 6549
- ypos -649
+ xpos 6557
+ ypos -645
 }
 Read {
  inputs 0
@@ -3666,7 +3666,7 @@ Read {
  name Read75
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
- ypos -550
+ ypos -546
  postage_stamp false
 }
 Transform {
@@ -3675,7 +3675,7 @@ Transform {
  shutteroffset centred
  name Transform9
  xpos 6560
- ypos -466
+ ypos -465
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -3686,7 +3686,7 @@ Reformat {
  black_outside true
  name Reformat75
  xpos 6560
- ypos -418
+ ypos -417
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3700,7 +3700,7 @@ Write {
  out_colorspace scene_linear
  name Write21
  xpos 6560
- ypos -376
+ ypos -373
  disable true
 }
 Read {
@@ -3713,7 +3713,7 @@ Read {
  name Read76
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7000
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -3721,14 +3721,14 @@ Crop {
  crop false
  name Crop9
  xpos 7000
- ypos 638
+ ypos 639
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat76
  xpos 7000
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3742,7 +3742,7 @@ Write {
  out_colorspace scene_linear
  name Write22
  xpos 7000
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3754,7 +3754,7 @@ Read {
  name Read77
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7220
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Reformat {
@@ -3762,7 +3762,7 @@ Reformat {
  filter Lanczos4
  name Reformat77
  xpos 7220
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3776,7 +3776,7 @@ Write {
  out_colorspace scene_linear
  name Write26
  xpos 7220
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3788,7 +3788,7 @@ Read {
  name Read78
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7440
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -3796,14 +3796,14 @@ Crop {
  crop false
  name Crop10
  xpos 7440
- ypos 638
+ ypos 639
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat78
  xpos 7440
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3817,7 +3817,7 @@ Write {
  out_colorspace scene_linear
  name Write27
  xpos 7440
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3829,7 +3829,7 @@ Read {
  name Read79
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7660
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -3837,14 +3837,14 @@ Crop {
  crop false
  name Crop11
  xpos 7660
- ypos 638
+ ypos 639
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat79
  xpos 7660
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3858,7 +3858,7 @@ Write {
  out_colorspace scene_linear
  name Write29
  xpos 7660
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3870,7 +3870,7 @@ Read {
  name Read80
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7880
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -3878,14 +3878,14 @@ Crop {
  crop false
  name Crop12
  xpos 7880
- ypos 638
+ ypos 639
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat80
  xpos 7880
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3899,7 +3899,7 @@ Write {
  out_colorspace scene_linear
  name Write30
  xpos 7880
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3911,7 +3911,7 @@ Read {
  name Read81
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 8100
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -3919,14 +3919,14 @@ Crop {
  crop false
  name Crop13
  xpos 8100
- ypos 638
+ ypos 639
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat81
  xpos 8100
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3940,7 +3940,7 @@ Write {
  out_colorspace scene_linear
  name Write31
  xpos 8100
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3952,7 +3952,7 @@ Read {
  name Read83
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 8320
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -3960,14 +3960,14 @@ Crop {
  crop false
  name Crop14
  xpos 8320
- ypos 638
+ ypos 639
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat82
  xpos 8320
- ypos 710
+ ypos 711
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -3981,7 +3981,7 @@ Write {
  out_colorspace scene_linear
  name Write32
  xpos 8320
- ypos 752
+ ypos 755
 }
 Read {
  inputs 0
@@ -3993,14 +3993,14 @@ Read {
  name Read84
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 8760
- ypos 530
+ ypos 534
  postage_stamp false
 }
 Crop {
  box {1175 405 2680 1095}
  name Crop17
  xpos 8760
- ypos 590
+ ypos 591
 }
 Transform {
  translate {0 320}
@@ -4009,7 +4009,7 @@ Transform {
  shutteroffset centred
  name Transform11
  xpos 8760
- ypos 638
+ ypos 639
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -4018,7 +4018,7 @@ Crop {
  box {1320 390 2416 1072}
  name Crop16
  xpos 8760
- ypos 662
+ ypos 663
  disable true
 }
 Reformat {
@@ -4026,26 +4026,26 @@ Reformat {
  filter Lanczos4
  name Reformat84
  xpos 8760
- ypos 710
+ ypos 711
 }
 Keyer {
  operation "luminance key"
  range {0.1050541653 1 1 1}
  name Keyer1
  xpos 8760
- ypos 728
+ ypos 731
 }
 Premult {
  name Premult1
  xpos 8760
- ypos 782
+ ypos 783
 }
-set N12db3500 [stack 0]
+set Ne4667a00 [stack 0]
 FilterErode {
  size -10
  name FilterErode1
  xpos 8870
- ypos 776
+ ypos 779
 }
 Blur {
  channels alpha
@@ -4053,15 +4053,15 @@ Blur {
  name Blur2
  label "\[value size] px"
  xpos 8870
- ypos 866
+ ypos 870
 }
-push $N12db3500
+push $Ne4667a00
 Dissolve {
  inputs 2
  which 0.67
  name Dissolve1
  xpos 8760
- ypos 824
+ ypos 827
 }
 Read {
  inputs 0
@@ -4073,7 +4073,7 @@ Read {
  name Read82
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 8540
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -4081,7 +4081,7 @@ Crop {
  crop false
  name Crop15
  xpos 8540
- ypos 638
+ ypos 639
  disable true
 }
 Reformat {
@@ -4089,19 +4089,19 @@ Reformat {
  filter Lanczos4
  name Reformat83
  xpos 8540
- ypos 686
+ ypos 687
 }
 Defocus {
  defocus 4.8
  name Defocus1
  xpos 8540
- ypos 704
+ ypos 707
 }
 Merge2 {
  inputs 2
  name Merge1
  xpos 8540
- ypos 782
+ ypos 783
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -4115,7 +4115,7 @@ Write {
  out_colorspace scene_linear
  name Write33
  xpos 8540
- ypos 848
+ ypos 851
 }
 Read {
  inputs 0
@@ -4127,7 +4127,7 @@ Read {
  name Read85
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 9200
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Reformat {
@@ -4135,7 +4135,7 @@ Reformat {
  filter Lanczos4
  name Reformat85
  xpos 9200
- ypos 734
+ ypos 735
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -4149,7 +4149,7 @@ Write {
  out_colorspace scene_linear
  name Write34
  xpos 9200
- ypos 776
+ ypos 779
 }
 Read {
  inputs 0
@@ -4161,14 +4161,14 @@ Read {
  name Read86
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6780
- ypos -550
+ ypos -546
  postage_stamp false
 }
 Crop {
  box {0 308 3840 1818}
  name Crop18
  xpos 6780
- ypos -490
+ ypos -489
 }
 Reformat {
  resize fill
@@ -4176,7 +4176,7 @@ Reformat {
  black_outside true
  name Reformat86
  xpos 6780
- ypos -418
+ ypos -417
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -4190,7 +4190,7 @@ Write {
  out_colorspace scene_linear
  name Write35
  xpos 6780
- ypos -376
+ ypos -373
 }
 Read {
  inputs 0
@@ -4202,7 +4202,7 @@ Read {
  name Read87
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 9420
- ypos 578
+ ypos 582
  postage_stamp false
 }
 RotoPaint {
@@ -4274,14 +4274,14 @@ RotoPaint {
  source_black_outside true
  name RotoPaint3
  xpos 9420
- ypos 632
+ ypos 635
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat87
  xpos 9420
- ypos 686
+ ypos 687
 }
 Group {
  name Colour_Smear1
@@ -4460,14 +4460,14 @@ Group {
   xpos -1238
   ypos -298
  }
-set N1321a520 [stack 0]
+set Ne472d200 [stack 0]
  Dot {
   name Dot29
   note_font Verdana
   xpos -1204
   ypos -109
  }
-set N1321f6a0 [stack 0]
+set Ne472d600 [stack 0]
  Dot {
   name Dot7
   xpos -1204
@@ -4479,15 +4479,15 @@ set N1321f6a0 [stack 0]
   xpos -1204
   ypos 1564
  }
-set N13229770 [stack 0]
-push $N1321f6a0
+set Ne472de00 [stack 0]
+push $Ne472d600
  Unpremult {
   name Unpremult2
   note_font Verdana
   xpos -1073
   ypos -108
  }
-push $N1321f6a0
+push $Ne472d600
  Switch {
   inputs 2
   which {{"\[value parent.already_premulted]" i}}
@@ -4502,41 +4502,41 @@ push $N1321f6a0
   xpos -901
   ypos -52
  }
-set N1323f5f0 [stack 0]
+set Ne472ec00 [stack 0]
  Dot {
   name Dot5
   xpos -562
   ypos -52
  }
-set N13244800 [stack 0]
+set Ne472f000 [stack 0]
  Dot {
   name Dot17
   note_font Verdana
   xpos 42
   ypos -52
  }
-set N13249800 [stack 0]
+set Ne472f400 [stack 0]
  Dot {
   name Dot38
   note_font Verdana
   xpos 42
   ypos 122
  }
-set N1324e9c0 [stack 0]
+set Ne472f800 [stack 0]
  Dot {
   name Dot145
   note_font Verdana
   xpos -39
   ypos 122
  }
-set N13253af0 [stack 0]
+set Ne472fc00 [stack 0]
  Dot {
   name Dot138
   note_font Verdana
   xpos -92
   ypos 185
  }
-push $N13253af0
+push $Ne472fc00
  Dot {
   name Dot39
   note_font Verdana
@@ -4587,7 +4587,7 @@ push $N13253af0
   xpos -37
   ypos 659
  }
-push $N1324e9c0
+push $Ne472f800
  Dot {
   name Dot20
   note_font Verdana
@@ -4647,7 +4647,7 @@ push $N1324e9c0
   xpos 7
   ypos 747
  }
-push $N13249800
+push $Ne472f400
  Dot {
   name Dot71
   note_font Verdana
@@ -4660,8 +4660,8 @@ push $N13249800
   xpos 1045
   ypos 100
  }
-set N13311630 [stack 0]
-push $N13311630
+set Ne473bc00 [stack 0]
+push $Ne473bc00
  Input {
   inputs 0
   name OMIT
@@ -4677,7 +4677,7 @@ push $N13311630
   xpos 1616
   ypos 50
  }
-set N1331b840 [stack 0]
+set Ne473c400 [stack 0]
  Merge2 {
   inputs 2
   operation out
@@ -4770,7 +4770,7 @@ set N1331b840 [stack 0]
   xpos 41
   ypos 1122
  }
-set N133b1dc0 [stack 0]
+set Ndd439a00 [stack 0]
  Merge2 {
   inputs 2
   operation mask
@@ -4778,15 +4778,15 @@ set N133b1dc0 [stack 0]
   xpos -498
   ypos 1611
  }
-push $N13229770
-push $N13244800
+push $Ne472de00
+push $Ne472f000
  Dot {
   name Dot6
   xpos -562
   ypos 162
  }
-set N133c7e00 [stack 0]
-push $N133c7e00
+set Ne4748200 [stack 0]
+push $Ne4748200
  Blur {
   size {{"\[value parent.sharpness]"}}
   name Blur1
@@ -4811,9 +4811,9 @@ push $N133c7e00
   xpos -554
   ypos 1268
  }
-push $N133b1dc0
-push $N133b1dc0
-push $N1331b840
+push $Ndd439a00
+push $Ndd439a00
+push $Ne473c400
  Dot {
   name Dot3
   note_font Verdana
@@ -4854,7 +4854,7 @@ push $N1331b840
   xpos -588
   ypos 1393
  }
-push $N1323f5f0
+push $Ne472ec00
  Merge2 {
   inputs 2
   name Merge13
@@ -4869,14 +4869,14 @@ push $N1323f5f0
   xpos -1238
   ypos 1725
  }
-set N1345db50 [stack 0]
+set Ne184a000 [stack 0]
  Premult {
   name Premult10
   note_font Verdana
   xpos -1130
   ypos 1789
  }
-push $N1345db50
+push $Ne184a000
  Switch {
   inputs 2
   which {{"\[value parent.output_premulted]" i}}
@@ -4890,7 +4890,7 @@ push $N1345db50
   xpos -1204
   ypos 1996
  }
-set N1347f6d0 [stack 0]
+set Ne1859c00 [stack 0]
 add_layer {smearmask smearmask.a}
  ShuffleCopy {
   inputs 2
@@ -4902,7 +4902,7 @@ add_layer {smearmask smearmask.a}
   xpos -1140
   ypos 2066
  }
-push $N1347f6d0
+push $Ne1859c00
  Switch {
   inputs 2
   which {{"\[value parent.outputmask]"}}
@@ -4911,7 +4911,7 @@ push $N1347f6d0
   xpos -1238
   ypos 2141
  }
-set N13495a30 [stack 0]
+set Ne185c400 [stack 0]
  Dot {
   name Dot19
   note_font Verdana
@@ -4924,13 +4924,13 @@ set N13495a30 [stack 0]
   xpos -1238
   ypos 2422
  }
-push $N1347f6d0
+push $Ne1859c00
 push 0
 push 0
 push 0
 push 0
-push $N1321a520
-push $N13495a30
+push $Ne472d200
+push $Ne185c400
  Viewer {
   inputs 7
   frame 1059
@@ -4956,7 +4956,7 @@ Write {
  out_colorspace scene_linear
  name Write36
  xpos 9420
- ypos 776
+ ypos 779
 }
 Read {
  inputs 0
@@ -4969,7 +4969,7 @@ Read {
  name Read88
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
- ypos -1030
+ ypos -1026
  postage_stamp false
 }
 OFXcom.absoft.neatvideo5_v5 {
@@ -4982,14 +4982,14 @@ OFXcom.absoft.neatvideo5_v5 {
  ParamsHash3 0
  name "Reduce Noise v5_1"
  xpos 6560
- ypos -970
+ ypos -969
 }
 Grade {
  white 2
  gamma 0.85
  name Grade1
  xpos 6560
- ypos -946
+ ypos -945
 }
 Group {
  name Group2
@@ -4997,7 +4997,7 @@ Group {
  tile_color 0x323232ff
  note_font_color 0xb80045ff
  xpos 6560
- ypos -898
+ ypos -897
  addUserKnob {20 grain_tab l Grain}
  addUserKnob {3 seed t "Change this value to make different instances of this operator produce different noise"}
  seed 134
@@ -5065,14 +5065,14 @@ Group {
   xpos 68
   ypos -58
  }
-set N13686ab0 [stack 0]
+set Ndfba1200 [stack 0]
  Dot {
   name Dot5
   tile_color 0xcccccc00
   xpos -75
   ypos -58
  }
-set N1368bb50 [stack 0]
+set Ndfe6ce00 [stack 0]
  Dot {
   name Dot6
   tile_color 0xcccccc00
@@ -5085,7 +5085,7 @@ set N1368bb50 [stack 0]
   xpos -146
   ypos 679
  }
-push $N1368bb50
+push $Ndfe6ce00
  Shuffle {
   alpha white
   name Shuffle1
@@ -5099,14 +5099,14 @@ push $N1368bb50
   xpos -76
   ypos 557
  }
-push $N13686ab0
+push $Ndfba1200
  Dot {
   name Dot2
   tile_color 0xcccccc00
   xpos 164
   ypos -58
  }
-set N136b0aa0 [stack 0]
+set Ne4158000 [stack 0]
  Noise {
   output {rgba.red -rgba.green -rgba.blue -rgba.alpha}
   cliptype none
@@ -5189,7 +5189,7 @@ set N136b0aa0 [stack 0]
   xpos 252
   ypos 295
  }
-push $N136b0aa0
+push $Ne4158000
  Grade {
   black {{parent.red_i} {parent.green_i} {parent.blue_i} {curve}}
   white {{parent.red_m} {parent.green_m} {parent.blue_m} {curve}}
@@ -5217,7 +5217,7 @@ push $N136b0aa0
   xpos 286
   ypos 557
  }
-push $N13686ab0
+push $Ndfba1200
  Merge2 {
   inputs 2+1
   operation plus
@@ -5249,7 +5249,7 @@ Reformat {
  black_outside true
  name Reformat88
  xpos 6560
- ypos -826
+ ypos -825
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5263,7 +5263,7 @@ Write {
  out_colorspace scene_linear
  name Write37
  xpos 6560
- ypos -784
+ ypos -781
 }
 Read {
  inputs 0
@@ -5275,7 +5275,7 @@ Read {
  name Read92
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 9970
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -5284,14 +5284,14 @@ Crop {
  crop false
  name Crop20
  xpos 9970
- ypos 686
+ ypos 687
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat90
  xpos 9970
- ypos 734
+ ypos 735
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5305,7 +5305,7 @@ Write {
  out_colorspace scene_linear
  name Write39
  xpos 9970
- ypos 776
+ ypos 779
 }
 Read {
  inputs 0
@@ -5319,7 +5319,7 @@ Read {
  name Read68
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 4030
- ypos -286
+ ypos -282
  postage_stamp false
 }
 Reformat {
@@ -5327,7 +5327,7 @@ Reformat {
  filter Lanczos4
  name Reformat68
  xpos 4030
- ypos -202
+ ypos -201
 }
 Write {
  file ./_output/listnr.jpeg
@@ -5341,7 +5341,7 @@ Write {
  out_colorspace scene_linear
  name Write15
  xpos 4030
- ypos -160
+ ypos -157
 }
 Read {
  inputs 0
@@ -5353,7 +5353,7 @@ Read {
  name Read91
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 9750
- ypos 578
+ ypos 582
  postage_stamp false
 }
 Crop {
@@ -5362,14 +5362,14 @@ Crop {
  crop false
  name Crop19
  xpos 9750
- ypos 686
+ ypos 687
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat89
  xpos 9750
- ypos 734
+ ypos 735
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5383,23 +5383,23 @@ Write {
  out_colorspace scene_linear
  name Write38
  xpos 9750
- ypos 776
+ ypos 779
 }
 StickyNote {
  inputs 0
  name StickyNote2
  label 2022
  note_font_size 40
- xpos 6549
- ypos 431
+ xpos 6557
+ ypos 435
 }
 StickyNote {
  inputs 0
  name StickyNote4
  label 2021
  note_font_size 40
- xpos 6549
- ypos -217
+ xpos 6557
+ ypos -213
 }
 Read {
  inputs 0
@@ -5411,7 +5411,7 @@ Read {
  name Read90
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
- ypos -118
+ ypos -114
  postage_stamp false
 }
 Crop {
@@ -5420,7 +5420,7 @@ Crop {
  crop false
  name Crop21
  xpos 6560
- ypos -10
+ ypos -9
 }
 Reformat {
  resize fill
@@ -5428,7 +5428,7 @@ Reformat {
  black_outside true
  name Reformat91
  xpos 6560
- ypos 14
+ ypos 15
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5442,7 +5442,7 @@ Write {
  out_colorspace scene_linear
  name Write40
  xpos 6560
- ypos 56
+ ypos 59
 }
 Read {
  inputs 0
@@ -5454,7 +5454,7 @@ Read {
  name Read89
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6780
- ypos -118
+ ypos -114
  postage_stamp false
 }
 Crop {
@@ -5463,7 +5463,7 @@ Crop {
  crop false
  name Crop22
  xpos 6780
- ypos -10
+ ypos -9
 }
 Reformat {
  resize fill
@@ -5471,7 +5471,7 @@ Reformat {
  black_outside true
  name Reformat92
  xpos 6780
- ypos 14
+ ypos 15
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5485,7 +5485,7 @@ Write {
  out_colorspace scene_linear
  name Write41
  xpos 6780
- ypos 56
+ ypos 59
 }
 Read {
  inputs 0
@@ -5497,7 +5497,7 @@ Read {
  name Read93
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7000
- ypos -550
+ ypos -546
  postage_stamp false
 }
 Crop {
@@ -5506,7 +5506,7 @@ Crop {
  crop false
  name Crop23
  xpos 7000
- ypos -442
+ ypos -441
 }
 Reformat {
  resize fill
@@ -5514,7 +5514,7 @@ Reformat {
  black_outside true
  name Reformat93
  xpos 7000
- ypos -418
+ ypos -417
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5528,7 +5528,7 @@ Write {
  out_colorspace scene_linear
  name Write42
  xpos 7000
- ypos -376
+ ypos -373
 }
 Read {
  inputs 0
@@ -5540,7 +5540,7 @@ Read {
  name Read94
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 10190
- ypos 530
+ ypos 534
  postage_stamp false
 }
 Reformat {
@@ -5548,7 +5548,7 @@ Reformat {
  filter Lanczos4
  name Reformat94
  xpos 10190
- ypos 734
+ ypos 735
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5562,7 +5562,7 @@ Write {
  out_colorspace scene_linear
  name Write43
  xpos 10190
- ypos 776
+ ypos 779
 }
 Read {
  inputs 0
@@ -5574,7 +5574,7 @@ Read {
  name Read95
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 10410
- ypos 554
+ ypos 558
  postage_stamp false
 }
 Crop {
@@ -5583,14 +5583,14 @@ Crop {
  crop false
  name Crop24
  xpos 10410
- ypos 686
+ ypos 687
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat95
  xpos 10410
- ypos 734
+ ypos 735
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5604,7 +5604,7 @@ Write {
  out_colorspace scene_linear
  name Write44
  xpos 10410
- ypos 776
+ ypos 779
 }
 Read {
  inputs 0
@@ -5616,7 +5616,7 @@ Read {
  name Read97
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7000
- ypos -118
+ ypos -114
  postage_stamp false
 }
 Crop {
@@ -5625,7 +5625,7 @@ Crop {
  crop false
  name Crop26
  xpos 7000
- ypos -10
+ ypos -9
 }
 Transform {
  translate {0 -350}
@@ -5633,7 +5633,7 @@ Transform {
  shutteroffset centred
  name Transform10
  xpos 7000
- ypos 14
+ ypos 15
  addUserKnob {20 User}
  addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
  addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
@@ -5644,7 +5644,7 @@ Reformat {
  black_outside true
  name Reformat97
  xpos 7000
- ypos 62
+ ypos 63
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5658,7 +5658,7 @@ Write {
  out_colorspace scene_linear
  name Write46
  xpos 7000
- ypos 104
+ ypos 107
 }
 Read {
  inputs 0
@@ -5670,7 +5670,7 @@ Read {
  name Read98
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7220
- ypos -118
+ ypos -114
  postage_stamp false
 }
 Reformat {
@@ -5679,7 +5679,7 @@ Reformat {
  black_outside true
  name Reformat98
  xpos 7220
- ypos 38
+ ypos 39
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5693,15 +5693,15 @@ Write {
  out_colorspace scene_linear
  name Write47
  xpos 7220
- ypos 80
+ ypos 83
 }
 StickyNote {
  inputs 0
  name StickyNote5
  label 2023
  note_font_size 40
- xpos 6549
- ypos 1343
+ xpos 6557
+ ypos 1347
 }
 Read {
  inputs 0
@@ -5713,7 +5713,7 @@ Read {
  name Read99
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
- ypos 1442
+ ypos 1446
  postage_stamp false
 }
 Reformat {
@@ -5722,7 +5722,7 @@ Reformat {
  black_outside true
  name Reformat99
  xpos 6560
- ypos 1574
+ ypos 1575
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5736,7 +5736,7 @@ Write {
  out_colorspace scene_linear
  name Write48
  xpos 6560
- ypos 1616
+ ypos 1619
 }
 Read {
  inputs 0
@@ -5749,7 +5749,7 @@ Read {
  name Read100
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6780
- ypos 1442
+ ypos 1446
  postage_stamp false
 }
 Reformat {
@@ -5758,7 +5758,7 @@ Reformat {
  black_outside true
  name Reformat100
  xpos 6780
- ypos 1574
+ ypos 1575
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5772,7 +5772,7 @@ Write {
  out_colorspace scene_linear
  name Write49
  xpos 6780
- ypos 1616
+ ypos 1619
 }
 Read {
  inputs 0
@@ -5784,7 +5784,7 @@ Read {
  name Read101
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7000
- ypos 1442
+ ypos 1446
  postage_stamp false
 }
 Reformat {
@@ -5793,7 +5793,7 @@ Reformat {
  black_outside true
  name Reformat101
  xpos 7000
- ypos 1574
+ ypos 1575
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5807,7 +5807,7 @@ Write {
  out_colorspace scene_linear
  name Write50
  xpos 7000
- ypos 1616
+ ypos 1619
 }
 Read {
  inputs 0
@@ -5819,7 +5819,7 @@ Read {
  name Read102
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7220
- ypos 1442
+ ypos 1446
  postage_stamp false
 }
 Reformat {
@@ -5828,7 +5828,7 @@ Reformat {
  black_outside true
  name Reformat102
  xpos 7220
- ypos 1574
+ ypos 1575
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -5842,7 +5842,7 @@ Write {
  out_colorspace scene_linear
  name Write51
  xpos 7220
- ypos 1616
+ ypos 1619
 }
 Ramp {
  inputs 0
@@ -5851,7 +5851,7 @@ Ramp {
  color {0.935546875 0.935546875 0.9184570312 1}
  name Ramp4
  xpos 7660
- ypos 2558
+ ypos 2559
 }
 Ramp {
  p0 {136 100}
@@ -5859,7 +5859,7 @@ Ramp {
  color {0.935546875 0.935546875 0.9184570312 1}
  name Ramp5
  xpos 7660
- ypos 2606
+ ypos 2607
 }
 Dot {
  name Dot4
@@ -6200,7 +6200,7 @@ RotoPaint {
  source_black_outside true
  name RotoPaint4
  xpos 7990
- ypos 2462
+ ypos 2463
 }
 Ramp {
  inputs 0
@@ -6210,7 +6210,7 @@ Ramp {
  color {0.935546875 0.935546875 0.9184570312 1}
  name Ramp1
  xpos 7550
- ypos 2222
+ ypos 2223
 }
 Ramp {
  p0 {232 100}
@@ -6219,7 +6219,7 @@ Ramp {
  color {0.935546875 0.935546875 0.9184570312 1}
  name Ramp2
  xpos 7550
- ypos 2270
+ ypos 2271
 }
 Ramp {
  p0 {240 20}
@@ -6228,7 +6228,7 @@ Ramp {
  color {0.935546875 0.935546875 0.9184570312 1}
  name Ramp3
  xpos 7550
- ypos 2318
+ ypos 2319
 }
 Dot {
  name Dot5
@@ -6370,7 +6370,7 @@ RotoPaint {
  source_black_outside true
  name RotoPaint6
  xpos 7440
- ypos 1934
+ ypos 1935
 }
 RotoPaint {
  inputs 0
@@ -6706,7 +6706,7 @@ RotoPaint {
  source_black_outside true
  name RotoPaint5
  xpos 7440
- ypos 1646
+ ypos 1647
 }
 Read {
  inputs 0
@@ -6718,7 +6718,7 @@ Read {
  name Read105
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 7770
- ypos 1418
+ ypos 1422
  postage_stamp false
 }
 Reformat {
@@ -6726,7 +6726,7 @@ Reformat {
  filter Lanczos4
  name Reformat106
  xpos 7770
- ypos 1502
+ ypos 1503
 }
 Crop {
  box {0 0 480 270}
@@ -6734,14 +6734,14 @@ Crop {
  crop false
  name Crop27
  xpos 7770
- ypos 1550
+ ypos 1551
 }
 Dot {
  name Dot3
  xpos 7804
  ypos 1602
 }
-set N14877090 [stack 0]
+set Ndd5a3200 [stack 0]
 Dot {
  name Dot1
  xpos 7694
@@ -6753,7 +6753,7 @@ Copy {
  to0 rgba.alpha
  name Copy1
  xpos 7660
- ypos 1640
+ ypos 1643
 }
 RotoPaint {
  output rgb
@@ -6963,19 +6963,19 @@ RotoPaint {
  source_black_outside true
  name RotoPaint7
  xpos 7660
- ypos 1694
+ ypos 1695
 }
 Dot {
  name Dot13
  xpos 7694
  ypos 1746
 }
-set N149095c0 [stack 0]
+set Ndda8ce00 [stack 0]
 Erode {
  size 0
  name Erode1
  xpos 7550
- ypos 1736
+ ypos 1739
 }
 Expression {
  inputs 0
@@ -6985,7 +6985,7 @@ Expression {
  expr3 1
  name UVmap1
  xpos 7440
- ypos 1718
+ ypos 1719
  hide_input true
 }
 Merge2 {
@@ -6993,12 +6993,12 @@ Merge2 {
  operation mask
  name Merge12
  xpos 7440
- ypos 1742
+ ypos 1743
 }
 Group {
  name ExpBlur
  xpos 7440
- ypos 1766
+ ypos 1767
  addUserKnob {20 User}
  addUserKnob {41 channels T Copy1.channels}
  addUserKnob {7 factor R -64 64}
@@ -7017,14 +7017,14 @@ Group {
   xpos 301
   ypos -414
  }
-set N149b37a0 [stack 0]
+set Ndecc3200 [stack 0]
  Dot {
   name Dot13
   xpos 301
   ypos -138
  }
-set N149b86e0 [stack 0]
-push $N149b37a0
+set Ndd5c3600 [stack 0]
+push $Ndecc3200
  Dot {
   name Dot1
   xpos 555
@@ -7037,7 +7037,7 @@ push $N149b37a0
   ypos -387
   disable {{parent.factor>0}}
  }
-set N149c2810 [stack 0]
+set Ndd5c3e00 [stack 0]
  Dot {
   name Dot28
   xpos 741
@@ -7048,43 +7048,43 @@ set N149c2810 [stack 0]
   xpos 741
   ypos -360
  }
-set N149d3a40 [stack 0]
+set Ndd5c4600 [stack 0]
  Dot {
   name Dot27
   xpos 741
   ypos -336
  }
-set N149d8ad0 [stack 0]
+set Ndd5c4a00 [stack 0]
  Dot {
   name Dot30
   xpos 741
   ypos -312
  }
-set N149ddb60 [stack 0]
+set Ndd5c4e00 [stack 0]
  Dot {
   name Dot31
   xpos 741
   ypos -288
  }
-set N149e2bf0 [stack 0]
+set Ndd5c7600 [stack 0]
  Dot {
   name Dot32
   xpos 741
   ypos -264
  }
-set N149e7cc0 [stack 0]
+set Ndd5c7a00 [stack 0]
  Dot {
   name Dot33
   xpos 741
   ypos -240
  }
-set N149ecd50 [stack 0]
+set Ndd5c7e00 [stack 0]
  Dot {
   name Dot34
   xpos 741
   ypos -216
  }
-set N149f1de0 [stack 0]
+set Ndd5c8200 [stack 0]
  Dot {
   name Dot35
   xpos 741
@@ -7097,7 +7097,7 @@ set N149f1de0 [stack 0]
   xpos 631
   ypos -195
  }
-push $N149f1de0
+push $Ndd5c8200
  Blur {
   channels rgba
   size 64
@@ -7105,7 +7105,7 @@ push $N149f1de0
   xpos 631
   ypos -219
  }
-push $N149ecd50
+push $Ndd5c7e00
  Blur {
   channels rgba
   size 32
@@ -7113,7 +7113,7 @@ push $N149ecd50
   xpos 631
   ypos -243
  }
-push $N149e7cc0
+push $Ndd5c7a00
  Blur {
   channels rgba
   size 16
@@ -7121,7 +7121,7 @@ push $N149e7cc0
   xpos 631
   ypos -267
  }
-push $N149e2bf0
+push $Ndd5c7600
  Blur {
   channels rgba
   size 8
@@ -7129,7 +7129,7 @@ push $N149e2bf0
   xpos 631
   ypos -291
  }
-push $N149ddb60
+push $Ndd5c4e00
  Blur {
   channels rgba
   size 4
@@ -7137,7 +7137,7 @@ push $N149ddb60
   xpos 631
   ypos -315
  }
-push $N149d8ad0
+push $Ndd5c4a00
  Blur {
   channels rgba
   size 2
@@ -7145,7 +7145,7 @@ push $N149d8ad0
   xpos 631
   ypos -339
  }
-push $N149d3a40
+push $Ndd5c4600
  Blur {
   channels rgba
   size 1
@@ -7153,7 +7153,7 @@ push $N149d3a40
   xpos 631
   ypos -363
  }
-push $N149c2810
+push $Ndd5c3e00
  Merge2 {
   inputs 2
   operation under
@@ -7161,7 +7161,7 @@ push $N149c2810
   xpos 521
   ypos -363
  }
-set N14a6b830 [stack 0]
+set Ndd5e0a00 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7169,7 +7169,7 @@ set N14a6b830 [stack 0]
   xpos 521
   ypos -339
  }
-set N14a7c240 [stack 0]
+set Ndd5e0e00 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7177,7 +7177,7 @@ set N14a7c240 [stack 0]
   xpos 521
   ypos -315
  }
-set N14a8cf40 [stack 0]
+set Ndd5e1a00 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7185,7 +7185,7 @@ set N14a8cf40 [stack 0]
   xpos 521
   ypos -291
  }
-set N14a9dc40 [stack 0]
+set Ndd5e2600 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7193,7 +7193,7 @@ set N14a9dc40 [stack 0]
   xpos 521
   ypos -267
  }
-set N14aae940 [stack 0]
+set Ndd5e3200 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7201,7 +7201,7 @@ set N14aae940 [stack 0]
   xpos 521
   ypos -243
  }
-set N14abf640 [stack 0]
+set Ndd5e3e00 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7209,7 +7209,7 @@ set N14abf640 [stack 0]
   xpos 521
   ypos -219
  }
-set N14ad0340 [stack 0]
+set Ndd5e4a00 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7222,50 +7222,50 @@ set N14ad0340 [stack 0]
   xpos 487
   ypos -192
  }
-push $N14ad0340
+push $Ndd5e4a00
  Dot {
   name Dot10
   xpos 485
   ypos -216
  }
-push $N14abf640
+push $Ndd5e3e00
  Dot {
   name Dot9
   xpos 476
   ypos -240
  }
-push $N14aae940
+push $Ndd5e3200
  Dot {
   name Dot8
   xpos 469
   ypos -264
  }
-push $N14a9dc40
+push $Ndd5e2600
  Dot {
   name Dot7
   xpos 463
   ypos -288
  }
-push $N14a8cf40
+push $Ndd5e1a00
  Dot {
   name Dot6
   xpos 454
   ypos -312
  }
-push $N14a7c240
+push $Ndd5e0e00
  Dot {
   name Dot5
   xpos 440
   ypos -336
  }
 push 0
-push $N14a6b830
+push $Ndd5e0a00
  Dot {
   name Dot4
   xpos 427
   ypos -360
  }
-push $N149c2810
+push $Ndd5c3e00
  Dot {
   name Dot3
   xpos 411
@@ -7297,7 +7297,7 @@ push $N149c2810
   xpos 411
   ypos -89
  }
-push $N149b86e0
+push $Ndd5c3600
  Copy {
   inputs 2
   channels rgba
@@ -7314,15 +7314,15 @@ end_group
 Unpremult {
  name Unpremult1
  xpos 7440
- ypos 1790
+ ypos 1791
 }
 Blur {
  channels rgb
  name Blur3
  xpos 7440
- ypos 1814
+ ypos 1815
 }
-push $N149095c0
+push $Ndda8ce00
 STMap {
  inputs 2
  channels rgba
@@ -7330,15 +7330,15 @@ STMap {
  invert_mask true
  name STMap1
  xpos 7550
- ypos 1814
+ ypos 1815
 }
-push $N149095c0
+push $Ndda8ce00
 Keymix {
  inputs 2
  invertMask true
  name Keymix1
  xpos 7660
- ypos 1808
+ ypos 1811
 }
 Copy {
  inputs 2
@@ -7346,19 +7346,19 @@ Copy {
  to0 rgba.alpha
  name Copy3
  xpos 7660
- ypos 1928
+ ypos 1931
 }
 Dot {
  name Dot2
  xpos 7694
  ypos 2034
 }
-set N14b97a00 [stack 0]
+set Ne4258000 [stack 0]
 Erode {
  size 0
  name Erode2
  xpos 7550
- ypos 2024
+ ypos 2027
 }
 Expression {
  inputs 0
@@ -7368,7 +7368,7 @@ Expression {
  expr3 1
  name UVmap2
  xpos 7440
- ypos 2006
+ ypos 2007
  hide_input true
 }
 Merge2 {
@@ -7376,12 +7376,12 @@ Merge2 {
  operation mask
  name Merge2
  xpos 7440
- ypos 2030
+ ypos 2031
 }
 Group {
  name ExpBlur1
  xpos 7440
- ypos 2054
+ ypos 2055
  addUserKnob {20 User}
  addUserKnob {41 channels T Copy1.channels}
  addUserKnob {7 factor R -64 64}
@@ -7400,14 +7400,14 @@ Group {
   xpos 301
   ypos -414
  }
-set N14bd7d70 [stack 0]
+set Ne475fc00 [stack 0]
  Dot {
   name Dot13
   xpos 301
   ypos -138
  }
-set N14bdccb0 [stack 0]
-push $N14bd7d70
+set Ne4760000 [stack 0]
+push $Ne475fc00
  Dot {
   name Dot1
   xpos 555
@@ -7420,7 +7420,7 @@ push $N14bd7d70
   ypos -387
   disable {{parent.factor>0}}
  }
-set N14be6de0 [stack 0]
+set Ne4760800 [stack 0]
  Dot {
   name Dot28
   xpos 741
@@ -7431,43 +7431,43 @@ set N14be6de0 [stack 0]
   xpos 741
   ypos -360
  }
-set N14bf8010 [stack 0]
+set Ne4761000 [stack 0]
  Dot {
   name Dot27
   xpos 741
   ypos -336
  }
-set N14bfd0a0 [stack 0]
+set Ne476b800 [stack 0]
  Dot {
   name Dot30
   xpos 741
   ypos -312
  }
-set N14c02130 [stack 0]
+set Ne476bc00 [stack 0]
  Dot {
   name Dot31
   xpos 741
   ypos -288
  }
-set N14c071c0 [stack 0]
+set Ne476c000 [stack 0]
  Dot {
   name Dot32
   xpos 741
   ypos -264
  }
-set N14c0c290 [stack 0]
+set Ne476c400 [stack 0]
  Dot {
   name Dot33
   xpos 741
   ypos -240
  }
-set N14c11320 [stack 0]
+set Ne476c800 [stack 0]
  Dot {
   name Dot34
   xpos 741
   ypos -216
  }
-set N14c163b0 [stack 0]
+set Ne476cc00 [stack 0]
  Dot {
   name Dot35
   xpos 741
@@ -7480,7 +7480,7 @@ set N14c163b0 [stack 0]
   xpos 631
   ypos -195
  }
-push $N14c163b0
+push $Ne476cc00
  Blur {
   channels rgba
   size 64
@@ -7488,7 +7488,7 @@ push $N14c163b0
   xpos 631
   ypos -219
  }
-push $N14c11320
+push $Ne476c800
  Blur {
   channels rgba
   size 32
@@ -7496,7 +7496,7 @@ push $N14c11320
   xpos 631
   ypos -243
  }
-push $N14c0c290
+push $Ne476c400
  Blur {
   channels rgba
   size 16
@@ -7504,7 +7504,7 @@ push $N14c0c290
   xpos 631
   ypos -267
  }
-push $N14c071c0
+push $Ne476c000
  Blur {
   channels rgba
   size 8
@@ -7512,7 +7512,7 @@ push $N14c071c0
   xpos 631
   ypos -291
  }
-push $N14c02130
+push $Ne476bc00
  Blur {
   channels rgba
   size 4
@@ -7520,7 +7520,7 @@ push $N14c02130
   xpos 631
   ypos -315
  }
-push $N14bfd0a0
+push $Ne476b800
  Blur {
   channels rgba
   size 2
@@ -7528,7 +7528,7 @@ push $N14bfd0a0
   xpos 631
   ypos -339
  }
-push $N14bf8010
+push $Ne4761000
  Blur {
   channels rgba
   size 1
@@ -7536,7 +7536,7 @@ push $N14bf8010
   xpos 631
   ypos -363
  }
-push $N14be6de0
+push $Ne4760800
  Merge2 {
   inputs 2
   operation under
@@ -7544,7 +7544,7 @@ push $N14be6de0
   xpos 521
   ypos -363
  }
-set N14c90130 [stack 0]
+set Ne4775400 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7552,7 +7552,7 @@ set N14c90130 [stack 0]
   xpos 521
   ypos -339
  }
-set N14ca0df0 [stack 0]
+set Ne4775800 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7560,7 +7560,7 @@ set N14ca0df0 [stack 0]
   xpos 521
   ypos -315
  }
-set N14cb1af0 [stack 0]
+set Ne4776400 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7568,7 +7568,7 @@ set N14cb1af0 [stack 0]
   xpos 521
   ypos -291
  }
-set N14cc27f0 [stack 0]
+set Ne4777000 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7576,7 +7576,7 @@ set N14cc27f0 [stack 0]
   xpos 521
   ypos -267
  }
-set N14cd34f0 [stack 0]
+set Ne4777c00 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7584,7 +7584,7 @@ set N14cd34f0 [stack 0]
   xpos 521
   ypos -243
  }
-set N14ce41f0 [stack 0]
+set Ne4778800 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7592,7 +7592,7 @@ set N14ce41f0 [stack 0]
   xpos 521
   ypos -219
  }
-set N14cf4ef0 [stack 0]
+set Ne4779400 [stack 0]
  Merge2 {
   inputs 2
   operation under
@@ -7605,50 +7605,50 @@ set N14cf4ef0 [stack 0]
   xpos 487
   ypos -192
  }
-push $N14cf4ef0
+push $Ne4779400
  Dot {
   name Dot10
   xpos 485
   ypos -216
  }
-push $N14ce41f0
+push $Ne4778800
  Dot {
   name Dot9
   xpos 476
   ypos -240
  }
-push $N14cd34f0
+push $Ne4777c00
  Dot {
   name Dot8
   xpos 469
   ypos -264
  }
-push $N14cc27f0
+push $Ne4777000
  Dot {
   name Dot7
   xpos 463
   ypos -288
  }
-push $N14cb1af0
+push $Ne4776400
  Dot {
   name Dot6
   xpos 454
   ypos -312
  }
-push $N14ca0df0
+push $Ne4775800
  Dot {
   name Dot5
   xpos 440
   ypos -336
  }
 push 0
-push $N14c90130
+push $Ne4775400
  Dot {
   name Dot4
   xpos 427
   ypos -360
  }
-push $N14be6de0
+push $Ne4760800
  Dot {
   name Dot3
   xpos 411
@@ -7680,7 +7680,7 @@ push $N14be6de0
   xpos 411
   ypos -89
  }
-push $N14bdccb0
+push $Ne4760000
  Copy {
   inputs 2
   channels rgba
@@ -7697,16 +7697,16 @@ end_group
 Unpremult {
  name Unpremult2
  xpos 7440
- ypos 2078
+ ypos 2079
 }
 Blur {
  channels rgb
  size 40.5
  name Blur4
  xpos 7440
- ypos 2102
+ ypos 2103
 }
-push $N14b97a00
+push $Ne4258000
 STMap {
  inputs 2
  channels rgba
@@ -7714,15 +7714,15 @@ STMap {
  invert_mask true
  name STMap2
  xpos 7550
- ypos 2102
+ ypos 2103
 }
-push $N14b97a00
+push $Ne4258000
 Keymix {
  inputs 2
  invertMask true
  name Keymix2
  xpos 7660
- ypos 2096
+ ypos 2099
 }
 Copy {
  inputs 2
@@ -7730,25 +7730,25 @@ Copy {
  to0 rgba.alpha
  name Copy2
  xpos 7660
- ypos 2360
+ ypos 2363
 }
 Premult {
  name Premult2
  xpos 7660
- ypos 2414
+ ypos 2415
 }
 Dot {
  name Dot6
  xpos 7694
  ypos 2466
 }
-push $N14877090
+push $Ndd5a3200
 Merge2 {
  inputs 2+1
  invert_mask true
  name Merge3
  xpos 7770
- ypos 2462
+ ypos 2463
 }
 Copy {
  inputs 2
@@ -7756,14 +7756,14 @@ Copy {
  to0 depth.Z
  name Copy4
  xpos 7770
- ypos 2648
+ ypos 2651
 }
 ZDefocus2 {
  math far=1
  size 20
  name ZDefocus1
  xpos 7770
- ypos 2720
+ ypos 2723
 }
 Group {
  name Group3
@@ -7771,7 +7771,7 @@ Group {
  tile_color 0x323232ff
  note_font_color 0xb80045ff
  xpos 7770
- ypos 2798
+ ypos 2799
  addUserKnob {20 grain_tab l Grain}
  addUserKnob {3 seed t "Change this value to make different instances of this operator produce different noise"}
  seed 134
@@ -7839,14 +7839,14 @@ Group {
   xpos 68
   ypos -58
  }
-set N15e86030 [stack 0]
+set Ndd62a400 [stack 0]
  Dot {
   name Dot5
   tile_color 0xcccccc00
   xpos -75
   ypos -58
  }
-set N15e8b0d0 [stack 0]
+set Ndd62a800 [stack 0]
  Dot {
   name Dot6
   tile_color 0xcccccc00
@@ -7859,7 +7859,7 @@ set N15e8b0d0 [stack 0]
   xpos -146
   ypos 679
  }
-push $N15e8b0d0
+push $Ndd62a800
  Shuffle {
   alpha white
   name Shuffle1
@@ -7873,14 +7873,14 @@ push $N15e8b0d0
   xpos -76
   ypos 557
  }
-push $N15e86030
+push $Ndd62a400
  Dot {
   name Dot2
   tile_color 0xcccccc00
   xpos 164
   ypos -58
  }
-set N15edfbd0 [stack 0]
+set Ndd637600 [stack 0]
  Noise {
   output {rgba.red -rgba.green -rgba.blue -rgba.alpha}
   cliptype none
@@ -7963,7 +7963,7 @@ set N15edfbd0 [stack 0]
   xpos 252
   ypos 295
  }
-push $N15edfbd0
+push $Ndd637600
  Grade {
   black {{parent.red_i} {parent.green_i} {parent.blue_i} {curve}}
   white {{parent.red_m} {parent.green_m} {parent.blue_m} {curve}}
@@ -7991,7 +7991,7 @@ push $N15edfbd0
   xpos 286
   ypos 557
  }
-push $N15e86030
+push $Ndd62a400
  Merge2 {
   inputs 2+1
   operation plus
@@ -8029,7 +8029,7 @@ Write {
  out_colorspace scene_linear
  name Write53
  xpos 7770
- ypos 2888
+ ypos 2891
 }
 Read {
  inputs 0
@@ -8041,7 +8041,7 @@ Read {
  name Read103
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 8100
- ypos 1418
+ ypos 1422
  postage_stamp false
 }
 Reformat {
@@ -8050,7 +8050,7 @@ Reformat {
  black_outside true
  name Reformat103
  xpos 8100
- ypos 1550
+ ypos 1551
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -8064,7 +8064,7 @@ Write {
  out_colorspace scene_linear
  name Write52
  xpos 8100
- ypos 1592
+ ypos 1595
 }
 Read {
  inputs 0
@@ -8077,7 +8077,7 @@ Read {
  name Read104
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6890
- ypos -1030
+ ypos -1026
  postage_stamp false
 }
 Crop {
@@ -8086,7 +8086,7 @@ Crop {
  crop false
  name Crop28
  xpos 6890
- ypos -970
+ ypos -969
 }
 Reformat {
  resize fill
@@ -8094,7 +8094,7 @@ Reformat {
  black_outside true
  name Reformat104
  xpos 6890
- ypos -826
+ ypos -825
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -8108,31 +8108,31 @@ Write {
  out_colorspace scene_linear
  name Write54
  xpos 6890
- ypos -784
+ ypos -781
 }
 StickyNote {
  inputs 0
  name StickyNote3
  label 2019
  note_font_size 40
- xpos 6549
- ypos -1129
+ xpos 6557
+ ypos -1125
 }
 StickyNote {
  inputs 0
  name StickyNote6
  label 2018
  note_font_size 40
- xpos 6549
- ypos -1609
+ xpos 6557
+ ypos -1605
 }
 StickyNote {
  inputs 0
  name StickyNote7
  label 2014
  note_font_size 40
- xpos 6549
- ypos -2281
+ xpos 6557
+ ypos -2565
 }
 Read {
  inputs 0
@@ -8145,7 +8145,7 @@ Read {
  name Read106
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
- ypos -1534
+ ypos -1530
  postage_stamp false
 }
 Crop {
@@ -8153,14 +8153,14 @@ Crop {
  crop false
  name Crop29
  xpos 6560
- ypos -1474
+ ypos -1473
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat105
  xpos 6560
- ypos -1330
+ ypos -1329
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -8174,7 +8174,7 @@ Write {
  out_colorspace scene_linear
  name Write55
  xpos 6560
- ypos -1288
+ ypos -1285
 }
 Constant {
  inputs 0
@@ -8182,7 +8182,7 @@ Constant {
  color {0.06051635742 0.0198059082 0.02801513672 0}
  name Constant2
  xpos 6670
- ypos -2121
+ ypos -2409
 }
 Constant {
  inputs 0
@@ -8190,7 +8190,7 @@ Constant {
  color {0.01599121094 0.05285644531 0.08648681641 0}
  name Constant3
  xpos 6670
- ypos -2025
+ ypos -2313
 }
 Read {
  inputs 0
@@ -8203,7 +8203,7 @@ Read {
  name Read107
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 6560
- ypos -2206
+ ypos -2490
  postage_stamp false
 }
 Reformat {
@@ -8211,7 +8211,7 @@ Reformat {
  filter Lanczos4
  name Reformat107
  xpos 6560
- ypos -2098
+ ypos -2385
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -8225,7 +8225,7 @@ Write {
  out_colorspace scene_linear
  name Write56
  xpos 6560
- ypos -2008
+ ypos -2293
 }
 Read {
  inputs 0
@@ -8237,7 +8237,7 @@ Read {
  name Read96
  label "\[lindex \[file split \[value \[topnode].file]] end-2]"
  xpos 10630
- ypos 554
+ ypos 558
  postage_stamp false
 }
 Crop {
@@ -8246,14 +8246,14 @@ Crop {
  crop false
  name Crop25
  xpos 10630
- ypos 686
+ ypos 687
 }
 Reformat {
  resize fill
  filter Lanczos4
  name Reformat96
  xpos 10630
- ypos 734
+ ypos 735
 }
 Write {
  file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
@@ -8265,7 +8265,159 @@ Write {
  version 53
  name Write45
  xpos 10630
- ypos 776
+ ypos 779
+}
+StickyNote {
+ inputs 0
+ name StickyNote8
+ label 2017
+ note_font_size 40
+ xpos 6557
+ ypos -2061
+}
+Read {
+ inputs 0
+ file_type jpeg
+ file ./_input/2017_Shibui.jpg
+ localizationPolicy off
+ format "640 480 0 0 640 480 1 PC_Video"
+ origset true
+ version 2
+ name Read108
+ label "\[lindex \[file split \[value \[topnode].file]] end-2]"
+ xpos 6560
+ ypos -1986
+ postage_stamp false
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ name Reformat108
+ xpos 6560
+ ypos -1881
+}
+Write {
+ file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
+ file_type jpeg
+ _jpeg_quality 1
+ _jpeg_sub_sampling 4:4:4
+ create_directories true
+ checkHashOnRead false
+ version 47
+ name Write57
+ xpos 6560
+ ypos -1789
+}
+Read {
+ inputs 0
+ file_type jpeg
+ file ./_input/2018_Plaza.jpg
+ localizationPolicy off
+ format "640 360 0 0 640 360 1 "
+ origset true
+ version 1
+ name Read109
+ label "\[lindex \[file split \[value \[topnode].file]] end-2]"
+ xpos 6780
+ ypos -1530
+ postage_stamp false
+}
+Transform {
+ scale 1.35
+ center {320 180}
+ shutteroffset centred
+ name Transform12
+ xpos 6780
+ ypos -1488
+ addUserKnob {20 User}
+ addUserKnob {22 center_to_format l "Center to Format" -STARTLINE T "n = nuke.thisNode();       rootWidth = nuke.Root().width();       rootHeight = nuke.Root().height();       xCenter, yCenter = n\['center'].value();       xNew = rootWidth/2-xCenter;       yNew = rootHeight/2-yCenter;       n\['translate'].setValue(xNew, 0); n\['translate'].setValue(yNew, 1);"}
+ addUserKnob {22 anchor_to_bbox l "Anchor to BBox" -STARTLINE T "n = nuke.thisNode(); i = n.input(0);       xNew = i.bbox().x() + (i.bbox().w()/2);       yNew = i.bbox().y() + (i.bbox().h()/2);       n\['center'].setValue(xNew, 0); n\['center'].setValue(yNew, 1);"}
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ name Reformat109
+ xpos 6780
+ ypos -1329
+}
+Write {
+ file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
+ file_type jpeg
+ _jpeg_quality 1
+ _jpeg_sub_sampling 4:4:4
+ create_directories true
+ checkHashOnRead false
+ version 46
+ name Write58
+ xpos 6780
+ ypos -1285
+}
+Read {
+ inputs 0
+ file_type jpeg
+ file ./_input/2019_Powercore.jpg
+ localizationPolicy off
+ format "640 480 0 0 640 480 1 PC_Video"
+ origset true
+ version 1
+ name Read110
+ label "\[lindex \[file split \[value \[topnode].file]] end-2]"
+ xpos 7110
+ ypos -1026
+ postage_stamp false
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ black_outside true
+ name Reformat110
+ xpos 7110
+ ypos -825
+}
+Write {
+ file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
+ file_type jpeg
+ _jpeg_quality 1
+ _jpeg_sub_sampling 4:4:4
+ create_directories true
+ checkHashOnRead false
+ version 46
+ name Write59
+ xpos 7110
+ ypos -781
+}
+Read {
+ inputs 0
+ file_type png
+ file ./_input/2023_WLM2.png
+ localizationPolicy off
+ format "2420 1376 0 0 2420 1376 1 "
+ origset true
+ name Read112
+ label "\[lindex \[file split \[value \[topnode].file]] end-2]"
+ xpos 8540
+ ypos 1422
+ postage_stamp false
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ black_outside true
+ name Reformat112
+ xpos 8540
+ ypos 1551
+}
+Write {
+ file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
+ file_type jpeg
+ _jpeg_quality 1
+ _jpeg_sub_sampling 4:4:4
+ create_directories true
+ checkHashOnRead false
+ version 44
+ name Write61
+ xpos 8540
+ ypos 1595
 }
 Viewer {
  frame 1
@@ -8277,5 +8429,39 @@ Viewer {
  monitorOutOutputTransform rec709
  name Viewer1
  xpos 3700
- ypos -394
+ ypos -393
+}
+Read {
+ inputs 0
+ file_type jpeg
+ file ./_input/2023_TAD.jpg
+ localizationPolicy off
+ format "506 285 0 0 506 285 1 "
+ origset true
+ name Read111
+ label "\[lindex \[file split \[value \[topnode].file]] end-2]"
+ xpos 8320
+ ypos 1422
+ postage_stamp false
+}
+Reformat {
+ resize fill
+ filter Lanczos4
+ black_outside true
+ name Reformat111
+ xpos 8320
+ ypos 1551
+}
+Write {
+ file "./_output/\[join \[lrange \[split \[basename \[metadata input/filename]] .] 0 0] .].jpeg"
+ file_type jpeg
+ _jpeg_quality 1
+ _jpeg_sub_sampling 4:4:4
+ create_directories true
+ checkHashOnRead false
+ version 44
+ name Write60
+ selected true
+ xpos 8320
+ ypos 1595
 }

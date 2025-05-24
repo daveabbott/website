@@ -105,7 +105,8 @@ function appendData(data) {
             var divInfoNominations = "<p class='thumb-awards'>" + vNoms + "</p>";
             divInfo.innerHTML = divInfoTitle + divInfoRole + divInfoAwards + divInfoNominations;
 
-            var divThumbHTML = "<a href='" + item.video + "' data-lity=''> <img src='" + item.thumb + "' class='lazyload'" + "style='max-width: 100%'" + "/></a>"
+            var divThumbHTML = "<a href='" + item.video + "' data-lity>" + "<img src='" + item.thumb + "' onerror=\"this.onerror=null; this.src='./img/thumbs/error.jpg';\" alt='Image' class='lazyload' style='max-width: 100%;' />" + "</a>"
+
             divThumb.innerHTML = divThumbHTML;
 
             divCard.appendChild(divThumb);
