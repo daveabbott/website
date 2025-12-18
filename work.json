@@ -1392,7 +1392,7 @@
     "company": "Airbag",
     "project": "Shell V-Power: Science of Efficiency",
     "thumb": "./img/thumbs/2019_shell_vpower.jpg",
-    "video": "http://youtu.be/KErAQXrPhos",
+    "video": "https://youtu.be/KErAQXrPhos",
     "role": "Composite | Roto | Paint",
     "awards": null,
     "nominated": null
@@ -1406,7 +1406,7 @@
     "company": "Pixel",
     "project": "Make This Christmas Magic #1",
     "thumb": "./img/thumbs/2019_kmart_xmas1.jpg",
-    "video": "http://vimeo.com/312249528",
+    "video": "https://vimeo.com/312249528",
     "role": "Composite | Matchmove",
     "awards": null,
     "nominated": null
@@ -1434,7 +1434,7 @@
     "company": null,
     "project": "For Your Love",
     "thumb": "./img/thumbs/2018_montaigne_foryourlove.jpg",
-    "video": "http://vimeo.com/302753307",
+    "video": "https://vimeo.com/302753307",
     "role": "Composite | Paint",
     "awards": null,
     "nominated": null
@@ -1448,7 +1448,7 @@
     "company": "WILDEBEEST",
     "project": "Awake",
     "thumb": "./img/thumbs/2018_totalgiovanni_awake.jpg",
-    "video": "http://vimeo.com/292035288",
+    "video": "https://vimeo.com/292035288",
     "role": "Composite",
     "awards": null,
     "nominated": null
@@ -1504,7 +1504,7 @@
     "company": "Pixel",
     "project": "The Most Interesting Job Interview",
     "thumb": "./img/thumbs/2018_asis_job.jpg",
-    "video": "http://vimeo.com/276185923",
+    "video": "https://vimeo.com/276185923",
     "role": "VFX Supervisor (shoot) | Composite",
     "awards": "Silver Lion (Design)",
     "nominated": null
@@ -1518,7 +1518,7 @@
     "company": null,
     "project": "Yellow Rose",
     "thumb": "./img/thumbs/2018_sophiekoh_yellowrose.jpg",
-    "video": "http://vimeo.com/276024358",
+    "video": "https://vimeo.com/276024358",
     "role": "Composite",
     "awards": "Best Hand Painted Animated Short: Palm Springs IAF 2017 <br> Best Commissioned Film: Cinanima 2017",
     "nominated": null
@@ -1546,7 +1546,7 @@
     "company": null,
     "project": "Need A Little Time",
     "thumb": "./img/thumbs/2018_barnett_nalt.jpg",
-    "video": "http://vimeo.com/260344721",
+    "video": "https://vimeo.com/260344721",
     "role": "Animation | Composite | Matchmove",
     "awards": "Vimeo Staff Pick",
     "nominated": "Best Music Video: ARIA"
@@ -1560,7 +1560,7 @@
     "company": "Oh Yeah Wow",
     "project": "Optus Regional",
     "thumb": "./img/thumbs/2018_optus_regional.jpg",
-    "video": "http://vimeo.com/252637510",
+    "video": "https://vimeo.com/252637510",
     "role": "VFX Supervisor | Composite | Online",
     "awards": null,
     "nominated": null
@@ -1574,7 +1574,7 @@
     "company": "Wabi Sabi",
     "project": "Lost & Found",
     "thumb": "./img/thumbs/2018_laf.jpg",
-    "video": "http://vimeo.com/256194490",
+    "video": "https://vimeo.com/256194490",
     "role": "VFX Supervisor | Pipeline | Composite",
     "awards": "Short Film Award: AEAF 2018 <br> Best Short Animation: AACTA 2018",
     "nominated": "Best Animated Short Subject: Annie Awards 2019 <br> Best Animated Short: The Oscars 2019 (short-listed)"
@@ -1615,7 +1615,7 @@
     "client": "Client Liaison",
     "project": "A Foreign Affair",
     "thumb": "./img/thumbs/2017_cl_aforeignaffair.jpg",
-    "video": "http://vimeo.com/231832669",
+    "video": "https://vimeo.com/231832669",
     "role": "Animation | Composite",
     "awards": "Best Music Video: Triple J 2017 <br> Best Cinematography: Sound Kilda 2017",
     "nominated": null
@@ -1657,7 +1657,7 @@
     "company": "Pixel",
     "project": "Ahh Capella",
     "thumb": "./img/thumbs/2017_sktf_aah.jpg",
-    "video": "http://vimeo.com/210232221",
+    "video": "https://vimeo.com/210232221",
     "role": "VFX Superviser | Modelling | Animation | Rendering | Online",
     "awards": null,
     "nominated": null
@@ -1671,7 +1671,7 @@
     "company": "Oh Yeah Wow",
     "project": "Speed of Bolt",
     "thumb": "./img/thumbs/2017_optus_bolt.jpg",
-    "video": "http://vimeo.com/213622846",
+    "video": "https://vimeo.com/213622846",
     "role": "Composite | Matchmove | Online",
     "awards": null,
     "nominated": null
@@ -1685,7 +1685,7 @@
     "company": null,
     "project": "Peace Trail",
     "thumb": "./img/thumbs/2017_neilyoung_peacetrail.jpg",
-    "video": "http://vimeo.com/191105174",
+    "video": "https://vimeo.com/191105174",
     "role": "Animation | Composite",
     "awards": null,
     "nominated": null
@@ -1713,7 +1713,7 @@
     "company": "CKOL",
     "project": "Direct From UK",
     "thumb": "./img/thumbs/2016_w7_uk.jpg",
-    "video": "http://vimeo.com/187428744",
+    "video": "https://vimeo.com/187428744",
     "role": "VFX Supervisor | Matchmove | Composite",
     "awards": null,
     "nominated": null
@@ -1769,7 +1769,7 @@
     "company": "OTTO Empire",
     "project": "The Night Is On My Side",
     "thumb": "./img/thumbs/2015_rubens_tnioms.jpg",
-    "video": "http://vimeo.com/143833181",
+    "video": "https://vimeo.com/143833181",
     "role": "VFX Supervisor | Composite",
     "awards": null,
     "nominated": null
@@ -1797,7 +1797,7 @@
     "company": "Oh Yeah Wow",
     "project": "Walk the Wire",
     "thumb": "./img/thumbs/2015_bb_wtw.jpg",
-    "video": "http://vimeo.com/138720507",
+    "video": "https://vimeo.com/138720507",
     "role": "VFX Supervisor | Animation | Composite | Matchmove",
     "awards": null,
     "nominated": "Best Music Video: Triple J <br> Best Music Video: Sound Kilda"
@@ -1811,7 +1811,7 @@
     "company": "Oh Yeah Wow",
     "project": "Heavy Wine",
     "thumb": "./img/thumbs/2015_pureblonde_heavywine.jpg",
-    "video": "http://vimeo.com/139168747",
+    "video": "https://vimeo.com/139168747",
     "role": "Composite",
     "awards": null,
     "nominated": null
@@ -1839,7 +1839,7 @@
     "company": "Oh Yeah Wow",
     "project": "Choose",
     "thumb": "./img/thumbs/2015_cocacola_choose.jpg",
-    "video": "http://vimeo.com/137799431",
+    "video": "https://vimeo.com/137799431",
     "role": "VFX Superviser | Composite",
     "awards": null,
     "nominated": null
@@ -1881,7 +1881,7 @@
     "company": "Otto Empire",
     "project": "Man Therapy",
     "thumb": "./img/thumbs/2015_beyondblue_mantherapy.jpg",
-    "video": "http://vimeo.com/187604185",
+    "video": "https://vimeo.com/187604185",
     "role": "VFX Supervisor | Animation | Composite | Matchmove",
     "awards": null,
     "nominated": null
@@ -1895,7 +1895,7 @@
     "company": null,
     "project": "Epic Delay",
     "thumb": "./img/thumbs/2014_dearplastic_epicdelay.jpg",
-    "video": "http://vimeo.com/108854894",
+    "video": "https://vimeo.com/108854894",
     "role": "Co-Director | Animation | Composite",
     "awards": null,
     "nominated": null
@@ -1951,7 +1951,7 @@
     "company": null,
     "project": "Non-Linear",
     "thumb": "./img/thumbs/2014_nonlinear.jpg",
-    "video": "http://vimeo.com/123599233",
+    "video": "https://vimeo.com/123599233",
     "role": "Animation | Composite",
     "awards": "Visual Science Award: NYC Imagine Science Film Festival 2018",
     "nominated": null
